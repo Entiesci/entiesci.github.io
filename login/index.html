@@ -1,9 +1,3 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html lang="ch">
 <head>
@@ -23,6 +17,20 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700" rel="stylesheet">
 <!-- //web-fonts -->
+<!--云-->
+<script src="js/Bmob-2.2.5.min.js"></script>
+<script>
+	Bmob.initialize("14886c61807ec8a5", "361123");
+	Bomb.debug(true)
+	function login(){
+		Bmob.User.login(Document.getElementById("username").value,Document.getElementById("pwd").value).then(res => {
+   location.href="https://ntsc-yrx.github.io/userpage/index.html"
+ }).catch(err => {
+  console.log(err)
+});
+	}
+</script>
+		
 </head>
 <body>
 		<!--header-->
@@ -35,15 +43,15 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	           <!--form-stars-here-->
 						<div class="wthree-form">
 							<h2>登录</h2>
-							<form action="#" method="post">
+						
 								<div class="form-sub-w3">
-									<input type="text" name="Username" placeholder="用户名 " required="" />
+									<input type="text" name="Username" id="uesrname" placeholder="用户名 " required="" />
 								<div class="icon-w3">
 									<i class="fa fa-user" aria-hidden="true"></i>
 								</div>
 								</div>
 								<div class="form-sub-w3">
-									<input type="password" name="Password" placeholder="密码" required="" />
+									<input type="password" name="Password" id="pwd" placeholder="密码" required="" />
 								<div class="icon-w3">
 									<i class="fa fa-unlock-alt" aria-hidden="true"></i>
 								</div>
@@ -55,9 +63,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 								</label> 
 								<div class="clear"></div>
 								<div class="submit-agileits">
-									<input type="submit" value="点击登录">
+									<input type="submit" onClick="login()" value="点击登录">
 								</div>
-							</form>
+							
 
 						</div>
 				<!--//form-ends-here-->

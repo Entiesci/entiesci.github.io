@@ -18,15 +18,14 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="//fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700" rel="stylesheet">
 <!-- //web-fonts -->
 <!--云-->
-<script scr="js/Bmob-2.2.5.min.js"></script>
+<script src="js/Bmob-2.2.5.min.js"></script>
 <script>
 	Bmob.initialize("14886c61807ec8a5", "361123");
 	Bomb.debug(true)
 	function register(){
 		let params = {
             username: document.getElementById("username").value,
-            password: document.getElementById("password").value,
-            email: document.getElementById("emaill").value,
+            password: document.getElementById("password").value
         }
         Bmob.User.register(params).then(res => {
           location.href="index.html"
@@ -48,7 +47,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	           <!--form-stars-here-->
 						<div class="wthree-form">
 							<h2>注册&nbsp;</h2>
-							<form action="#" method="post">
+					
 								<div class="form-sub-w3">
 									<input type="text" name="Username" id="username" placeholder="用户名 " required="" />
 								<div class="icon-w3">
@@ -60,12 +59,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 								<div class="icon-w3">
 									<i class="fa fa-unlock-alt" aria-hidden="true"></i>
 								</div>
-							    </div>
-								<div class="form-sub-w3">
-									<input type="password" name="Password" id="emaill" placeholder="邮箱（选填）" required="" />
-								<div class="icon-w3">
-									<i class="fa fa-unlock-alt" aria-hidden="true"></i>
-								</div>
+							   
 								</div>
 								<label class="anim">
 								
@@ -73,9 +67,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 								</label> 
 								<div class="clear"></div>
 								<div class="submit-agileits">
-									<input type="submit" onClick="register()" value="开启你的旅途">
+									<input type="submit" onclick="register()" value="开启你的旅途">
 								</div>
-							</form>
+				
 
 						</div>
 				<!--//form-ends-here-->
