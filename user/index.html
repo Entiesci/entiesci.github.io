@@ -29,6 +29,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--circlechart-->
 <script src="js/jquery.circlechart.js"></script>
 <!--circlechart-->
+<script src="js/Bmob-2.2.5.min.js"></script>
+<script>
+	Bmob.initialize("14886c61807ec8a5", "361123");
+	Bomb.debug(true)
+	function get(){
+		let user = Bmob.User.current();
+		var spanTag = document.getElementById("info");
+		spanTag.innerHTML = user.username;
+		}
+	</script>
 
 </head>
 <body>
@@ -40,8 +50,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<img src="images/2.jpg" alt=" " class="img-responsive" />
 			</div>
 			
-			<h2>AJ Lee</h2>
-			<p class="photo">Photographer</p>
+			<h2><span id="info"></span></h2>
+			
 			<div class="skill-info">
 				<ul>
 					<li><div class="demo demo-1" data-percent="20"></div><span>snoozed</span></li>
