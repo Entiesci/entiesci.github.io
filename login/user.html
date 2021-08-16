@@ -7,7 +7,7 @@
 	Bmob.initialize("14886c61807ec8a5", "361123");
 	Bomb.debug(true)
 	function get(){
-		let current = Bmob.User.current();
+		let user = Bmob.User.current();
 		var spanTag = document.getElementById("info");
 		spanTag.innerHTML = user.username;
 		}
