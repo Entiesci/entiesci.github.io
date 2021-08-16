@@ -7,13 +7,13 @@
 	Bomb.debug(true)
 	function get(){
 		let current = Bmob.User.current();
-		var spanTag = Document.getElementById("info");
+		var spanTag = document.getElementById("info");
 		spanTag.innerHTML = user.username;
 	}
 	</script>
 </head>
 <body>
 	<span id="info"></span>
-	<button onClick="get()">获取用户名</button>
+	<button onclick="get()">获取用户名</button>
 </body>
 </html>
