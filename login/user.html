@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+	<script src="js/Bmob-2.2.5.min.js"></script>
+<script>
+	Bmob.initialize("14886c61807ec8a5", "361123");
+	Bomb.debug(true)
+	function get(){
+		let current = Bmob.User.current();
+		var spanTag = Document.getElementById("info");
+		spanTag.innerHTML = user.username;
+	}
+	</script>
+</head>
+<body>
+	<span id="info"></span>
+	<button onClick="get()">获取用户名</button>
+</body>
+</html>
