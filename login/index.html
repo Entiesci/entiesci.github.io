@@ -23,7 +23,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	Bmob.initialize("14886c61807ec8a5", "361123");
 	Bomb.debug(true)
 	function login(){
-		Bmob.User.login(Document.getElementById("username").value,Document.getElementById("pwd").value).then(res => {
+		Bmob.User.login(document.getElementById("username").value,document.getElementById("pwd").value).then(res => {
    location.href="user.html"
  }).catch(err => {
   console.log(err)
