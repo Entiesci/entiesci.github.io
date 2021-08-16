@@ -24,10 +24,10 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	Bomb.debug(true)
 	function login(){
 		Bmob.User.login(document.getElementById("username").value,document.getElementById("pwd").value).then(res => {
-   location.href="user.html"
- }).catch(err => {
-  console.log(err)
-});
+			location.href="user.html"
+		}).catch(err => {
+			console.log(err)
+		});
 	}
 </script>
 		
@@ -45,7 +45,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<h2>登录</h2>
 						
 								<div class="form-sub-w3">
-									<input type="text" name="Username" id="uesrname" placeholder="用户名 " required="" />
+									<input type="text" name="Username" id="username" placeholder="用户名 " required="" />
 								<div class="icon-w3">
 									<i class="fa fa-user" aria-hidden="true"></i>
 								</div>
