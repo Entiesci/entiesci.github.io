@@ -11,14 +11,14 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
-  cursor:url(cur/01.cur),auto;
+  cursor:url("cur/Comix_White_Pointer.cur"),auto;
 
 }
 
 a {
   color: #ffb727;
   text-decoration: none;
-  cursor:url(cur/15.cur),auto;
+  cursor:url("cur/Comix_White_Link.cur"),auto;
 
 }
 
