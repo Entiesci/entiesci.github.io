@@ -11,11 +11,15 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  cursor:url(cur/01.cur),auto;
+
 }
 
 a {
   color: #ffb727;
   text-decoration: none;
+  cursor:url(cur/15.cur),auto;
+
 }
 
 a:hover {
