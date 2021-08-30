@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>CSS教程-文本</title>
+      <link href="/2021/08/30/CSS%E6%95%99%E7%A8%8B-%E6%96%87%E6%9C%AC%E4%B8%8E%E8%83%8C%E6%99%AF/"/>
+      <url>/2021/08/30/CSS%E6%95%99%E7%A8%8B-%E6%96%87%E6%9C%AC%E4%B8%8E%E8%83%8C%E6%99%AF/</url>
+      
+        <content type="html"><![CDATA[<h1 id="CSS教程-文本"><a href="#CSS教程-文本" class="headerlink" title="CSS教程-文本"></a>CSS教程-文本</h1><h2 id="文本样式"><a href="#文本样式" class="headerlink" title="文本样式"></a>文本样式</h2><p>此部分及以后的部分讲的都是“属性”里可以填入的内容<br>CSS样式代码是有分类的，绝大部分的代码的格式都是如下：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text-<span class="attribute">color</span>:<span class="number">#000000</span>;</span><br></pre></td></tr></table></figure><p>转换为中文就是：</p><blockquote><p>分类 - 项目：数值 ；</p></blockquote><p>今天讲的文本样式的分类是</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text-</span><br></pre></td></tr></table></figure><p>项目有</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">color</span>:#表示颜色的数值</span><br><span class="line">indent:数字em</span><br><span class="line">style:样式</span><br><span class="line">decoration:各种线</span><br><span class="line">align:对齐方式</span><br><span class="line">transform:默认大小写</span><br></pre></td></tr></table></figure><p>项目单独讲解如下：<br>decoration</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">underline //下划线</span><br><span class="line">overline //上划线</span><br><span class="line">line-through //删除线</span><br><span class="line">blink //闪烁</span><br></pre></td></tr></table></figure><p>transform</p><pre><code class="CSS">c~ //首字母大写u~ //全大写l~ //全小写</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CSS教程-初见</title>
+      <link href="/2021/08/29/CSS%E6%95%99%E7%A8%8B-%E5%88%9D%E8%A7%81/"/>
+      <url>/2021/08/29/CSS%E6%95%99%E7%A8%8B-%E5%88%9D%E8%A7%81/</url>
+      
+        <content type="html"><![CDATA[<h1 id="CSS教程-初见"><a href="#CSS教程-初见" class="headerlink" title="CSS教程-初见"></a>CSS教程-初见</h1><p>没错，今天我们不讲HTML了，我们来讲CSS。</p><h2 id="CSS简介"><a href="#CSS简介" class="headerlink" title="CSS简介"></a>CSS简介</h2><blockquote><p>问题1：CSS是什么？</p></blockquote><p>CSS全称“层叠样式表”，层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。<br>CSS 能够对网页中元素位置的排版进行像素级精确控制，支持几乎所有的字体字号样式，拥有对网页对象和模型样式编辑的能力。</p><p>这样说你们可能还是不清楚，说白了，CSS就是表示网页外观的文件。<br>CSS文件的格式清晰，但要真正实现一些高级外观功能（如圆角，动画）还是有一定的难度。</p><blockquote><p>问题2：CSS该怎么用？</p></blockquote><p>你可以把CSS代码嵌入到HTML中，代码如下：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">CSS代码...</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure><p>你也可以单独创建一个CSS文件，后缀名为.css，然后在HTML中链接CSS文件（见HTML教程-head部分）</p><h2 id="CSS使用"><a href="#CSS使用" class="headerlink" title="CSS使用"></a>CSS使用</h2><blockquote><p> 问题3：CSS代码的格式是？</p></blockquote><p>css代码格式如下</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.p</span>&#123;</span><br><span class="line">参数</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>其中，“参数”表示外观代码，”.p”表示此段CSS代码是关于</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure><p>的外观代码。</p><p>以后，我们学习CSS的重点就放在“参数”这里了。</p><blockquote><p>问题4:怎么样区分不同的段落?</p></blockquote><p>(以p为例子) 方法一:</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">html:<span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;id&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">CSS: p.id&#123;&#125;</span><br></pre></td></tr></table></figure><p>方法二:</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">html:<span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;id&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">CSS: #id&#123;&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>出发！NOIP！</title>
+      <link href="/2021/08/28/%E5%87%BA%E5%8F%91%EF%BC%81NOIP%EF%BC%81/"/>
+      <url>/2021/08/28/%E5%87%BA%E5%8F%91%EF%BC%81NOIP%EF%BC%81/</url>
+      
+        <content type="html"><![CDATA[<h1 id="通知"><a href="#通知" class="headerlink" title="通知"></a>通知</h1><p>我要去参加NOIP竞赛了</p><p>noip官网<a href="https://www.noi.cn/">NOI全国青少年信息学奥林匹克竞赛</a></p><p>虽然时间有点紧（9月多），但我一个能拿个等级奖……吧……</p><p>以下内容原引百度百科内容</p><blockquote><h2 id="命题宗旨"><a href="#命题宗旨" class="headerlink" title="命题宗旨"></a>命题宗旨</h2><p>全国青少年信息学<a href="https://baike.baidu.com/item/%E5%A5%A5%E6%9E%97%E5%8C%B9%E5%85%8B">奥林匹克</a>联赛（NOIP）是一项面向全国青少年的信息学竞赛和普及活动，旨在向那些在中学阶段学习的青少年普及计算机科学知识；给学校的<a href="https://baike.baidu.com/item/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E6%95%99%E8%82%B2">信息技术教育</a>课程提供动力和新的思路；给那些有才华的学生提供相互交流和学习的机会；通过竞赛和相关的活动培养和选拔优秀的计算机人才。</p><p>竞赛的目的是为了在更高层次上推动普及。本竞赛及其相关活动遵循开放性原则，任何有条件和有兴趣的学校和个人，都可以在业余时间自愿参加。本活动不和现行的学校教学相冲突，也不列入教学计划，是课外性质的因材施教活动。参加者可为初高中学生或其他<a href="https://baike.baidu.com/item/%E4%B8%AD%E7%AD%89%E4%B8%93%E4%B8%9A%E5%AD%A6%E6%A0%A1">中等专业学校</a>的青少年。</p><h2 id="加分保送"><a href="#加分保送" class="headerlink" title="加分保送"></a>加分保送</h2><p>2010年11月19日，教育部宣布取消了各项<a href="https://baike.baidu.com/item/%E5%A5%A5%E6%9E%97%E5%8C%B9%E5%85%8B%E7%AB%9E%E8%B5%9B">奥林匹克竞赛</a>全国决赛一等奖以下的高校保送资格，改由所在地招生委员会决定是否给予20分及以下的加分。调整政策从2011年秋季进入高中阶段一年级的学生开始适用，2010年(含)以前已进入高中阶段学习的学生，仍可适用调整前的相关政策。</p><p>根据教育部现行《普通高校招收保送生办法》中关于保送生选拔条件的规定，获得全国青少年信息学奥林匹克联赛(NOIP)一等奖的应届高中毕业生，均**<u>具有保送进入高校就读</u><strong>的资格。部分地区一等奖获奖选手还享有高考加分优惠，具体情况视省招办政策而定。获奖选手可申请参加<a href="https://baike.baidu.com/item/%E9%AB%98%E6%A0%A1%E8%87%AA%E4%B8%BB%E6%8B%9B%E7%94%9F">高校自主招生</a>和保送生考试，经高校测试通过，可享受</strong><u>高考降分</u><strong>优惠或</strong><u>直接保送录取</u>**。</p><p>NOIP中成绩优秀的非高三选手，可以作为省代表队成员参加全国决赛(NOI)及夏令营比赛（部分省市代表队人员须经过选拔赛决出）。NOIP获奖选手同样具有保送资格，并且成绩优秀的选手能够当场获得高校点招，免试进入名牌大学。夏令营作为全国决赛的扩大赛，本身不具有保送资格，但如果选手之前已获得NOIP一等奖，则同样可以参与现场保送。2013届及以前获得提高组复赛一等奖的高中毕业生可免高考，而通过大学的保送生考试直接被录取。</p></blockquote><p>当然现在我只能说打扰了</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HTML教程-head部分</title>
+      <link href="/2021/08/28/HTML%E6%95%99%E7%A8%8B-head%E9%83%A8%E5%88%86/"/>
+      <url>/2021/08/28/HTML%E6%95%99%E7%A8%8B-head%E9%83%A8%E5%88%86/</url>
+      
+        <content type="html"><![CDATA[<h1 id="HTML教程-head部分"><a href="#HTML教程-head部分" class="headerlink" title="HTML教程-head部分"></a>HTML教程-head部分</h1><p>##head部分</p><p>还记得当初讲过的HTML模板吗？忘记了不要紧，但接下来可要记牢哦<br>我们来复习一下</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">...</span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">...</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><p>没错，我们今天要讲的就是head标签内的部分<br>那么，head部分有什么用呢？</p><blockquote><p>head部分的内容不会在网页中直接显示，但却至关重要</p></blockquote><p>head部分常见的代码如下：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>标题<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">stylesheet</span> <span class="attr">href</span>=<span class="string">CSS文件</span> <span class="attr">type</span>=<span class="string">text/css</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">keywords</span> <span class="attr">content</span>=<span class="string">搜索时用的关键字</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">decsrption</span> <span class="attr">content</span>=<span class="string">搜索条目的简介</span>&gt;</span></span><br></pre></td></tr></table></figure><p>让我来介绍一下这些代码的用途</p><blockquote><p>title–网页标题【特别重要】<br>link–关联文件（如js，css等）【很重要】<br>meta–简介，关键字</p></blockquote><p>由此可见，如果你的网页head部分为空，那么你的网页就只能是一个连标题都没有的word文档了</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HTML教程-输入</title>
+      <link href="/2021/08/26/HTML%E6%95%99%E7%A8%8B-%E8%BE%93%E5%85%A5/"/>
+      <url>/2021/08/26/HTML%E6%95%99%E7%A8%8B-%E8%BE%93%E5%85%A5/</url>
+      
+        <content type="html"><![CDATA[<h1 id="HTML教程-输入"><a href="#HTML教程-输入" class="headerlink" title="HTML教程-输入"></a>HTML教程-输入</h1><p>注意！这是一个非常重要的板块！</p><h2 id="输入-介绍"><a href="#输入-介绍" class="headerlink" title="输入-介绍"></a>输入-介绍</h2><p>你心中的输入指的是什么？输入框？字符串？选项？用户名？<br>我不管你认为的输入是什么，我现在就要“颠覆你的三观”</p><p>输入包括以下：</p><blockquote><p>输入框：输入文本，密码，email<br>文件<br>按钮：提交，重置<br>复选框<br>单选框</p></blockquote><p>待会儿我们就会把以上的输入的代码一一告诉你，可不要开小差哦！</p><h2 id="输入-代码"><a href="#输入-代码" class="headerlink" title="输入-代码"></a>输入-代码</h2><p>输入的通用代码如下:</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure><p>“”内可输入</p><p> 输入框样式:</p><blockquote><p>text</p><p>email</p><p>password</p><p>url</p></blockquote><p> 选择文件样式:</p><blockquote><p>file</p></blockquote><p> 按钮样式:</p><blockquote><p>submit (提交)</p><p>reset (重置)</p><p>button</p><p>image (以图片为按钮,要在type=””后键入src=”图片地址”)</p></blockquote><p>选择样式:</p><blockquote><p>checkbox (复选框)</p><p>radio (单选框)</p></blockquote><p> 日历样式:</p><blockquote><p>date,month,day……</p></blockquote><p> 输入数字样式:</p><blockquote><p>number</p></blockquote><p> 拉条样式:</p><blockquote><p>range (要键入max=”最大值” min=”最小值” step=”加工” value=”默认值”)</p></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C++ 出发！</title>
+      <link href="/2021/08/25/CPP-%E5%87%BA%E5%8F%91%EF%BC%81/"/>
+      <url>/2021/08/25/CPP-%E5%87%BA%E5%8F%91%EF%BC%81/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-出发！"><a href="#C-出发！" class="headerlink" title="C++ 出发！"></a>C++ 出发！</h1><p>C++学习日志即将翻开，我……</p><p>算了，说白话吧</p><p>我开始学C++了，不知道能不能赶上九月多的比赛</p><p>就这样了</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> <span class="number">0</span>; <span class="comment">//表示结束</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HTML教程-链接</title>
+      <link href="/2021/08/25/HTML%E6%95%99%E7%A8%8B-%E9%93%BE%E6%8E%A5/"/>
+      <url>/2021/08/25/HTML%E6%95%99%E7%A8%8B-%E9%93%BE%E6%8E%A5/</url>
+      
+        <content type="html"><![CDATA[<h1 id="HTML初级教程"><a href="#HTML初级教程" class="headerlink" title="HTML初级教程"></a>HTML初级教程</h1><p>今天我们来讲链接</p><h2 id="链接（介绍）"><a href="#链接（介绍）" class="headerlink" title="链接（介绍）"></a>链接（介绍）</h2><p>相信大家都应该见过链接这种东西吧！就是这个<a href="#">有下划线的一般是蓝色的</a>东西</p><p>链接的作用有很多种，包括但不限于以下</p><blockquote><p>跳转网页</p><p>下载文件</p><p>转到某个标题位置</p><p>标记网站中的图片</p><p>……</p></blockquote><p>接下来就让我们看看如何在网页中插入一个链接吧！</p><h2 id="链接（使用）"><a href="#链接（使用）" class="headerlink" title="链接（使用）"></a>链接（使用）</h2><p>废话不多说，直接上代码</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;web&quot;</span>&gt;</span>文本<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure><p>注：可以把web替换为以下：</p><blockquote><p>网页地址(<a href="http://xxx.com/">http://xxx.com</a>)</p><p>#本页已标记的标题</p><p>文件地址</p><p>mailto:邮箱地址</p></blockquote><p>语法2(#~)细节:</p><p>这种用法指跳转至一篇文章的某个标题处,你需要在这个标题处命名,如下</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">name</span>=<span class="string">&quot;名字&quot;</span>&gt;</span>标题文字<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure><p>然后使用链接方法如下</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#名字&quot;</span>&gt;</span>链接文字<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure><p>如何使用图片代替链接文字?</p><p>你可以使用以下代码</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;web&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;图片地址&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure><p>怎么样让链接变成其它颜色?(蓝色在黑身背景下不好区分)</p><p>这个需要运用CSS的知识,我们以后再说~</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>评论&amp;交流区入口&gt;&gt;&gt;here</title>
+      <link href="/2021/08/24/%E8%AF%84%E8%AE%BA-%E4%BA%A4%E6%B5%81%E5%8C%BA%E5%85%A5%E5%8F%A3-here/"/>
+      <url>/2021/08/24/%E8%AF%84%E8%AE%BA-%E4%BA%A4%E6%B5%81%E5%8C%BA%E5%85%A5%E5%8F%A3-here/</url>
+      
+        <content type="html"><![CDATA[<p>欢迎小伙伴们在这里畅所欲言</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 评论区 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HTML教程-列表</title>
+      <link href="/2021/08/24/HTML%E6%95%99%E7%A8%8B-%E5%88%97%E8%A1%A8/"/>
+      <url>/2021/08/24/HTML%E6%95%99%E7%A8%8B-%E5%88%97%E8%A1%A8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="HTML初级教程"><a href="#HTML初级教程" class="headerlink" title="HTML初级教程"></a>HTML初级教程</h1><h2 id="列表种类"><a href="#列表种类" class="headerlink" title="列表种类"></a>列表种类</h2><p>列表分为2种：有序列表与无序列表</p><p>有序列表：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">&lt;li&gt;第1项&lt;/li&gt;</span><br><span class="line">&lt;li&gt;第2项&lt;/li&gt;</span><br><span class="line">……</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure><p>无序列表：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol&gt;</span><br><span class="line">&lt;li&gt;第1项&lt;/li&gt;</span><br><span class="line">&lt;li&gt;第2项&lt;/li&gt;</span><br><span class="line">……</span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure><p>区别：有序列表——有数字或字母编号（默认是数字）</p><p>无序列表——每一项前是一个点（默认实心圆）</p><h2 id="列表样式"><a href="#列表样式" class="headerlink" title="列表样式"></a>列表样式</h2><p>怎么样设置列表前面是数字，字母还是正方形呢？</p><p>无序列表中，你可以把</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br></pre></td></tr></table></figure><p>替换为</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul type=&quot;&quot;&gt;</span><br></pre></td></tr></table></figure><blockquote><p>“”中填入：</p><p>disc——实心圆</p><p>circle——空心圆</p><p>square——正方形</p></blockquote><p>有序列表中，你可以把</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol&gt;</span><br></pre></td></tr></table></figure><p>替换为</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol type=&quot;&quot;&gt;</span><br></pre></td></tr></table></figure><blockquote><p>“”中填入：</p><p>A——大小字母</p><p>a——小写字母</p><p>I（大写的i）——大写罗马字</p><p>i——小写罗马字</p><p>1——数字</p></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HTML教程-入门与文本</title>
+      <link href="/2021/08/23/HTML%E5%88%9D%E7%BA%A7%E6%95%99%E7%A8%8B/"/>
+      <url>/2021/08/23/HTML%E5%88%9D%E7%BA%A7%E6%95%99%E7%A8%8B/</url>
+      
+        <content type="html"><![CDATA[<h1 id="html初级教程"><a href="#html初级教程" class="headerlink" title="html初级教程"></a>html初级教程</h1><p>作者：Ntsc</p><h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><p>HTML是目前网页前端(服务器端)最常用的一种语言,属于标记语言,所以在学习使用没有编程语言那么困难</p><h2 id="标记"><a href="#标记" class="headerlink" title="标记"></a>标记</h2><p>HTML是一种标记语言，标记放在&lt;&gt;中<br>标记也有两种——单标记（空标记）与双标记</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;ab&gt;  //单标记</span><br><span class="line">&lt;ab&gt;&lt;/ab&gt;  //双标记</span><br></pre></td></tr></table></figure><p>那网页中的文本呢?</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">网页中的文本一般都放置在双标记的中间</span><br><span class="line">例子:&lt;p&gt;文本&lt;/p&gt;</span><br></pre></td></tr></table></figure><p>当你理解了这些后,恭喜你,成功入门了</p><h2 id="网站基本框架"><a href="#网站基本框架" class="headerlink" title="网站基本框架"></a>网站基本框架</h2><p>废话不多说,直接上代码</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span>  //声明</span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span> //表示文件开始</span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">头部信息</span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">网页内容</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span> //表示文件结束</span><br></pre></td></tr></table></figure><p>你需要牢记这个框架,代码绝大多数会在”头部信息”与”网页内容”中编写</p><h2 id="文本I"><a href="#文本I" class="headerlink" title="文本I"></a>文本I</h2><p>以下介绍一些代码</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>之间写文本,表示一个段落,在末尾会自动换行<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>表示标题1,数字可以替换为1~6<span class="tag">&lt;<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span>这是一个单标记,作用是换行,包括但不限于文本,图片</span><br></pre></td></tr></table></figure><h2 id="文本II"><a href="#文本II" class="headerlink" title="文本II"></a>文本II</h2><p>以下我们会介绍文字处理,例如加粗,斜体</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">strong</span>&gt;</span>加粗<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">big</span>&gt;</span>大号<span class="tag">&lt;/<span class="name">big</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">i</span>&gt;</span>斜体<span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">small</span>&gt;</span>小号<span class="tag">&lt;/<span class="name">small</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">sub</span>&gt;</span>上标<span class="tag">&lt;/<span class="name">sub</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">sup</span>&gt;</span>下标<span class="tag">&lt;/<span class="name">sup</span>&gt;</span></span><br></pre></td></tr></table></figure><p>这些代码看作与文本紧密相连的部分</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的第一篇博客</title>
+      <link href="/2021/08/23/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+      <url>/2021/08/23/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+      
+        <content type="html"><![CDATA[<h2 id="第一"><a href="#第一" class="headerlink" title="第一"></a>第一</h2><p>博客nb</p><hr><h2 id="第二"><a href="#第二" class="headerlink" title="第二"></a>第二</h2><p>我nb</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World(hexo博客使用说明)</title>
+      <link href="/2021/08/23/hello-world/"/>
+      <url>/2021/08/23/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>(本博客非内容)</p><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start-快速开始"><a href="#Quick-Start-快速开始" class="headerlink" title="Quick Start(快速开始)"></a>Quick Start(快速开始)</h2><h3 id="Create-a-new-post-新建博客"><a href="#Create-a-new-post-新建博客" class="headerlink" title="Create a new post(新建博客)"></a>Create a new post(新建博客)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server-运行本地服务器"><a href="#Run-server-运行本地服务器" class="headerlink" title="Run server(运行本地服务器)"></a>Run server(运行本地服务器)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files-创建可上传至远程仓库的文件"><a href="#Generate-static-files-创建可上传至远程仓库的文件" class="headerlink" title="Generate static files(创建可上传至远程仓库的文件)"></a>Generate static files(创建可上传至远程仓库的文件)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites-上传至远程仓库"><a href="#Deploy-to-remote-sites-上传至远程仓库" class="headerlink" title="Deploy to remote sites(上传至远程仓库)"></a>Deploy to remote sites(上传至远程仓库)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
