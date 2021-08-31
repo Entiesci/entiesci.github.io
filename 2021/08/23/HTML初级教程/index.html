@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 
@@ -405,24 +405,39 @@
                 <h1 id="html初级教程"><a href="#html初级教程" class="headerlink" title="html初级教程"></a>html初级教程</h1><p>作者：Ntsc</p>
 <h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><p>HTML是目前网页前端(服务器端)最常用的一种语言,属于标记语言,所以在学习使用没有编程语言那么困难</p>
 <h2 id="标记"><a href="#标记" class="headerlink" title="标记"></a>标记</h2><p>HTML是一种标记语言，标记放在&lt;&gt;中<br>标记也有两种——单标记（空标记）与双标记</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;ab&gt;  //单标记</span><br><span class="line">&lt;ab&gt;&lt;/ab&gt;  //双标记</span><br></pre></td></tr></table></figure>
-
+<pre><code>&lt;ab&gt;  //单标记
+&lt;ab&gt;&lt;/ab&gt;  //双标记
+</code></pre>
 <p>那网页中的文本呢?</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">网页中的文本一般都放置在双标记的中间</span><br><span class="line">例子:&lt;p&gt;文本&lt;/p&gt;</span><br></pre></td></tr></table></figure>
-
+<pre><code>网页中的文本一般都放置在双标记的中间
+例子:&lt;p&gt;文本&lt;/p&gt;
+</code></pre>
 <p>当你理解了这些后,恭喜你,成功入门了</p>
 <h2 id="网站基本框架"><a href="#网站基本框架" class="headerlink" title="网站基本框架"></a>网站基本框架</h2><p>废话不多说,直接上代码</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span>  //声明</span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span> //表示文件开始</span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">头部信息</span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">网页内容</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span> //表示文件结束</span><br></pre></td></tr></table></figure>
-
+<pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>  //声明
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span> //表示文件开始
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+头部信息
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+网页内容
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span> //表示文件结束
+</code></pre>
 <p>你需要牢记这个框架,代码绝大多数会在”头部信息”与”网页内容”中编写</p>
 <h2 id="文本I"><a href="#文本I" class="headerlink" title="文本I"></a>文本I</h2><p>以下介绍一些代码</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>之间写文本,表示一个段落,在末尾会自动换行<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>表示标题1,数字可以替换为1~6<span class="tag">&lt;<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span>这是一个单标记,作用是换行,包括但不限于文本,图片</span><br></pre></td></tr></table></figure>
-
-
-
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>之间写文本,表示一个段落,在末尾会自动换行<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>表示标题1,数字可以替换为1~6<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>这是一个单标记,作用是换行,包括但不限于文本,图片
+</code></pre>
 <h2 id="文本II"><a href="#文本II" class="headerlink" title="文本II"></a>文本II</h2><p>以下我们会介绍文字处理,例如加粗,斜体</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">strong</span>&gt;</span>加粗<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">big</span>&gt;</span>大号<span class="tag">&lt;/<span class="name">big</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">i</span>&gt;</span>斜体<span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">small</span>&gt;</span>小号<span class="tag">&lt;/<span class="name">small</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">sub</span>&gt;</span>上标<span class="tag">&lt;/<span class="name">sub</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">sup</span>&gt;</span>下标<span class="tag">&lt;/<span class="name">sup</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">></span></span>加粗<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>big</span><span class="token punctuation">></span></span>大号<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>big</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span><span class="token punctuation">></span></span>斜体<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>small</span><span class="token punctuation">></span></span>小号<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>small</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sub</span><span class="token punctuation">></span></span>上标<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sub</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sup</span><span class="token punctuation">></span></span>下标<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sup</span><span class="token punctuation">></span></span>
+</code></pre>
 <p>这些代码看作与文本紧密相连的部分</p>
 
                 

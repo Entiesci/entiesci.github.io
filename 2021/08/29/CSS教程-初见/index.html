@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 
@@ -412,24 +412,36 @@
 <p>问题2：CSS该怎么用？</p>
 </blockquote>
 <p>你可以把CSS代码嵌入到HTML中，代码如下：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">	CSS代码...</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
+    CSS代码<span class="token number">...</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+</code></pre>
 <p>你也可以单独创建一个CSS文件，后缀名为.css，然后在HTML中链接CSS文件（见HTML教程-head部分）</p>
 <h2 id="CSS使用"><a href="#CSS使用" class="headerlink" title="CSS使用"></a>CSS使用</h2><blockquote>
 <p> 问题3：CSS代码的格式是？</p>
 </blockquote>
 <p>css代码格式如下</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.p</span>&#123;</span><br><span class="line">	参数</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre class=" language-css"><code class="language-css"><span class="token number">.</span>p&amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
+    参数
+&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+</code></pre>
 <p>其中，“参数”表示外观代码，”.p”表示此段CSS代码是关于</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+</code></pre>
 <p>的外观代码。</p>
 <p>以后，我们学习CSS的重点就放在“参数”这里了。</p>
 <blockquote>
 <p>问题4:怎么样区分不同的段落?</p>
 </blockquote>
 <p>(以p为例子) 方法一:</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">html:<span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;id&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">CSS: p.id&#123;&#125;</span><br></pre></td></tr></table></figure>
+<pre class=" language-html"><code class="language-html">html:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>id<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+CSS: p.id<span class="token entity" title="&#123;">&amp;#123;</span><span class="token entity" title="&#125;">&amp;#125;</span>
+</code></pre>
 <p>方法二:</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">html:<span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;id&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">CSS: #id&#123;&#125;</span><br></pre></td></tr></table></figure>
+<pre class=" language-html"><code class="language-html">html:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>id<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+CSS: #id<span class="token entity" title="&#123;">&amp;#123;</span><span class="token entity" title="&#125;">&amp;#125;</span>
+</code></pre>
+
                 
             </div>
             <hr/>
@@ -595,7 +607,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/08/30/CSS%E6%95%99%E7%A8%8B-%E6%96%87%E6%9C%AC%E4%B8%8E%E8%83%8C%E6%99%AF/">
+                <a href="/2021/08/30/CSS%E6%95%99%E7%A8%8B-%E6%96%87%E6%9C%AC/">
                     <div class="card-image">
                         
                         

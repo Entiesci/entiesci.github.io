@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 
@@ -404,18 +404,28 @@
             <div id="articleContent">
                 <h1 id="HTML初级教程"><a href="#HTML初级教程" class="headerlink" title="HTML初级教程"></a>HTML初级教程</h1><h2 id="列表种类"><a href="#列表种类" class="headerlink" title="列表种类"></a>列表种类</h2><p>列表分为2种：有序列表与无序列表</p>
 <p>有序列表：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">	&lt;li&gt;第1项&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;第2项&lt;/li&gt;</span><br><span class="line">	……</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
-
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;第1项&lt;/li&gt;
+    &lt;li&gt;第2项&lt;/li&gt;
+    ……
+&lt;/ul&gt;
+</code></pre>
 <p>无序列表：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol&gt;</span><br><span class="line">	&lt;li&gt;第1项&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;第2项&lt;/li&gt;</span><br><span class="line">	……</span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure>
+<pre><code>&lt;ol&gt;
+    &lt;li&gt;第1项&lt;/li&gt;
+    &lt;li&gt;第2项&lt;/li&gt;
+    ……
+&lt;/ol&gt;
+</code></pre>
 <p>区别：有序列表——有数字或字母编号（默认是数字）</p>
 <p>无序列表——每一项前是一个点（默认实心圆）</p>
 <h2 id="列表样式"><a href="#列表样式" class="headerlink" title="列表样式"></a>列表样式</h2><p>怎么样设置列表前面是数字，字母还是正方形呢？</p>
 <p>无序列表中，你可以把</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br></pre></td></tr></table></figure>
+<pre><code>&lt;ul&gt;
+</code></pre>
 <p>替换为</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul type=&quot;&quot;&gt;</span><br></pre></td></tr></table></figure>
-
+<pre><code>&lt;ul type=&quot;&quot;&gt;
+</code></pre>
 <blockquote>
 <p>“”中填入：</p>
 <p>disc——实心圆</p>
@@ -423,10 +433,11 @@
 <p>square——正方形</p>
 </blockquote>
 <p>有序列表中，你可以把</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol&gt;</span><br></pre></td></tr></table></figure>
+<pre><code>&lt;ol&gt;
+</code></pre>
 <p>替换为</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol type=&quot;&quot;&gt;</span><br></pre></td></tr></table></figure>
-
+<pre><code>&lt;ol type=&quot;&quot;&gt;
+</code></pre>
 <blockquote>
 <p>“”中填入：</p>
 <p>A——大小字母</p>
