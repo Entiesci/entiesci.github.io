@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>CSS教程-字体</title>
+      <link href="/2021/09/01/CSS%E6%95%99%E7%A8%8B-%E5%AD%97%E4%BD%93/"/>
+      <url>/2021/09/01/CSS%E6%95%99%E7%A8%8B-%E5%AD%97%E4%BD%93/</url>
+      
+        <content type="html"><![CDATA[<h1 id="CSS教程-字体，间距"><a href="#CSS教程-字体，间距" class="headerlink" title="CSS教程-字体，间距"></a>CSS教程-字体，间距</h1><h2 id="字体样式"><a href="#字体样式" class="headerlink" title="字体样式"></a>字体样式</h2><p>今天讲的样式的分类是</p><pre class=" language-CSS"><code class="language-CSS">font-</code></pre><p>项目有</p><pre class=" language-CSS"><code class="language-CSS">color:#表示颜色的数值size :大小style:样式family:字体weight:粗细</code></pre><p>项目单独讲解如下：<br>weight<br>可填入数字100~900中的整百数，数字越大，字体越粗</p><h2 id="设置间接"><a href="#设置间接" class="headerlink" title="设置间接"></a>设置间接</h2><p>这个没有统一的分类，但也不多</p><pre class=" language-CSS"><code class="language-CSS">line-height //行距word-spacing //词距letter-spacing //字距</code></pre><p>一共就这3个,在后面加冒号加数值即可</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CSS教程-背景</title>
       <link href="/2021/08/31/CSS%E6%95%99%E7%A8%8B-%E8%83%8C%E6%99%AF/"/>
       <url>/2021/08/31/CSS%E6%95%99%E7%A8%8B-%E8%83%8C%E6%99%AF/</url>
