@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>CSS教程-边框</title>
+      <link href="/2021/09/02/CSS%E6%95%99%E7%A8%8B-%E8%BE%B9%E6%A1%86/"/>
+      <url>/2021/09/02/CSS%E6%95%99%E7%A8%8B-%E8%BE%B9%E6%A1%86/</url>
+      
+        <content type="html"><![CDATA[<h1 id="CSS教程-边框"><a href="#CSS教程-边框" class="headerlink" title="CSS教程-边框"></a>CSS教程-边框</h1><h2 id="边框样式"><a href="#边框样式" class="headerlink" title="边框样式"></a>边框样式</h2><p>今天讲的文本样式的分类是</p><pre class=" language-CSS"><code class="language-CSS">border-</code></pre><p>边框样式包括图片边框和文字边框哦~</p><p>项目有</p><pre class=" language-CSS"><code class="language-CSS">color:#表示颜色的数值width:粗细style:样式</code></pre><p>项目单独讲解如下：</p><p>//作者很懒，什么也没留下….</p><p>这是CSS教程系列里最后一个样式的教程了，请同学们一定要牢记！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CSS教程-字体</title>
       <link href="/2021/09/01/CSS%E6%95%99%E7%A8%8B-%E5%AD%97%E4%BD%93/"/>
       <url>/2021/09/01/CSS%E6%95%99%E7%A8%8B-%E5%AD%97%E4%BD%93/</url>
