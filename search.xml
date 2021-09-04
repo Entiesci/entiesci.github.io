@@ -4,6 +4,82 @@
   
     
     <entry>
+      <title>HTML拓展-localStorage存储</title>
+      <link href="/2021/09/04/HTML%E6%8B%93%E5%B1%95-localStorage%E5%AD%98%E5%82%A8/"/>
+      <url>/2021/09/04/HTML%E6%8B%93%E5%B1%95-localStorage%E5%AD%98%E5%82%A8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="HTML拓展-localStorage存储"><a href="#HTML拓展-localStorage存储" class="headerlink" title="HTML拓展-localStorage存储"></a>HTML拓展-localStorage存储</h1><h2 id="localStorage存储"><a href="#localStorage存储" class="headerlink" title="localStorage存储"></a>localStorage存储</h2><p>localStorage存储技术属于JS（JavaScript）的内容，而且还要放在函数中执行，框架如下</p><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">    <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>    此处放置代码    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre><p>localStorage存储的功能有很多，我们一一讲解</p><blockquote><p>输入与储存</p></blockquote><p>输入还是使用input代码，如下</p><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>data<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre><p>储存的代码如下</p><pre class=" language-JavaScript"><code class="language-JavaScript">localStorage.key=data或者localStorage.setItem('key',data)</code></pre><p>这里说明一下localStorage存储的格式<br>localStorage存储的内容有两个：key,data<br>可以理解为是名称和内容，他们俩一一对应。<br>key和data都可以被当做变量直接赋值，如方法1</p><blockquote><p>获取</p></blockquote><p>直接上代码</p><pre class=" language-JavaScript"><code class="language-JavaScript">var data=localStorage.getItem("key")</code></pre><p>如果要把获取的内容显示出来，你需要</p><pre class=" language-html"><code class="language-html">//html<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>123<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>//Javascriptvar data=localStorage.getItem("key")123.innerHTML=data</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的世界指令大全-实时更新</title>
+      <link href="/2021/09/03/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%8C%87%E4%BB%A4%E5%A4%A7%E5%85%A8-%E5%AE%9E%E6%97%B6%E6%9B%B4%E6%96%B0/"/>
+      <url>/2021/09/03/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%8C%87%E4%BB%A4%E5%A4%A7%E5%85%A8-%E5%AE%9E%E6%97%B6%E6%9B%B4%E6%96%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="我的世界指令大全"><a href="#我的世界指令大全" class="headerlink" title="我的世界指令大全"></a>我的世界指令大全</h1><h2 id="A"><a href="#A" class="headerlink" title="A"></a>A</h2><p>/awake（哎咿呀咿呀咿呀）<br>/ascend (提升到一个平台）</p><h2 id="B"><a href="#B" class="headerlink" title="B"></a>B</h2><p>/buttercup（开始吟唱）<br>/bind&lt;命令&gt;（设置命令快捷键）<br>/blockdata（修改某个方块的数据标签）<br>/backup（运行备份）<br>/ban（添加一个玩家到黑名单）<br>/ban-ip（添加一个ip到黑名单）<br>/banlist（显示你的黑名单）<br>/butcher（杀死附近所有的怪物）</p><h2 id="C"><a href="#C" class="headerlink" title="C"></a>C</h2><p>/clear（清空背包）<br>/clone（将某个方块复制到某个位置）</p><h2 id="D"><a href="#D" class="headerlink" title="D"></a>D</h2><p>/daylock（开启或关闭日夜循环）<br>/difficulty（设置游戏难度，0和平，1简单，2普通，3困难）<br>/damage（开启或关闭伤害）<br>/descend（下降到一个平台）<br>/dupe [all]（复制物品）<br>/destroy [all]（破坏背包里的物品）<br>/defuse [all]（拆掉点燃了的TNT）<br>/drops（开启或关闭物品掉落）<br>/duplicate [all]（复制当前手中物品并丢出）<br>/deop（将某个玩家的管理员身份撤销）</p><h2 id="E"><a href="#E" class="headerlink" title="E"></a>E</h2><p>/explode [范围]（使指定范围产生爆炸）<br>/effect（获得或移除某效果）<br>/ext [all]（熄灭周围的火焰）<br>/enchant（附魔某个玩家的某个物品）</p><h2 id="F"><a href="#F" class="headerlink" title="F"></a>F</h2><p>/fly（飞行）<br>/freeze（冻结所有怪物）<br>/fill（用某种方块填满某块区域）<br>/forestgen（在身旁形成森林）<br>/falldamage（高空掉落是否造成伤害）</p><h2 id="G"><a href="#G" class="headerlink" title="G"></a>G</h2><p>/give（玩家）&lt;物品&gt; [数量]     （给某个玩家某种数量的某种物品，给自己时则不需要输玩家名）<br>/goto&lt;某地名&gt;（直接去某个地方）<br>/gamemode（设置游戏模式）<br>/gamerule ture/false（开启或关闭某种游戏规则）<br>/gamerule pvp（开启或关闭玩家之间的伤害）<br>/gamerule doMobLoot（开启或关闭生物掉落物品）<br>/gamerule doMobSpawning（开启或关闭生物自然生成）<br>/gamerule doWeatherCycle（开启或关闭天气变化）<br>/gamerule keepInventory（开启或关闭死亡不掉落，你们最想要的东西）<br>/gamerule naturalRegeneration false（UHC，指超极限）<br>依次输入以下指令：/gamerule naturalRegeneration false     /time set 18000           /gamerule doDaylightCycle false（永夜UHC，最难生存，能玩下来的都是鬼才）<br>/grow（生长达到满）</p><h2 id="H"><a href="#H" class="headerlink" title="H"></a>H</h2><p>/house（马了顶大！）<br>/help（命令帮助）<br>/heal（为某人补指定的血）<br>/health（设置血量）<br>/home（回到你的出生点）</p><h2 id="I"><a href="#I" class="headerlink" title="I"></a>I</h2><p>/i &lt;物品代码&gt; [数量]（给玩家指定数量的物品，物品代码大全下面会给）<br>/invsee（查看某人的背包）<br>/itemstack &lt;物品代码&gt; [数量]（同上）<br>/instantmine（即时挖矿）<br>/itemname（显示当前手上的物品名称）</p><h2 id="J"><a href="#J" class="headerlink" title="J"></a>J</h2><p>/jump（瞬移到光标所指处）</p><h2 id="K"><a href="#K" class="headerlink" title="K"></a>K</h2><p>/kill（自杀）<br>/kick（将某位玩家踢出房间）<br>/killnpc [all]（杀掉周围所有的NPC）</p><h2 id="L"><a href="#L" class="headerlink" title="L"></a>L</h2><p>/lexburner（用爱发电&amp;一方通行）<br>/light（开关光照）<br>/list（列出玩家列表）<br>/lingtning（超电磁炮）<br>/lingtning（雷击，若不输入名字则雷会劈到你的光标所指处）<br>/locate（寻找遗迹或村庄）<br>/listwaypoints（列出所有路径点）<br>M<br>/mihotel（食用猕hotel，回复100点生命值）<br>/music [音量值]（播放音乐）<br>/mute（将某人禁言）<br>/me（显示你自己的信息）<br>/msg &lt;消息&gt;（私聊）<br>/maxstack [物品ID|物品名称|全部] [数量]（最大堆叠物品）<br>/macro &lt;文件名&gt; {参数}（允许运行宏）<br>/mmoedit name skname rank（如果你安装了MCRPG插件，那么你可以使用这个命令改变某位玩家的某项技能级别）</p><h2 id="N"><a href="#N" class="headerlink" title="N"></a>N</h2><p>/nick ID（给某人改名）<br>/noclip（穿墙）</p><h2 id="O"><a href="#O" class="headerlink" title="O"></a>O</h2><p>/op（给予某位玩家管理员身份）<br>P</p><h2 id="p（显示当前的坐标）"><a href="#p（显示当前的坐标）" class="headerlink" title="/p（显示当前的坐标）"></a>/p（显示当前的坐标）</h2><p>/pumpkins（在自己身旁形成南瓜林）<br>/pardon（从黑名单移除某位玩家或某个ip）<br>/pos（显示当前所有玩家的坐标）<br>/particle（制造颗粒效果）<br>/playsound（播放某个游戏音效）<br>/publish（对局域网开放单人世界）<br>Q<br>暂无<br>R<br>/reach（到指定的地方）<br>/replaceitem（替换物品栏中的物品）<br>/return（传送到上一次传送的地方）<br>/removedrops [all]（删掉地上的所有物品）<br>/rename（修改某命令的名称）<br>/rem（删除指定路点）<br>/repair [all]（当前手持物品耐久回满）<br>/reset（恢复所有默认设置）<br>S<br>/stop（停止服务器运行）<br>/seen name（查看某位玩家最后退出的时间）<br>/search &lt;关键词&gt;（搜索某物品名）<br>/save-all（将服务器保存至硬盘中）<br>/save-off（禁用服务器自动保存）<br>/save-on（开启服务器自动保存）<br>/set &lt;名字&gt;（在这个世界标记一个路径点）<br>/say（向其他玩家显示一条信息）<br>/setjump [JUMP|reset]（设置跳跃的高度 落地伤害和移动 1:1）<br>/setspawn [ X,Y,Z轴 ]（设置当前位置）<br>/scoreboard（管理玩家或队伍）<br>/seed（显示此世界种子）<br>/setspeed [速度|重置]（设置移动速度）<br>/spawn（产生某个生物）<br>/setblock（将一个方块变成另一个方块）<br>/setidletimeout（设置自动踢出挂机玩家的时间）<br>/spawnstack {NAME|ID|random}（产生一个合体的怪物NPC）<br>/setworldspawn（设置出生点）<br>/spawnpoint（设置某位玩家的出生点）<br>/summon（生成某个实体）<br>/snow（在自己附近生成下雪后的样子）<br>/stats（通过命令的返回改变计分板对象）<br>T<br>/tele（传送到某坐标）<br>/thaw（融化所有雪和冰块）<br>/title（设置屏幕标题）<br>/tp [玩家名]（传送到某玩家的位置）<br>/tp name1 name2（把玩家1传送到玩家2的位置）<br>/tphere（把某位玩家传送到自己的位置）<br>/tpall（将当前所有玩家传送到自己的位置）<br>/tell（向某玩家发起私聊）<br>/tellraw（向其他玩家显示一条JSON信息）<br>/time [set|get|day|night [minute|hour|day [TIME]]]（设置在指定时间得到某物品）<br>/timeschedule（设定一段时间，并且当前世界将永远保持着这段时间）<br>/testfor（计算特定条件的实体数）<br>/time（修改或查询当前世界时间）<br>/tree（生成一棵树）<br>/testforblock（探测某一个方块是否在某一个位置）<br>/testforblocks（探测某两个区域内的方块是否匹配）<br>/trigger（设置触发装置的激活状态）<br>U<br>/up[高度]（将自己提升到某个高度）<br>/unbind（撤销某个命令）<br>/unlimited id（给自己某个物品【无限】）<br>/useportal（传送到下界）<br>V<br>暂无<br>W<br>/weather（设置天气）<br>/waterdamage（开关水下伤害）<br>/world（当前世界信息）<br>/world load（加载指定的文件）<br>/world save（保存并退出）<br>/world exit（不保存并退出）<br>/world list（列出所有存档）<br>/whitelist（列出白名单）<br>/worldborder（管理世界边界）<br>X<br>/xp（增加或移除某位玩家的经验值）<br>Y<br>暂无<br>Z<br>暂无</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 游戏 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>派蒙~</title>
+      <link href="/2021/09/03/%E6%B4%BE%E8%92%99/"/>
+      <url>/2021/09/03/%E6%B4%BE%E8%92%99/</url>
+      
+        <content type="html"><![CDATA[<h1 id="派蒙-应急食物嘿嘿嘿…"><a href="#派蒙-应急食物嘿嘿嘿…" class="headerlink" title="派蒙-应急食物嘿嘿嘿…"></a>派蒙-应急食物嘿嘿嘿…</h1><p>⠀  ⠀⠀⠀⠀⠀⠀⢀⣠⠴⠒⠛⠲⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀<br>⠀⠀⠀⠀⡀⠀⢀⠀⢻⡄⣠⠶⣆⠀⣸⣀⣀⠀⠀⡀⠀⢀⠀⢀⠀⠀<br>⠀⠀⠀⠁⠀⠀⢀⡠⠬⠛⢓⣏⠉⣾⣉⣀⠉⢹⡀⠀⠀⠀⠀⠀⠀⠀<br>⠀⠀⠐⠀⢀⡖⠋⣠⠴⠛⠙⢹⠞⢳⢀⣨⡵⠚⠀⠀⠀⠐⠀⠀⠂⠀<br>⠀⠀⠀⣰⠋⡠⠎⠁⣀⠤⠒⠚⠛⠙⠒⠳⠤⣄⡀⠀⠠⠀⠀⠄⠀⠠<br>⠀⠀⠀⠘⠐⢼⠖⠋⠀⠀⢀⠀⠀⠀⠀⠀⠀⠘⣌⡒⠲⢹⠀⠀⠀⠀<br>⠀⠀⠈⠀⡸⠁⠀⠀⠀⠀⡆⠀⠀⠐⠀⠢⣄⠀⡽⡙⡲⠑⠒⠒⡒⠁<br>⢀⡠⠴⠚⠀⠀⠀⠀⠀⣕⠝⣄⡀⢀⠀⠀⡇⠵⢍⠚⢾⡀⢠⠖⠁⠀<br>⠈⠦⣄⣀⠀⡔⠀⠀⢁⡞⠀⠉⠲⣄⡀⢲⢼⠀⢀⠳⡄⠁⠀⢣⠀⠀<br>⠀⠀⣠⠃⢐⠄⠀⠀⠴⠅⠠⡊⡢⠀⠉⠉⠁⠀⢆⠕⠹⡀⠀⠈⡆⠀<br>⠀⠠⡇⠀⡸⠀⠀⠀⠨⡅⠀⠒⠈⠀⢄⠠⠠⠔⠀⠀⠀⢻⠀⠀⢣⠀<br>⠀⢸⠅⠀⡕⠀⠀⠀⠀⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⡏⠀⠀⢸⠀<br>⠀⠈⡇⠀⣣⠀⠀⠈⠀⠸⡦⠴⠲⢚⢚⠙⠝⠙⠍⠝⣱⠏⢠⠀⢸⠅<br>⠀⠀⠙⣆⠘⣄⠀⠠⣄⠀⠹⣌⠌⠀⠂⠐⢈⠄⡁⢌⠳⣺⠏⢀⡞⠀<br>⠀⠀⠀⠀⠙⠺⠛⣲⠜⠟⡓⡚⣏⣔⡀⡌⣀⢂⣔⠴⠋⢏⠒⠁⠀</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 游戏 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CSS教程-列表与鼠标</title>
+      <link href="/2021/09/03/CSS%E6%95%99%E7%A8%8B-%E5%88%97%E8%A1%A8%E4%B8%8E%E9%BC%A0%E6%A0%87/"/>
+      <url>/2021/09/03/CSS%E6%95%99%E7%A8%8B-%E5%88%97%E8%A1%A8%E4%B8%8E%E9%BC%A0%E6%A0%87/</url>
+      
+        <content type="html"><![CDATA[<h1 id="CSS教程-列表，鼠标"><a href="#CSS教程-列表，鼠标" class="headerlink" title="CSS教程-列表，鼠标"></a>CSS教程-列表，鼠标</h1><h2 id="列表样式"><a href="#列表样式" class="headerlink" title="列表样式"></a>列表样式</h2><p>今天讲的样式的分类是</p><pre class=" language-CSS"><code class="language-CSS">list-style-</code></pre><p>项目有</p><pre class=" language-CSS"><code class="language-CSS">type:样式position:边距image:自定义图片样式</code></pre><p>项目单独讲解如下：<br>type<br>none表示无</p><h2 id="超链接样式"><a href="#超链接样式" class="headerlink" title="超链接样式"></a>超链接样式</h2><p>今天讲的样式没有分类，而且与之前的有一点不一样<br>模块如下</p><pre class=" language-CSS"><code class="language-CSS">a:+++&#123;    属性&#125;</code></pre><p>今天我们不讲“属性”部分，而将“+++”的部分</p><p>“+++”可以替换为以下，表示属性适用于不同的超链接</p><pre class=" language-CSS"><code class="language-CSS">link 未访问的hover 鼠标悬停的visited 访问过的active 被激活的</code></pre><p>注：定义的顺序如下</p><blockquote><p>link / visited</p><p>↓</p><p>hover</p><p>↓</p><p>active</p></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CSS教程-边框</title>
       <link href="/2021/09/02/CSS%E6%95%99%E7%A8%8B-%E8%BE%B9%E6%A1%86/"/>
       <url>/2021/09/02/CSS%E6%95%99%E7%A8%8B-%E8%BE%B9%E6%A1%86/</url>
