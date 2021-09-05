@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="HTML拓展-localStorage存储, Ntsc&#39;s Blog">
+    <meta name="keywords" content="HTML扩展-localStorage存储, Ntsc&#39;s Blog">
     <meta name="description" content="ntsc的个人博客，内含HTML教程、CSS教程等">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>HTML拓展-localStorage存储 | Ntsc&#39;s Blog</title>
+    <title>HTML扩展-localStorage存储 | Ntsc&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -244,12 +244,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">HTML拓展-localStorage存储</h1>
+                    <h1 class="description center-align post-title">HTML扩展-localStorage存储</h1>
                 </div>
             </div>
         </div>
@@ -381,7 +381,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-09-04
+                    2021-09-05
                 </div>
                 
 
@@ -402,7 +402,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="HTML拓展-localStorage存储"><a href="#HTML拓展-localStorage存储" class="headerlink" title="HTML拓展-localStorage存储"></a>HTML拓展-localStorage存储</h1><h2 id="localStorage存储技术"><a href="#localStorage存储技术" class="headerlink" title="localStorage存储技术"></a>localStorage存储技术</h2><p>localStorage存储技术属于JS（JavaScript）的内容，而且还要放在函数中执行，框架如下</p>
+                <h1 id="HTML拓展-localStorage存储"><a href="#HTML拓展-localStorage存储" class="headerlink" title="HTML拓展-localStorage存储"></a>HTML拓展-localStorage存储</h1><p>localStorage存储技术属于JS（JavaScript）的内容，而且还要放在函数中执行，框架如下</p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">
     <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     此处放置代码
@@ -410,24 +410,26 @@
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 </code></pre>
 <p>localStorage存储的功能有很多，我们一一讲解</p>
-<h2 id="输入与储存"><a href="#输入与储存" class="headerlink" title="输入与储存"></a>输入与储存</h2><p>输入还是使用input代码，如下</p>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>data<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><p>代码如下</p>
+<pre class=" language-javascript"><code class="language-javascript">localStorage<span class="token punctuation">.</span><span class="token function">removeItem</span><span class="token punctuation">(</span><span class="token string">"key"</span><span class="token punctuation">)</span>
 </code></pre>
-<p>储存的代码如下</p>
-<pre class=" language-JavaScript"><code class="language-JavaScript">localStorage.key=data
-或者
-localStorage.setItem('key',data)
+<p>以上是删除单个数据的方法，删除全部数据（清空）如下</p>
+<pre class=" language-javascript"><code class="language-javascript">localStorage<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
-<p>这里说明一下localStorage存储的格式<br>localStorage存储的内容有两个：key,data<br>可以理解为是名称和内容，他们俩一一对应。<br>key和data都可以被当做变量直接赋值，如方法1</p>
-<h2 id="获取"><a href="#获取" class="headerlink" title="获取"></a>获取</h2><p>直接上代码</p>
-<pre class=" language-JavaScript"><code class="language-JavaScript">var data=localStorage.getItem("key")
+<h2 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h2><p>缓存指你关闭浏览器时会自动清空的数据</p>
+<p>方法很简单，只需要把原代码的单词替换一下</p>
+<pre class=" language-javascript"><code class="language-javascript">localStorage改为sessionStorage即可
 </code></pre>
-<p>如果要把获取的内容显示出来，你需要</p>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>123<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<h2 id="判断是否支持"><a href="#判断是否支持" class="headerlink" title="判断是否支持"></a>判断是否支持</h2><p>以下方法可以让你判断你的浏览器是否支持localStorage存储技术</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">if</span><span class="token punctuation">(</span>window<span class="token punctuation">.</span>localStorage<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+支持时的操作（比如显示文字等）
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token keyword">else</span>
+<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+不支持时的操作
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> data<span class="token operator">=</span>localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">"key"</span><span class="token punctuation">)</span>
-<span class="token number">123</span><span class="token punctuation">.</span>innerHTML<span class="token operator">=</span>data
-</code></pre>
+<p>判断是否支持sessionStorage存储只要把“localStorage”改为“sessionStorage”即可</p>
 
                 
             </div>
@@ -454,7 +456,7 @@ localStorage.setItem('key',data)
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ntsc-yrx.github.io/2021/09/04/HTML%E6%8B%93%E5%B1%95-localStorage%E5%AD%98%E5%82%A8/">https://ntsc-yrx.github.io/2021/09/04/HTML%E6%8B%93%E5%B1%95-localStorage%E5%AD%98%E5%82%A8/</a>
+                    <a href="https://ntsc-yrx.github.io/2021/09/05/HTML%E6%8B%93%E5%B1%95-localStorage%E5%AD%98%E5%82%A82/">https://ntsc-yrx.github.io/2021/09/05/HTML%E6%8B%93%E5%B1%95-localStorage%E5%AD%98%E5%82%A82/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -590,9 +592,10 @@ localStorage.setItem('key',data)
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/09/05/HTML%E6%8B%93%E5%B1%95-localStorage%E5%AD%98%E5%82%A82/">
                     <div class="card-image">
@@ -610,9 +613,9 @@ localStorage.setItem('key',data)
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -621,6 +624,7 @@ localStorage.setItem('key',data)
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -639,13 +643,13 @@ localStorage.setItem('key',data)
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/09/03/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%8C%87%E4%BB%A4%E5%A4%A7%E5%85%A8-%E5%AE%9E%E6%97%B6%E6%9B%B4%E6%96%B0/">
+                <a href="/2021/09/04/HTML%E6%8B%93%E5%B1%95-localStorage%E5%AD%98%E5%82%A8/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="我的世界指令大全-实时更新">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="HTML拓展-localStorage存储">
                         
-                        <span class="card-title">我的世界指令大全-实时更新</span>
+                        <span class="card-title">HTML拓展-localStorage存储</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -656,7 +660,7 @@ localStorage.setItem('key',data)
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-04
                             </span>
                         <span class="publish-author">
                             
@@ -669,8 +673,8 @@ localStorage.setItem('key',data)
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%B8%B8%E6%88%8F/">
-                        <span class="chip bg-color">游戏</span>
+                    <a href="/tags/%E6%95%99%E7%A8%8B/">
+                        <span class="chip bg-color">教程</span>
                     </a>
                     
                 </div>
