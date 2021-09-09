@@ -4,11 +4,87 @@
   
     
     <entry>
-      <title>HTML扩展-localStorage存储</title>
+      <title>CPP教程-变量</title>
+      <link href="/2021/09/09/CPP%E6%95%99%E7%A8%8B-%E5%8F%98%E9%87%8F/"/>
+      <url>/2021/09/09/CPP%E6%95%99%E7%A8%8B-%E5%8F%98%E9%87%8F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p>几乎所有编程语言里面都有变量,C++也不例外</p><p>C++的变量定义代码是</p><pre class=" language-C++"><code class="language-C++"> int name=0;</code></pre><p> <code>int</code>是这个变量的类型,所有类型如下</p><blockquote><p>int 整形(整数)<br>float 浮点型(小数)<br>double 双精度浮点型(长小数)<br>char 字符<br>string 字符串<br>long long 长整数<br>bool 布尔型(是或否)</p></blockquote><p> 在使用习惯上,一般<code>float</code>会不用,而用<code>double</code></p><p> <code>name</code>是指这个变量的名字,可随意填写,但要求如下</p><blockquote><p>只包括英文,数字,下划线<br>不以数字开头<br>没有空格</p></blockquote><p>变量可以用<code>=</code>直接赋值,也可以赋值为另一个变量的值,但要注意两个量的类型是否相同</p><blockquote><p>注:string在代码编辑器里的颜色与其它如int,double等的颜色不同,因为string是一个特殊的类型,它确实是一个内置函数,相当于一个一维的字符列表(你以后会学到)</p></blockquote><p>位置:<br>你可以在<code>主函数</code>内或者外面定义变量,也可以在其它函数里定义</p><blockquote><p>布尔值详解</p></blockquote><p>布尔值是一个特殊的类型,如果把它赋值为一个数字,那么除0还是0外,其它的都是1<br>0=否,1=是</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程;C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CPP教程-初见</title>
+      <link href="/2021/09/08/CPP%E6%95%99%E7%A8%8B-%E5%88%9D%E8%A7%81/"/>
+      <url>/2021/09/08/CPP%E6%95%99%E7%A8%8B-%E5%88%9D%E8%A7%81/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++ 教程"></a>C++ 教程</h1><h2 id="hello-world"><a href="#hello-world" class="headerlink" title="hello world"></a>hello world</h2><blockquote><p>你好，世界！</p></blockquote><p>C++的世界,很大.</p><p>C++是C语言的继承，它既可以进行C语言的过程化程序设计，又可以进行以抽象数据类型为特点的基于对象的程序设计，还可以进行以继承和多态为特点的面向对象的程序设计。C++擅长面向对象程序设计的同时，还可以进行基于过程的程序设计，因而C++就适应的问题规模而论，大小由之。<br>C++不仅拥有计算机高效运行的实用性特征，同时还致力于提高大规模程序的编程质量与程序设计语言的问题描述能力。</p><p>C++是世界上最通用的编程语言之一,与HTML不同的是,C++是编程语言,而HTML是超文本标记语言.一个是编程,一个是标记,因此,C++的难度会大一些<br>与C++齐名的还要Java,Python等</p><p>C++的用处很大,在游戏搭建,软件构造等都有用武之地<br>C++是一门复杂的编程语言,同学们要做好心理准备</p><blockquote><p>C++软件推荐:Dev C++</p></blockquote><h2 id="基本结构"><a href="#基本结构" class="headerlink" title="基本结构"></a>基本结构</h2><p>接下来,我们正式开始学习C++这个编程语言</p><p>C++的基本代码框架如下</p><pre class=" language-C++"><code class="language-C++"># include <bits/stdc++.h>using namespace std;int main()&#123;程序return 0;&#125;</code></pre><p>C++的每个语句之间使用<code>;</code>隔开!<br>框架逐行讲解如下:</p><pre class=" language-C++"><code class="language-C++"># include <bits/stdc++.h></code></pre><p>这个是声明,<code>&lt;&gt;</code>里的是要使用的库,当你在使用C++里面的某些代码时,计算机可能需要在不同的库里面找到,而你必须声明所有你用的的库,不然就会报错<code>没有这个代码</code></p><p>实例里的<code>bits/stdc++.h</code>是万能头文件,里面涵盖的大部分常用库</p><pre class=" language-C++"><code class="language-C++">using namespace std;</code></pre><p>这个的意思是——使用通用命名空间<br>这个是用来处理重名问题的,一般情况下这样写就可以</p><pre class=" language-C++"><code class="language-C++">int main&#123;...return 0;&#125;</code></pre><p>这个是<code>主函数</code>,表示程序主要执行部分,除了定义新函数需要写在外面&amp;定义变量,列表可以写在外面 以外,其他的都要写在里面才会执行</p><pre class=" language-C++"><code class="language-C++">return 0;</code></pre><p>这个表示程序结束,终止.</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程;C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HTML扩展-设置是否缓存</title>
+      <link href="/2021/09/06/HTML%E6%89%A9%E5%B1%95-%E8%AE%BE%E7%BD%AE%E6%98%AF%E5%90%A6%E7%BC%93%E5%AD%98/"/>
+      <url>/2021/09/06/HTML%E6%89%A9%E5%B1%95-%E8%AE%BE%E7%BD%AE%E6%98%AF%E5%90%A6%E7%BC%93%E5%AD%98/</url>
+      
+        <content type="html"><![CDATA[<h1 id="设置是否缓存"><a href="#设置是否缓存" class="headerlink" title="设置是否缓存"></a>设置是否缓存</h1><h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>缓存至把浏览器中从网络上获取的文件暂时保存在磁盘上，这样下一次在同一个设备上访问此网站就可以减少下载量，从而加快网站加载速度</p><blockquote><p>缓存的选择：</p></blockquote><p>长时间不变化的，或者文件较大的（如视频、图片）需要缓存<br>可能会随时更改的数据不要缓存</p><blockquote><p>缓存的时间：</p></blockquote><p>缓存没有时间限制，但如果用户清理了浏览器缓存，那么缓存内容会被清空</p><h2 id="改变"><a href="#改变" class="headerlink" title="改变"></a>改变</h2><p>设置缓存需要在两个地方进行改动</p><blockquote><p>新文件</p></blockquote><p>你需要新建一个文件<code>name.appcache</code>后缀名不可更改<br>文件内容如下</p><pre class=" language-appcache"><code class="language-appcache">CACHE MANIFEST/要缓存的文件NETWORK/不缓存的文件(填*表示除要缓存的文件外都不要缓存)FALLBACK/没有网络时跳转的错误页面(html文件)</code></pre><blockquote><p>html文件</p></blockquote><p>在原文件更改代码为</p><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">manifest</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>name.appcache<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre><p>即可</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>实用软件分享</title>
+      <link href="/2021/09/05/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+      <url>/2021/09/05/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/</url>
+      
+        <content type="html"><![CDATA[<h1 id="实用软件分享"><a href="#实用软件分享" class="headerlink" title="实用软件分享"></a>实用软件分享</h1><p>本文章分享的软件均免费或有poujie版</p><h2 id="Adobe全家桶"><a href="#Adobe全家桶" class="headerlink" title="Adobe全家桶"></a>Adobe全家桶</h2><p><a href="https://www.yutu.cn/popsoft.html">https://www.yutu.cn/popsoft.html</a></p><h2 id="电脑美化"><a href="#电脑美化" class="headerlink" title="电脑美化"></a>电脑美化</h2><p><a href="https://zhutix.com/tag/10t/">https://zhutix.com/tag/10t/</a></p><h2 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h2><p><a href="https://msdn.itellyou.cn/">https://msdn.itellyou.cn/</a></p><h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p>本博客仅转载，无实际内容</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 软件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HTML扩展-localStorage存储2</title>
       <link href="/2021/09/05/HTML%E6%8B%93%E5%B1%95-localStorage%E5%AD%98%E5%82%A82/"/>
       <url>/2021/09/05/HTML%E6%8B%93%E5%B1%95-localStorage%E5%AD%98%E5%82%A82/</url>
       
-        <content type="html"><![CDATA[<h1 id="HTML拓展-localStorage存储"><a href="#HTML拓展-localStorage存储" class="headerlink" title="HTML拓展-localStorage存储"></a>HTML拓展-localStorage存储</h1><p>localStorage存储技术属于JS（JavaScript）的内容，而且还要放在函数中执行，框架如下</p><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">    <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>    此处放置代码    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre><p>localStorage存储的功能有很多，我们一一讲解</p><h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><p>代码如下</p><pre class=" language-javascript"><code class="language-javascript">localStorage<span class="token punctuation">.</span><span class="token function">removeItem</span><span class="token punctuation">(</span><span class="token string">"key"</span><span class="token punctuation">)</span></code></pre><p>以上是删除单个数据的方法，删除全部数据（清空）如下</p><pre class=" language-javascript"><code class="language-javascript">localStorage<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><h2 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h2><p>缓存指你关闭浏览器时会自动清空的数据</p><p>方法很简单，只需要把原代码的单词替换一下</p><pre class=" language-javascript"><code class="language-javascript">localStorage改为sessionStorage即可</code></pre><h2 id="判断是否支持"><a href="#判断是否支持" class="headerlink" title="判断是否支持"></a>判断是否支持</h2><p>以下方法可以让你判断你的浏览器是否支持localStorage存储技术</p><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">if</span><span class="token punctuation">(</span>window<span class="token punctuation">.</span>localStorage<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>支持时的操作（比如显示文字等）<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token keyword">else</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>不支持时的操作<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre><p>判断是否支持sessionStorage存储只要把“localStorage”改为“sessionStorage”即可</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="HTML拓展-localStorage存储"><a href="#HTML拓展-localStorage存储" class="headerlink" title="HTML拓展-localStorage存储"></a>HTML拓展-localStorage存储</h1><p>localStorage存储技术属于JS（JavaScript）的内容，而且还要放在函数中执行，框架如下</p><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">    <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>    此处放置代码    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre><p>localStorage存储的功能有很多，我们一一讲解</p><h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><p>代码如下</p><pre class=" language-javascript"><code class="language-javascript">localStorage<span class="token punctuation">.</span><span class="token function">removeItem</span><span class="token punctuation">(</span><span class="token string">"key"</span><span class="token punctuation">)</span></code></pre><p>以上是删除单个数据的方法，删除全部数据（清空）如下</p><pre class=" language-javascript"><code class="language-javascript">localStorage<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><h2 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h2><p>缓存指你关闭浏览器时会自动清空的数据</p><p>方法很简单，只需要把原代码的单词替换一下</p><pre class=" language-javascript"><code class="language-javascript">localStorage改为sessionStorage即可</code></pre><h2 id="判断是否支持"><a href="#判断是否支持" class="headerlink" title="判断是否支持"></a>判断是否支持</h2><p>以下方法可以让你判断你的浏览器是否支持localStorage存储技术</p><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">if</span><span class="token punctuation">(</span>window<span class="token punctuation">.</span>localStorage<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>支持时的操作（比如显示文字等）<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token keyword">else</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>不支持时的操作<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre><p>判断是否支持sessionStorage存储只要把“localStorage”改为“sessionStorage”即可</p><h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p>代码有时会出现“&amp;#123”和“&amp;#125”，分别代表前后花括号” {   }  “</p>]]></content>
       
       
       
