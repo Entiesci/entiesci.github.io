@@ -14,7 +14,7 @@
       
         <tags>
             
-            <tag> 教程;C++ </tag>
+            <tag> 教程,C++ </tag>
             
         </tags>
       
@@ -33,7 +33,7 @@
       
         <tags>
             
-            <tag> 教程;C++ </tag>
+            <tag> 教程,C++ </tag>
             
         </tags>
       
@@ -315,19 +315,6 @@
             <tag> 教程 </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>C++ 出发！</title>
-      <link href="/2021/08/25/CPP-%E5%87%BA%E5%8F%91%EF%BC%81/"/>
-      <url>/2021/08/25/CPP-%E5%87%BA%E5%8F%91%EF%BC%81/</url>
-      
-        <content type="html"><![CDATA[<h1 id="C-出发！"><a href="#C-出发！" class="headerlink" title="C++ 出发！"></a>C++ 出发！</h1><p>C++学习日志即将翻开，我……</p><p>算了，说白话吧</p><p>我开始学C++了，不知道能不能赶上九月多的比赛</p><p>就这样了</p><pre class=" language-c++"><code class="language-c++">return 0; //表示结束</code></pre>]]></content>
-      
-      
       
     </entry>
     
