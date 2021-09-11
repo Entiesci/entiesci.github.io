@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="HTML扩展-设置是否缓存, Ntsc&#39;s Blog">
+    <meta name="keywords" content="CPP自定义库函数, Ntsc&#39;s Blog">
     <meta name="description" content="ntsc的个人博客，内含HTML教程、CSS教程等">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>HTML扩展-设置是否缓存 | Ntsc&#39;s Blog</title>
+    <title>CPP自定义库函数 | Ntsc&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -244,12 +244,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">HTML扩展-设置是否缓存</h1>
+                    <h1 class="description center-align post-title">CPP自定义库函数</h1>
                 </div>
             </div>
         </div>
@@ -369,6 +369,10 @@
                                 <span class="chip bg-color">教程</span>
                             </a>
                         
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C++</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -381,7 +385,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-09-06
+                    2021-09-11
                 </div>
                 
 
@@ -390,7 +394,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    258
+                    188
                 </div>
                 
 
@@ -412,36 +416,64 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="设置是否缓存"><a href="#设置是否缓存" class="headerlink" title="设置是否缓存"></a>设置是否缓存</h1><h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>缓存至把浏览器中从网络上获取的文件暂时保存在磁盘上，这样下一次在同一个设备上访问此网站就可以减少下载量，从而加快网站加载速度</p>
-<blockquote>
-<p>缓存的选择：</p>
+                <h1 id="C-自定义库函数"><a href="#C-自定义库函数" class="headerlink" title="C++自定义库函数"></a>C++自定义库函数</h1><h2 id="制作-amp-使用教程"><a href="#制作-amp-使用教程" class="headerlink" title="制作&amp;使用教程"></a>制作&amp;使用教程</h2><blockquote>
+<p>制作</p>
 </blockquote>
-<p>长时间不变化的，或者文件较大的（如视频、图片）需要缓存<br>可能会随时更改的数据不要缓存</p>
-<blockquote>
-<p>缓存的时间：</p>
-</blockquote>
-<p>缓存没有时间限制，但如果用户清理了浏览器缓存，那么缓存内容会被清空</p>
-<h2 id="改变"><a href="#改变" class="headerlink" title="改变"></a>改变</h2><p>设置缓存需要在两个地方进行改动</p>
-<blockquote>
-<p>新文件</p>
-</blockquote>
-<p>你需要新建一个文件<code>name.appcache</code>后缀名不可更改<br>文件内容如下</p>
-<pre class=" language-appcache"><code class="language-appcache">CACHE MANIFEST
-/要缓存的文件
-NETWORK
-/不缓存的文件(填*表示除要缓存的文件外都不要缓存)
-FALLBACK
-/没有网络时跳转的错误页面(html文件)
+<p>把你原来在你自己的程序里定义的函数的定义代码拿出来,加入<code>库文件</code>中就可以了(记得在库文件中加以下代码)</p>
+<pre class=" language-C++"><code class="language-C++">#include <bits/stdc++.h>
+using namespace std;
 </code></pre>
+<p><code>库文件</code>要求:后缀名是<code>.h</code>,文件名随意</p>
 <blockquote>
-<p>html文件</p>
+<p>使用</p>
 </blockquote>
-<p>在原文件更改代码为</p>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">manifest</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>name.appcache<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-...
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
+<p>就像加入标准库一样<br>实例:</p>
+<pre class=" language-C++"><code class="language-C++">#include <C:\Users\abc\Desktop\name.h>
 </code></pre>
-<p>即可</p>
+<p>你需要在<code>&lt;&gt;</code>中加入你自己的库文件在你的计算机上的文件地址</p>
+<h2 id="推荐我自己编的库函数"><a href="#推荐我自己编的库函数" class="headerlink" title="推荐我自己编的库函数"></a>推荐我自己编的库函数</h2><blockquote>
+<p>最近更新：<a href="https://ntsc-yrx.github.io/File/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0%E5%BA%93/ntsc.h">下载库文件</a></p>
+</blockquote>
+<p>以下是部分库文件代码</p>
+<pre class=" language-C++"><code class="language-C++">#include <bits/stdc++.h>
+using namespace std;
+\
+//判断质数
+//返回值,是返回true,不是返回false
+bool if_prime(int x) &#123;
+    if (x < 2)
+        return false;
+    for (int i = 2; i <= sqrt(x); i++) &#123;
+        if (x % i == 0)
+            return false;
+    &#125;
+    return true;
+&#125;
+
+//输出逆序数字
+//cout
+void reverse_num(int x) &#123;
+    cout << x % 10;
+    if (x > 10) &#123;
+        reverse_num(x / 10);
+    &#125; else
+        return;
+&#125;
+
+//转进制
+//参数(十进制数,目标进制)
+//cout
+void change_base(int a, int b) &#123;
+    char to1016[16] &#123;'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'&#125;;
+    int tmp;
+    tmp = a % b;
+    a = a / b;
+    if (a != 0) &#123;
+        change_base(a, b);
+    &#125;
+    cout << to1016[tmp];
+&#125;
+</code></pre>
 
                 
             </div>
@@ -468,7 +500,7 @@ FALLBACK
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ntsc-yrx.github.io/2021/09/06/HTML%E6%89%A9%E5%B1%95-%E8%AE%BE%E7%BD%AE%E6%98%AF%E5%90%A6%E7%BC%93%E5%AD%98/">https://ntsc-yrx.github.io/2021/09/06/HTML%E6%89%A9%E5%B1%95-%E8%AE%BE%E7%BD%AE%E6%98%AF%E5%90%A6%E7%BC%93%E5%AD%98/</a>
+                    <a href="https://ntsc-yrx.github.io/2021/09/11/CPP%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%93%E5%87%BD%E6%95%B0/">https://ntsc-yrx.github.io/2021/09/11/CPP%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%93%E5%87%BD%E6%95%B0/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -508,6 +540,10 @@ FALLBACK
                             
                                 <a href="/tags/%E6%95%99%E7%A8%8B/">
                                     <span class="chip bg-color">教程</span>
+                                </a>
+                            
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C++</span>
                                 </a>
                             
                         </div>
@@ -604,17 +640,18 @@ FALLBACK
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/09/08/CPP%E6%95%99%E7%A8%8B-%E5%88%9D%E8%A7%81/">
+                <a href="/2021/09/11/CPP%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%93%E5%87%BD%E6%95%B0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="CPP教程-初见">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="CPP自定义库函数">
                         
-                        <span class="card-title">CPP教程-初见</span>
+                        <span class="card-title">CPP自定义库函数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -624,9 +661,9 @@ FALLBACK
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -635,6 +672,7 @@ FALLBACK
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -657,13 +695,13 @@ FALLBACK
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/09/05/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/">
+                <a href="/2021/09/09/CPP%E6%95%99%E7%A8%8B-%E5%8F%98%E9%87%8F/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="实用软件分享">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="CPP教程-变量">
                         
-                        <span class="card-title">实用软件分享</span>
+                        <span class="card-title">CPP教程-变量</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -674,7 +712,7 @@ FALLBACK
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-09
                             </span>
                         <span class="publish-author">
                             
@@ -687,8 +725,12 @@ FALLBACK
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%BD%AF%E4%BB%B6/">
-                        <span class="chip bg-color">软件</span>
+                    <a href="/tags/%E6%95%99%E7%A8%8B/">
+                        <span class="chip bg-color">教程</span>
+                    </a>
+                    
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
                     </a>
                     
                 </div>
