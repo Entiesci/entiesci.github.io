@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>逻辑运算讲解</title>
+      <link href="/2021/09/16/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E8%AE%B2%E8%A7%A3/"/>
+      <url>/2021/09/16/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E8%AE%B2%E8%A7%A3/</url>
+      
+        <content type="html"><![CDATA[<h1 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>逻辑运算是使用<code>bool值</code>的一种运算,他只有<code>是true``否false</code>两种情况<br>bool值的表达方式有很多种,如下</p><blockquote><p>1,0<br>true,fales<br>是,否<br>除0的数,0</p></blockquote><h2 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h2><p>运算符有以下几个</p><blockquote><p>并且<code>∧</code><br>那么<code>→</code><br>或者<code>∨</code><br>以下是错误的<code>﹁</code></p></blockquote><p>注意相连的两个要使用括号括起来</p><p>例子:</p><p>(p∧q)→(﹁(q∨r))<br>如果p并且q,那么以下的就是错误的:q或者r</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>人教8上-地理12句</title>
+      <link href="/2021/09/16/%E4%BA%BA%E6%95%998%E4%B8%8A-%E5%9C%B0%E7%90%8612%E5%8F%A5/"/>
+      <url>/2021/09/16/%E4%BA%BA%E6%95%998%E4%B8%8A-%E5%9C%B0%E7%90%8612%E5%8F%A5/</url>
+      
+        <content type="html"><![CDATA[<h1 id="地理12句（八上）"><a href="#地理12句（八上）" class="headerlink" title="地理12句（八上）"></a>地理12句（八上）</h1><h3 id="Ntsc原创"><a href="#Ntsc原创" class="headerlink" title="Ntsc原创"></a>Ntsc原创</h3><h2 id="中国邻国"><a href="#中国邻国" class="headerlink" title="中国邻国"></a>中国邻国</h2><p>朝俄蒙哈吉塔阿，巴印尼不缅老越。<br>韩日菲文马印尼。</p><h2 id="少数民族"><a href="#少数民族" class="headerlink" title="少数民族"></a>少数民族</h2><p>壮满回苗维吾尔，土家蒙古彝藏多。</p><h2 id="山脉"><a href="#山脉" class="headerlink" title="山脉"></a>山脉</h2><p>天阴昆仑秦南岭，大太巫雪长武台。</p><h2 id="中国省级行政区"><a href="#中国省级行政区" class="headerlink" title="中国省级行政区"></a>中国省级行政区</h2><p>两湖两广两河山，五江二宁青陕甘，云贵西四北上天，重内台海福吉安，还有港澳好河山</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CPP自定义库函数</title>
       <link href="/2021/09/11/CPP%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%93%E5%87%BD%E6%95%B0/"/>
       <url>/2021/09/11/CPP%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%93%E5%87%BD%E6%95%B0/</url>
