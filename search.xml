@@ -4,6 +4,65 @@
   
     
     <entry>
+      <title>论爱-何为爱情</title>
+      <link href="/2021/09/17/%E8%AE%BA%E7%88%B1-%E4%BD%95%E4%B8%BA%E7%88%B1%E6%83%85/"/>
+      <url>/2021/09/17/%E8%AE%BA%E7%88%B1-%E4%BD%95%E4%B8%BA%E7%88%B1%E6%83%85/</url>
+      
+        <content type="html"><![CDATA[<h1 id="论爱，何为爱情"><a href="#论爱，何为爱情" class="headerlink" title="论爱，何为爱情"></a>论爱，何为爱情</h1><p>以下仅阐述我个人的观点，不作标准</p><p>仅讨论中学时的爱情</p><h2 id="长篇大论"><a href="#长篇大论" class="headerlink" title="长篇大论"></a>长篇大论</h2><p>我认为爱情是有两种的，我不妨把它们叫做A式爱情与B式爱情</p><p>B式爱情就和那么大部分人认为的一样，是不好的，但A式爱情截然不同，它的更多意义是两个人互相学习，互相帮助，相互进步。我相信，如果你是这种爱情，老师一定不会阻拦你</p><p>我爱你，只不过是为了让我们俩不成为陌生人</p><p>现在算下来，我充其量只剩下1年的时间了，在着一年里我只希望可以和你一起把成绩提上来，我没有别的想法。</p><p>确实我还是蛮幼稚的，太冲动了，没有深思熟虑。我也考虑过后果，我知道后果可能会很糟，但我真的不想看到你拉着脸和我说话</p><p>我知道我这样会给你带来很多麻烦。</p><p>我们的关系不是大人的爱情，我说我蛮喜欢你只是因为我和你同天值日，有一份特殊的感情罢了</p><p>我是一个考虑问题严谨的人，我在这个方面不会轻易走出第一步，而且我是想得很开的，我心里的爱情是喜欢学习共同进步的爱情，我也不希望你轻易和其他人走在一起，你一定要仔细辨别对方的好坏，一定要和成绩好的，有道德素养的人在一起，避开“伪君子”。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 感情 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CPP教程-输入与输出</title>
+      <link href="/2021/09/17/CPP%E6%95%99%E7%A8%8B-%E8%BE%93%E5%85%A5%E4%B8%8E%E8%BE%93%E5%87%BA/"/>
+      <url>/2021/09/17/CPP%E6%95%99%E7%A8%8B-%E8%BE%93%E5%85%A5%E4%B8%8E%E8%BE%93%E5%87%BA/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><h2 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h2><p>C++里的输入输出一般都会显示在命令提示符（黑底白字的那玩意儿）里，而要在那里输入或输出程序计算结果，就要使用输入输出语句</p><p>输入输出语句在C++里有两种：流式，格式</p><blockquote><p>在C语言中貌似没有流式</p></blockquote><h3 id="流式输入-出"><a href="#流式输入-出" class="headerlink" title="流式输入/出"></a>流式输入/出</h3><p>流式输入输出是C++里的独特的方式(指针)</p><p>它的效率比格式化输入输出要低,特别是在输入输出量很大的时候,极有可能会造成程序超时</p><blockquote><p>输入输出流程: 输入&gt;外存&gt;内存</p></blockquote><p>代码如下</p><pre class=" language-c++"><code class="language-c++">cin>>a; //输入并赋值给acout<<a; //输出a的值cout<<a<<endl; //输出并换行</code></pre><h3 id="格式化输入-出"><a href="#格式化输入-出" class="headerlink" title="格式化输入/出"></a>格式化输入/出</h3><p>格式化输入输出在C系列语言中通用</p><p>它的效率更高,特别是在输入输出量很大的时候,推荐使用</p><blockquote><p>输入输出流程: 输入&gt;内存</p></blockquote><p>但是它的代码要复杂的多,而且灵活性低</p><p>代码如下</p><pre class=" language-c++"><code class="language-c++">scanf("%d",&a) //输入一个类型为 整数(%d) 的值并按照 地址(&) 赋值给aprintf("%d",a) //输出a的值(强制转换类型为整数)</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>API-动漫图片API</title>
+      <link href="/2021/09/16/API-%E5%8A%A8%E6%BC%AB%E5%9B%BE%E7%89%87API/"/>
+      <url>/2021/09/16/API-%E5%8A%A8%E6%BC%AB%E5%9B%BE%E7%89%87API/</url>
+      
+        <content type="html"><![CDATA[<h1 id="API大全"><a href="#API大全" class="headerlink" title="API大全"></a>API大全</h1><p>不定期更新</p><h2 id="动漫图片"><a href="#动漫图片" class="headerlink" title="动漫图片"></a>动漫图片</h2><p><a href="https://api.jysafe.cn/pixiv/?color=f00&amp;limit=10">https://api.jysafe.cn/pixiv/?color=f00&amp;limit=10</a><br><a href="https://api.ghser.com/acg.html">https://api.ghser.com/acg.html</a><br><a href="https://rainchan.win/projects/pximg">https://rainchan.win/projects/pximg</a><br><a href="https://api.skyil.cn/#/">https://api.skyil.cn/#/</a><br><a href="http://119.91.108.170:88/doc/pixiv">http://119.91.108.170:88/doc/pixiv</a><br><a href="https://acg.e4a.top/acgurl.php%EF%BC%88acg.e4a,top%EF%BC%89">https://acg.e4a.top/acgurl.php（acg.e4a,top）</a><br><a href="https://api.lyiqk.cn/api%EF%BC%88%E5%87%8C%E4%B8%80API%EF%BC%89">https://api.lyiqk.cn/api（凌一API）</a><br><a href="https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php%EF%BC%88%E5%8A%A8%E6%BC%AB%E6%98%9F%E7%A9%BA%EF%BC%89">https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php（动漫星空）</a><br><a href="https://acg.teas.moe/man/api.php%EF%BC%88%E5%96%B5%E7%99%BDAPI%EF%BC%89">https://acg.teas.moe/man/api.php（喵白API）</a><br><a href="https://api.imacroc.cn/acg/%EF%BC%88Macro%E2%80%98s">https://api.imacroc.cn/acg/（Macro‘s</a> API）<br><a href="http://www.dmoe.cc/random.php%EF%BC%88%E9%BE%99%E8%B0%B7%E6%83%85%EF%BC%89">http://www.dmoe.cc/random.php（龙谷情）</a><br><a href="https://api.ghser.com/random/bg.php%EF%BC%88%E4%B8%89%E7%A7%8B-%E9%A3%8E%E6%99%AF%EF%BC%89">https://api.ghser.com/random/bg.php（三秋-风景）</a><br><a href="http://119.91.108.170:88/api/pixiv/setu.php?return=img">http://119.91.108.170:88/api/pixiv/setu.php?return=img</a><br><a href="https://www.yingciyuan.cn/api.php">https://www.yingciyuan.cn/api.php</a><br><a href="https://www.morenote.top/api/GetRandomImage?type=%E5%8A%A8%E6%BC%AB%E7%BB%BC%E5%90%882">https://www.morenote.top/api/GetRandomImage?type=%E5%8A%A8%E6%BC%AB%E7%BB%BC%E5%90%882</a><br><a href="https://api.mz-moe.cn/img.php%EF%BC%88%E6%9C%A8%E5%AD%90%EF%BC%89">https://api.mz-moe.cn/img.php（木子）</a><br><a href="https://api.paugram.com/wallpaper/%EF%BC%88%E4%BF%9D%E7%BD%97%EF%BC%89">https://api.paugram.com/wallpaper/（保罗）</a><br><a href="https://api.btstu.cn/sjbz/api.php?lx=dongman&amp;format=images%EF%BC%88%E6%90%8F%E5%A4%A9%EF%BC%89">https://api.btstu.cn/sjbz/api.php?lx=dongman&amp;format=images（搏天）</a><br><a href="https://api.mtyqx.cn/api/random.php%EF%BC%88%E5%A2%A8%E5%A4%A9%E9%80%B8%EF%BC%89">https://api.mtyqx.cn/api/random.php（墨天逸）</a><br><a href="https://api.isoyu.com/aipc_animation.php%EF%BC%88%E5%A7%AC%E9%95%BF%E4%BF%A1%EF%BC%89">https://api.isoyu.com/aipc_animation.php（姬长信）</a><br><a href="https://api.yimian.xyz/img?type=moe%EF%BC%88EEE.DOG">https://api.yimian.xyz/img?type=moe（EEE.DOG</a> 动漫）<br><a href="https://api.yimian.xyz/img?type=head%EF%BC%88EEE.DOG">https://api.yimian.xyz/img?type=head（EEE.DOG</a> 头像）<br><a href="https://api.yimian.xyz/img?type=moe&amp;size=1920x1080%EF%BC%88EEE%E3%80%82DOG">https://api.yimian.xyz/img?type=moe&amp;size=1920x1080（EEE。DOG</a> 背景）<br><a href="https://img.paulzzh.com/touhou/random%EF%BC%88paulzzh">https://img.paulzzh.com/touhou/random（paulzzh</a>  东方project）<br><a href="https://api.r10086.com/%E5%8A%A8%E6%BC%AB%E7%BB%BC%E5%90%881.php">https://api.r10086.com/动漫综合1.php</a></p><p>输出JSON的<br><a href="http://jiuli.xiaoapi.cn/i/pixiv_img.php?key=JiuLiapi">http://jiuli.xiaoapi.cn/i/pixiv_img.php?key=JiuLiapi</a><br><a href="http://119.91.108.170:88/api/pixiv/setu.php">http://119.91.108.170:88/api/pixiv/setu.php</a><br><a href="https://api.lolicon.app/setu/v2">https://api.lolicon.app/setu/v2</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> API </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>逻辑运算讲解</title>
       <link href="/2021/09/16/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E8%AE%B2%E8%A7%A3/"/>
       <url>/2021/09/16/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E8%AE%B2%E8%A7%A3/</url>
@@ -27,7 +86,7 @@
       <link href="/2021/09/16/%E4%BA%BA%E6%95%998%E4%B8%8A-%E5%9C%B0%E7%90%8612%E5%8F%A5/"/>
       <url>/2021/09/16/%E4%BA%BA%E6%95%998%E4%B8%8A-%E5%9C%B0%E7%90%8612%E5%8F%A5/</url>
       
-        <content type="html"><![CDATA[<h1 id="地理12句（八上）"><a href="#地理12句（八上）" class="headerlink" title="地理12句（八上）"></a>地理12句（八上）</h1><h3 id="Ntsc原创"><a href="#Ntsc原创" class="headerlink" title="Ntsc原创"></a>Ntsc原创</h3><h2 id="中国邻国"><a href="#中国邻国" class="headerlink" title="中国邻国"></a>中国邻国</h2><p>朝俄蒙哈吉塔阿，巴印尼不缅老越。<br>韩日菲文马印尼。</p><h2 id="少数民族"><a href="#少数民族" class="headerlink" title="少数民族"></a>少数民族</h2><p>壮满回苗维吾尔，土家蒙古彝藏多。</p><h2 id="山脉"><a href="#山脉" class="headerlink" title="山脉"></a>山脉</h2><p>天阴昆仑秦南岭，大太巫雪长武台。</p><h2 id="中国省级行政区"><a href="#中国省级行政区" class="headerlink" title="中国省级行政区"></a>中国省级行政区</h2><p>两湖两广两河山，五江二宁青陕甘，云贵西四北上天，重内台海福吉安，还有港澳好河山</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="地理12句（八上）"><a href="#地理12句（八上）" class="headerlink" title="地理12句（八上）"></a>地理12句（八上）</h1><p>Ntsc原创</p><h2 id="中国邻国"><a href="#中国邻国" class="headerlink" title="中国邻国"></a>中国邻国</h2><blockquote><p>朝俄蒙哈吉塔阿，巴印尼不缅老越。<br>韩日菲文马印尼。</p></blockquote><h2 id="少数民族"><a href="#少数民族" class="headerlink" title="少数民族"></a>少数民族</h2><blockquote><p>壮满回苗维吾尔，土家蒙古彝藏多。</p></blockquote><h2 id="山脉"><a href="#山脉" class="headerlink" title="山脉"></a>山脉</h2><blockquote><p>天阴昆仑秦南岭，大太巫雪长武台。</p></blockquote><h2 id="中国省级行政区"><a href="#中国省级行政区" class="headerlink" title="中国省级行政区"></a>中国省级行政区</h2><blockquote><p>两湖两广两河山，五江二宁青陕甘，云贵西四北上天，重内台海福吉安，还有港澳好河山</p></blockquote>]]></content>
       
       
       
