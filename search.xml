@@ -4,9 +4,72 @@
   
     
     <entry>
+      <title>CPP教程-计算函数</title>
+      <link href="/2021/09/24/CPP%E6%95%99%E7%A8%8B-%E8%AE%A1%E7%AE%97%E5%87%BD%E6%95%B0/"/>
+      <url>/2021/09/24/CPP%E6%95%99%E7%A8%8B-%E8%AE%A1%E7%AE%97%E5%87%BD%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><h2 id="计算函数"><a href="#计算函数" class="headerlink" title="计算函数"></a>计算函数</h2><p>C++中自带了一些十分方便的计算函数，它们都直接返回返回值，使用方法如下</p><pre class=" language-c++"><code class="language-c++">a = sqrt(n); //a=n的平方根</code></pre><p>常用函数表</p><pre class=" language-c++"><code class="language-c++">sqrt(n) 平方根pow(x,y) x的y次方ceil(n) 向上取整floor(n) 向下取整max(x,y) 返回x，y中的最大值min(x,y) 返回x，y中的最小值abs(n) 绝对值</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CPP教程-文件导入&amp;导出</title>
+      <link href="/2021/09/21/CPP%E6%95%99%E7%A8%8B-%E6%96%87%E4%BB%B6%E5%AF%BC%E5%85%A5-%E5%AF%BC%E5%87%BA/"/>
+      <url>/2021/09/21/CPP%E6%95%99%E7%A8%8B-%E6%96%87%E4%BB%B6%E5%AF%BC%E5%85%A5-%E5%AF%BC%E5%87%BA/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><h2 id="文件导入与导出"><a href="#文件导入与导出" class="headerlink" title="文件导入与导出"></a>文件导入与导出</h2><blockquote><p>以下内容为竞赛使用</p></blockquote><p>如果不想在控制台输入数据,而是直接从文件中读取数据怎么办呢?以下代码就可以实现</p><pre class=" language-c++"><code class="language-c++">freopen("xxx.in","r",stdin); //读入freopen("xxx.out","w",stdout); //输出</code></pre><p>注意:</p><blockquote><p>读入文件的文件名后缀名为<code>.in</code>,你可以先使用记事本编辑一个<code>txt</code>文件,然后改一下后缀名就可以了 </p></blockquote><blockquote><p>程序运行完之后会自动创建一个名字为<code>xxx.out</code>的输出文件,直接用记事本打开即可 </p></blockquote><blockquote><p>请把代码放在主程序<code>main</code>的第一行,而且最后两句一起写</p></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CPP教程-循环</title>
+      <link href="/2021/09/19/CPP%E6%95%99%E7%A8%8B-%E5%BE%AA%E7%8E%AF/"/>
+      <url>/2021/09/19/CPP%E6%95%99%E7%A8%8B-%E5%BE%AA%E7%8E%AF/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><h2 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h2><p>代码</p><pre class=" language-c++"><code class="language-c++">for(初始化变量;判断条件;变量更改)&#123;    ...&#125;</code></pre><p>当<code>判断条件</code>不成立时停止循环<br>例子</p><pre class=" language-c++"><code class="language-c++">for(int i=1;i<=10;i++)&#123; //会执行10次    ...&#125;</code></pre><h2 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h2><p>代码</p><pre class=" language-c++"><code class="language-c++">while(判断条件)&#123;    ...&#125;</code></pre><p>和<code>for循环</code>一样,只不过是把<code>初始化变量</code>与<code>变量更改</code>外置<br>例子</p><pre class=" language-c++"><code class="language-c++">int i=1;while(i<=10)&#123; //当i>10时停止    ...    i++;&#125;</code></pre><h2 id="do-while循环"><a href="#do-while循环" class="headerlink" title="do-while循环"></a>do-while循环</h2><p>和<code>while循环</code>一样,只不过会先执行一遍再判定<br>代码</p><pre class=" language-c++"><code class="language-c++">do&#123;    ...&#125;while(判断条件);</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>勿忘国耻</title>
-      <link href="/2021/09/18/12/"/>
-      <url>/2021/09/18/12/</url>
+      <link href="/2021/09/18/%E5%8B%BF%E5%BF%98%E5%9B%BD%E8%80%BB/"/>
+      <url>/2021/09/18/%E5%8B%BF%E5%BF%98%E5%9B%BD%E8%80%BB/</url>
       
         <content type="html"><![CDATA[<p><img src="https://ntsc-yrx.github.io/File/image/20210918.png" alt="918"></p>]]></content>
       
