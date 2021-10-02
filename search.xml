@@ -4,6 +4,76 @@
   
     
     <entry>
+      <title>共贺国庆-2021</title>
+      <link href="/2021/10/02/%E5%85%B1%E8%B4%BA%E5%9B%BD%E5%BA%86-2021/"/>
+      <url>/2021/10/02/%E5%85%B1%E8%B4%BA%E5%9B%BD%E5%BA%86-2021/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://ntsc-yrx.github.io/File/images/20211001.jpg" alt="神州大地繁花似锦，祖国长空乐曲如潮。"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于本网站被bing及google收录的通知</title>
+      <link href="/2021/09/27/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%BD%91%E7%AB%99%E8%A2%ABbing%E5%8F%8Agoogle%E6%94%B6%E5%BD%95%E7%9A%84%E9%80%9A%E7%9F%A5/"/>
+      <url>/2021/09/27/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%BD%91%E7%AB%99%E8%A2%ABbing%E5%8F%8Agoogle%E6%94%B6%E5%BD%95%E7%9A%84%E9%80%9A%E7%9F%A5/</url>
+      
+        <content type="html"><![CDATA[<h1 id="关于本网站被各大搜索引擎收录的状态"><a href="#关于本网站被各大搜索引擎收录的状态" class="headerlink" title="关于本网站被各大搜索引擎收录的状态"></a>关于本网站被各大搜索引擎收录的状态</h1><h2 id="最近"><a href="#最近" class="headerlink" title="最近"></a>最近</h2><blockquote><p>bing<br>google</p></blockquote><h2 id="所有"><a href="#所有" class="headerlink" title="所有"></a>所有</h2><p>格式：</p><pre class=" language-1"><code class="language-1">搜索引擎：关键词</code></pre><p>bing:<br>ntsc’s blog,</p><p>google:<br>ntscyrx,</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 公告 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>在本博客发布文章的方法</title>
+      <link href="/2021/09/25/%E5%9C%A8%E6%9C%AC%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+      <url>/2021/09/25/%E5%9C%A8%E6%9C%AC%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="在本博客发布文章的方法"><a href="#在本博客发布文章的方法" class="headerlink" title="在本博客发布文章的方法"></a>在本博客发布文章的方法</h1><p>1.编辑邮件，内容如下</p><blockquote><p>作者<br>时间<br>分类<br>内容<br>访问密码(可选)</p></blockquote><p>2.发送至<a href="mailto:&#x68;&#122;&#x78;&#x33;&#48;&#x36;&#x39;&#49;&#x34;&#64;&#49;&#54;&#51;&#x2e;&#99;&#x6f;&#109;">&#x68;&#122;&#x78;&#x33;&#48;&#x36;&#x39;&#49;&#x34;&#64;&#49;&#54;&#51;&#x2e;&#99;&#x6f;&#109;</a><br>3.等待审核通过<br>4.在博客查看你自己的网站</p><blockquote><p>注:<br>文章审核时间:每周六<br>文章发布:最晚14天内</p></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 公告 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>FineYunOS在线系统发布</title>
+      <link href="/2021/09/25/FineYunOS%E5%9C%A8%E7%BA%BF%E7%B3%BB%E7%BB%9F%E5%8F%91%E5%B8%83/"/>
+      <url>/2021/09/25/FineYunOS%E5%9C%A8%E7%BA%BF%E7%B3%BB%E7%BB%9F%E5%8F%91%E5%B8%83/</url>
+      
+        <content type="html"><![CDATA[<h1 id="FineYunOS发布！"><a href="#FineYunOS发布！" class="headerlink" title="FineYunOS发布！"></a>FineYunOS发布！</h1><p>FineYUNoS是一个可以在浏览器中直接运行的系统！目前已经发布！</p><h2 id="配置要求"><a href="#配置要求" class="headerlink" title="配置要求"></a>配置要求</h2><pre class=" language-txt"><code class="language-txt">系统——Windows7以上浏览器——Edge/Chrome等支持HTML5的浏览器内存——至少8GB分辨率——至少360*480</code></pre><p>运行时可能会有较长的启动时间</p><h2 id="OS信息"><a href="#OS信息" class="headerlink" title="OS信息"></a>OS信息</h2><pre class=" language-txt"><code class="language-txt">内核——Scratch3.12.0编码——HTML系统大小——9MB</code></pre><h2 id="在线体验"><a href="#在线体验" class="headerlink" title="在线体验"></a>在线体验</h2><p>网站:<a href="https://ntsc-yrx.github.io/File/FineYunOS">https://ntsc-yrx.github.io/File/FineYunOS</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 软件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CPP教程-计算函数</title>
       <link href="/2021/09/24/CPP%E6%95%99%E7%A8%8B-%E8%AE%A1%E7%AE%97%E5%87%BD%E6%95%B0/"/>
       <url>/2021/09/24/CPP%E6%95%99%E7%A8%8B-%E8%AE%A1%E7%AE%97%E5%87%BD%E6%95%B0/</url>
@@ -183,7 +253,7 @@
       <link href="/2021/09/16/%E4%BA%BA%E6%95%998%E4%B8%8A-%E5%9C%B0%E7%90%8612%E5%8F%A5/"/>
       <url>/2021/09/16/%E4%BA%BA%E6%95%998%E4%B8%8A-%E5%9C%B0%E7%90%8612%E5%8F%A5/</url>
       
-        <content type="html"><![CDATA[<h1 id="地理12句（八上）"><a href="#地理12句（八上）" class="headerlink" title="地理12句（八上）"></a>地理12句（八上）</h1><p>Ntsc原创</p><h2 id="中国邻国"><a href="#中国邻国" class="headerlink" title="中国邻国"></a>中国邻国</h2><blockquote><p>朝俄蒙哈吉塔阿，巴印尼不缅老越。<br>韩日菲文马印尼。</p></blockquote><h2 id="少数民族"><a href="#少数民族" class="headerlink" title="少数民族"></a>少数民族</h2><blockquote><p>壮满回苗维吾尔，土家蒙古彝藏多。</p></blockquote><h2 id="山脉"><a href="#山脉" class="headerlink" title="山脉"></a>山脉</h2><blockquote><p>天阴昆仑秦南岭，大太巫雪长武台。</p></blockquote><h2 id="中国省级行政区"><a href="#中国省级行政区" class="headerlink" title="中国省级行政区"></a>中国省级行政区</h2><blockquote><p>两湖两广两河山，五江二宁青陕甘，云贵西四北上天，重内台海福吉安，还有港澳好河山</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h1 id="地理12句（八上）"><a href="#地理12句（八上）" class="headerlink" title="地理12句（八上）"></a>地理12句（八上）</h1><p>Ntsc原创</p><h2 id="中国邻国"><a href="#中国邻国" class="headerlink" title="中国邻国"></a>中国邻国</h2><blockquote><p>朝俄蒙哈吉塔阿，巴印尼不缅老越。<br>韩日菲文马印尼。</p></blockquote><h2 id="少数民族"><a href="#少数民族" class="headerlink" title="少数民族"></a>少数民族</h2><blockquote><p>壮满回苗维吾尔，土家蒙古彝藏多。</p></blockquote><h2 id="山脉"><a href="#山脉" class="headerlink" title="山脉"></a>山脉</h2><blockquote><p>天阴昆仑秦南岭，大太巫雪长武台。</p></blockquote><h2 id="中国省级行政区"><a href="#中国省级行政区" class="headerlink" title="中国省级行政区"></a>中国省级行政区</h2><blockquote><p>两湖两广两河山，五江二宁青陕甘，云贵西四北上天，内重台海福吉安，还有港澳好河山</p></blockquote>]]></content>
       
       
       
@@ -202,7 +272,7 @@
       <link href="/2021/09/11/CPP%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%93%E5%87%BD%E6%95%B0/"/>
       <url>/2021/09/11/CPP%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%93%E5%87%BD%E6%95%B0/</url>
       
-        <content type="html"><![CDATA[<h1 id="C-自定义库函数"><a href="#C-自定义库函数" class="headerlink" title="C++自定义库函数"></a>C++自定义库函数</h1><h2 id="制作-amp-使用教程"><a href="#制作-amp-使用教程" class="headerlink" title="制作&amp;使用教程"></a>制作&amp;使用教程</h2><blockquote><p>制作</p></blockquote><p>把你原来在你自己的程序里定义的函数的定义代码拿出来,加入<code>库文件</code>中就可以了(记得在库文件中加以下代码)</p><pre class=" language-C++"><code class="language-C++">#include <bits/stdc++.h>using namespace std;</code></pre><p><code>库文件</code>要求:后缀名是<code>.h</code>,文件名随意</p><blockquote><p>使用</p></blockquote><p>就像加入标准库一样<br>实例:</p><pre class=" language-C++"><code class="language-C++">#include <C:\Users\abc\Desktop\name.h></code></pre><p>你需要在<code>&lt;&gt;</code>中加入你自己的库文件在你的计算机上的文件地址</p><h2 id="推荐我自己编的库函数"><a href="#推荐我自己编的库函数" class="headerlink" title="推荐我自己编的库函数"></a>推荐我自己编的库函数</h2><blockquote><p>最近更新：<a href="https://ntsc-yrx.github.io/File/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0%E5%BA%93/ntsc.h">下载库文件</a></p></blockquote><p>以下是部分库文件代码</p><pre class=" language-C++"><code class="language-C++">#include <bits/stdc++.h>using namespace std;\//判断质数//返回值,是返回true,不是返回falsebool if_prime(int x) &#123;    if (x < 2)        return false;    for (int i = 2; i <= sqrt(x); i++) &#123;        if (x % i == 0)            return false;    &#125;    return true;&#125;//输出逆序数字//coutvoid reverse_num(int x) &#123;    cout << x % 10;    if (x > 10) &#123;        reverse_num(x / 10);    &#125; else        return;&#125;//转进制//参数(十进制数,目标进制)//coutvoid change_base(int a, int b) &#123;    char to1016[16] &#123;'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'&#125;;    int tmp;    tmp = a % b;    a = a / b;    if (a != 0) &#123;        change_base(a, b);    &#125;    cout << to1016[tmp];&#125;</code></pre>]]></content>
+        <content type="html"><![CDATA[<h1 id="C-自定义库函数"><a href="#C-自定义库函数" class="headerlink" title="C++自定义库函数"></a>C++自定义库函数</h1><h2 id="制作-amp-使用教程"><a href="#制作-amp-使用教程" class="headerlink" title="制作&amp;使用教程"></a>制作&amp;使用教程</h2><blockquote><p>制作</p></blockquote><p>把你原来在你自己的程序里定义的函数的定义代码拿出来,加入<code>库文件</code>中就可以了(记得在库文件中加以下代码)</p><pre class=" language-C++"><code class="language-C++">#include <bits/stdc++.h>using namespace std;</code></pre><p><code>库文件</code>要求:后缀名是<code>.h</code>,文件名随意</p><blockquote><p>使用</p></blockquote><p>就像加入标准库一样<br>实例:</p><pre class=" language-C++"><code class="language-C++">#include <C:\Users\abc\Desktop\name.h></code></pre><p>你需要在<code>&lt;&gt;</code>中加入你自己的库文件在你的计算机上的文件地址</p><h2 id="推荐我自己编的库函数"><a href="#推荐我自己编的库函数" class="headerlink" title="推荐我自己编的库函数"></a>推荐我自己编的库函数</h2><blockquote><p>最近更新：<a href="https://ntsc-yrx.github.io/File/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0%E5%BA%93/ntsc.h">下载库文件</a></p></blockquote><p>所有：<br><a href="https://ntsc-yrx.github.io/File/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0%E5%BA%93/bignum/bignum.h">bignum</a><br><a href="https://ntsc-yrx.github.io/File/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0%E5%BA%93/sort/sort.h">sort</a><br><a href="https://ntsc-yrx.github.io/File/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0%E5%BA%93/ntsc.h">其它</a></p><p>以下是部分库文件目录</p><pre class=" language-C++"><code class="language-C++">//判断质数//返回值,是返回true,不是返回falsebool if_prime(int x) &#123;//输出逆序数字//coutvoid reverse_num(int x) &#123;//转进制//参数(十进制数,目标进制)//coutvoid change_base(int a, int b) &#123;</code></pre>]]></content>
       
       
       

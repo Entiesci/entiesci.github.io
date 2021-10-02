@@ -429,7 +429,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    188
+                    212
                 </div>
                 
 
@@ -469,45 +469,20 @@ using namespace std;
 <h2 id="推荐我自己编的库函数"><a href="#推荐我自己编的库函数" class="headerlink" title="推荐我自己编的库函数"></a>推荐我自己编的库函数</h2><blockquote>
 <p>最近更新：<a href="https://ntsc-yrx.github.io/File/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0%E5%BA%93/ntsc.h">下载库文件</a></p>
 </blockquote>
-<p>以下是部分库文件代码</p>
-<pre class=" language-C++"><code class="language-C++">#include <bits/stdc++.h>
-using namespace std;
-\
-//判断质数
+<p>所有：<br><a href="https://ntsc-yrx.github.io/File/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0%E5%BA%93/bignum/bignum.h">bignum</a><br><a href="https://ntsc-yrx.github.io/File/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0%E5%BA%93/sort/sort.h">sort</a><br><a href="https://ntsc-yrx.github.io/File/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0%E5%BA%93/ntsc.h">其它</a></p>
+<p>以下是部分库文件目录</p>
+<pre class=" language-C++"><code class="language-C++">//判断质数
 //返回值,是返回true,不是返回false
 bool if_prime(int x) &#123;
-    if (x < 2)
-        return false;
-    for (int i = 2; i <= sqrt(x); i++) &#123;
-        if (x % i == 0)
-            return false;
-    &#125;
-    return true;
-&#125;
 
 //输出逆序数字
 //cout
 void reverse_num(int x) &#123;
-    cout << x % 10;
-    if (x > 10) &#123;
-        reverse_num(x / 10);
-    &#125; else
-        return;
-&#125;
 
 //转进制
 //参数(十进制数,目标进制)
 //cout
 void change_base(int a, int b) &#123;
-    char to1016[16] &#123;'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'&#125;;
-    int tmp;
-    tmp = a % b;
-    a = a / b;
-    if (a != 0) &#123;
-        change_base(a, b);
-    &#125;
-    cout << to1016[tmp];
-&#125;
 </code></pre>
 
                 
