@@ -4,13 +4,103 @@
   
     
     <entry>
+      <title>CPP教程-前缀和与差分</title>
+      <link href="/2021/10/09/CPP%E6%95%99%E7%A8%8B-%E5%89%8D%E7%BC%80%E5%92%8C%E4%B8%8E%E5%B7%AE%E5%88%86/"/>
+      <url>/2021/10/09/CPP%E6%95%99%E7%A8%8B-%E5%89%8D%E7%BC%80%E5%92%8C%E4%B8%8E%E5%B7%AE%E5%88%86/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><p>差分与前缀和是在优化数组存储时的主要的方法，下面我们来了解它们</p><h2 id="前缀和"><a href="#前缀和" class="headerlink" title="前缀和"></a>前缀和</h2><p>以下是两个数组</p><pre class=" language-1"><code class="language-1">1,2,3,4, 5  //原数组1,3,6,10,15  //前缀和处理</code></pre><p>我可以明确的告诉你这就是前缀和<br>看出来了吗?前缀和数组<code>a[n]</code>就等于原数组<code>b[n]</code>项(含)前面的所有项目的和<br>放在递推里可以这样写</p><pre class=" language-c++"><code class="language-c++">a[1]=b[1];for(...)&#123;    a[i]=a[i-1]+b[i];&#125;</code></pre><p>那么前缀和有什么用呢?<br>他可以让我们更快的读取数组区间的和<br>以一维数组为例:<br>要求数组<code>b[n~m]</code>项的和<code>ans</code>,可以这样写</p><pre class=" language-c++"><code class="language-c++">//a[]是b[]的前缀和数组ans=a[m]-a[n-1];</code></pre><h2 id="差分"><a href="#差分" class="headerlink" title="差分"></a>差分</h2><p>照样是两个数组</p><pre class=" language-c++"><code class="language-c++">1,2,5,4,61,1,3,-1,2</code></pre><p>有一点乱,但没关系,差分数组<code>a[]</code>和原数组<code>b[]</code>规律就是</p><pre class=" language-c++"><code class="language-c++">a[n]=b[n]-b[n-1]</code></pre><p>即是原数组的对应项与前一项的差<br>那么差分有什么用呢?<br>他可以让我们更快的改变数组区间内的值(同操作,如都+2)<br>如果要把<code>b[n~m]</code>的项目都<code>+2</code>怎么办呢?</p><pre class=" language-c++"><code class="language-c++">a[n]+=2;a[m+1]-=2;</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> 高级教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CPP教程-循环与递归</title>
+      <link href="/2021/10/06/CPP%E6%95%99%E7%A8%8B-%E5%BE%AA%E7%8E%AF%E4%BA%8E%E9%80%92%E5%BD%92/"/>
+      <url>/2021/10/06/CPP%E6%95%99%E7%A8%8B-%E5%BE%AA%E7%8E%AF%E4%BA%8E%E9%80%92%E5%BD%92/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><h2 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h2><blockquote><p>在循环中有几种方法可以表示 <code>循环n次</code>呢?</p></blockquote><p>1.for正</p><pre class=" language-c++"><code class="language-c++">for(int i=1;i<=n;i++)</code></pre><p>2.for逆</p><pre class=" language-c++"><code class="language-c++">for(int i=n;i<=1;i--)</code></pre><p>3.while</p><pre class=" language-c++"><code class="language-c++">while(n--)</code></pre><p>注意:这种循环会改变<code>n</code>的值</p><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> 高级教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CPP教程-排序</title>
+      <link href="/2021/10/06/CPP%E6%95%99%E7%A8%8B-%E6%8E%92%E5%BA%8F/"/>
+      <url>/2021/10/06/CPP%E6%95%99%E7%A8%8B-%E6%8E%92%E5%BA%8F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><blockquote><p>在c++中,怎么样对一个无序数组从小到大/从大到小排序呢?</p></blockquote><p>方法如下</p><p>1.函数法<br>c++本身就提供给我们一个高效的排序函数</p><pre class=" language-c++"><code class="language-c++">int a[1000]//数据下标为1~nsort(a+1,a+n+1)//若数据下标为0~n-1,则sort(a,a+n)</code></pre><p><code>sort</code>函数使用的方法是<code>快速排序</code><br>2.选择排序</p><pre class=" language-c++"><code class="language-c++"></code></pre><p>3.冒泡排序<br>程序如下</p><pre class=" language-c++"><code class="language-c++">for(int i=1;i<=n;i++)&#123;    for(int j=i;j<=n;j++)&#123;        if(a[j]>a[j+1])swap(a[j],a[j+1]);    &#125;&#125;</code></pre><p>时间复杂度为<code>O(n^2)</code><br>4.插入排序</p><pre class=" language-c++"><code class="language-c++"></code></pre><p>5.快速排序(高级)<br>程序如下</p><pre class=" language-c++"><code class="language-c++">int a[10000001],n;void qsort(int l,int r)&#123;    int mid=a[(l+r)/2],i=l,j=r;    do&#123;        while(a[i]<mid)i++;        while(a[j]>mid)j--;        if(i<=j)swap(a[i++],a[j--]);    &#125;while(i<=j);    if(l<j)qsort(l,j);    if(i<r)qsort(i,r);&#125;int main() &#123;    cin>>n;    for(int i=1;i<=n;i++)scanf(%d,&a[i]);    qsort(1,n);    for(int i=1;i<=n;i++)printf(%d ,a[i]);    return 0;&#125;</code></pre><p>6.归并排序(高级)<br>程序如下</p><pre class=" language-c++"><code class="language-c++">int a[10000001],n,b[10000001];void msort(int l,int r)&#123;    if(l==r)return;    int mid=(l+r)/2,i=l,j=mid+1,k=l;    msort(l,mid);msort(mid+1,r);    while(i<=mid&&j<=r)&#123;        if(a[i]<a[j])b[k++]=a[i++];        else b[k++]=a[j++];    &#125;    while(i<=mid)b[k++]=a[i++];    while(j<=r)b[k++]=a[j++];    for(int i=l;i<=r;i++)a[i]=b[i];&#125;int main() &#123;    cin>>n;    for(int i=1;i<=n;i++)scanf(%d,&a[i]);    msort(1,n);    for(int i=1;i<=n;i++)printf(%d ,a[i]);    return 0;&#125;</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> 高级教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CPP教程-结构体</title>
+      <link href="/2021/10/05/CPP%E6%95%99%E7%A8%8B-%E7%BB%93%E6%9E%84%E4%BD%93/"/>
+      <url>/2021/10/05/CPP%E6%95%99%E7%A8%8B-%E7%BB%93%E6%9E%84%E4%BD%93/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><h2 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h2><p>结构体就是你自己的自定义数据结构<br>你可以在结构体中包括n个不同类型的数据，那么这种类型的变量就相当于一个n项的一维列表<br>一维列表就相当于二维……</p><blockquote><p>定义方式</p></blockquote><pre class=" language-c++"><code class="language-c++">struct node &#123;    int id, t;    bool operator <(const node &x)const &#123;        return t > x.t;    &#125;&#125; a[10001];</code></pre><p><code>node</code>表示这个结构的名称,可以自定义<br><code>a[10001]</code>表示这个列表/变量的类型是这个自定义结构<br><code>int id,t;</code>表示这个结构体包含的项目</p><p>这里混进了一个奇怪的东西</p><pre class=" language-c++"><code class="language-c++">bool operator <(const node &x)const &#123;    return t > x.t;</code></pre><p>这个是什么呢?<br><code>operator</code>的意思是重载运算符,这端代码的意义是在<code>sort()</code>排序中按照结构体中的<code>t</code>来排序<br>eg</p><pre class=" language-c++"><code class="language-c++">~node a[10001];//输入的数据下标范围是0~n-1~sort(a,a+n);</code></pre><p>这样的话排序就会按<code>a</code>中的<code>t</code>进行排序,于<code>a</code>中的t对应的<code>id</code>也会改变位置</p><blockquote><p>使用方式</p></blockquote><p>你可以把结构体当成维度+1的列表<br>eg</p><pre class=" language-c++"><code class="language-c++">//定义结构体struct node &#123;    int id, t;    &#125;&#125; a[10001];//使用结构体中的项目a[19].id // a 列表中的下标19项的结构体中的 id 项</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Pic APi</title>
       <link href="/2021/10/04/Pic-APi/"/>
       <url>/2021/10/04/Pic-APi/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>PicApi应用正式发布!</p></blockquote><h1 id="PicApi"><a href="#PicApi" class="headerlink" title="PicApi"></a>PicApi</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>PicApi是一个免翻墙的图片网站,每刷新一次就会给你推送一组新的图片<br>图片有风景,二次元等众多分类</p><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>链接:<a href="https://ntsc-yrx.github.io/File/PICAPI/PICAPII.exe">https://ntsc-yrx.github.io/File/PICAPI/PICAPII.exe</a></p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>PicApi应用正式发布!</p></blockquote><h1 id="PicApi"><a href="#PicApi" class="headerlink" title="PicApi"></a>PicApi</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>PicApi是一个免翻墙的图片网站,每刷新一次就会给你推送一组新的图片<br>图片有风景,二次元等众多分类</p><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>链接:<a href="https://ntsc-yrx.github.io/File/PICAPI/about%EF%BC%88%E5%9C%A8%E6%AD%A4%E9%A1%B5%E9%9D%A2%E4%B8%8B%E6%BB%91%EF%BC%89">https://ntsc-yrx.github.io/File/PICAPI/about（在此页面下滑）</a></p><h2 id="支持"><a href="#支持" class="headerlink" title="支持"></a>支持</h2><ul><li>Android4+</li><li>Windows10、7</li></ul>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 软件 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -53,7 +143,7 @@
       <link href="/2021/09/25/%E5%9C%A8%E6%9C%AC%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0%E7%9A%84%E6%96%B9%E6%B3%95/"/>
       <url>/2021/09/25/%E5%9C%A8%E6%9C%AC%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0%E7%9A%84%E6%96%B9%E6%B3%95/</url>
       
-        <content type="html"><![CDATA[<h1 id="在本博客发布文章的方法"><a href="#在本博客发布文章的方法" class="headerlink" title="在本博客发布文章的方法"></a>在本博客发布文章的方法</h1><p>1.编辑邮件，内容如下</p><blockquote><p>作者<br>时间<br>分类<br>内容<br>访问密码(可选)</p></blockquote><p>2.发送至<a href="mailto:&#x68;&#x7a;&#120;&#51;&#x30;&#54;&#57;&#49;&#x34;&#x40;&#49;&#54;&#x33;&#x2e;&#99;&#x6f;&#109;">&#x68;&#x7a;&#120;&#51;&#x30;&#54;&#57;&#49;&#x34;&#x40;&#49;&#54;&#x33;&#x2e;&#99;&#x6f;&#109;</a><br>3.等待审核通过<br>4.在博客查看你自己的网站</p><blockquote><p>注:<br>文章审核时间:每周六<br>文章发布:最晚14天内</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h1 id="在本博客发布文章的方法"><a href="#在本博客发布文章的方法" class="headerlink" title="在本博客发布文章的方法"></a>在本博客发布文章的方法</h1><p>1.编辑邮件，内容如下</p><blockquote><p>作者<br>时间<br>分类<br>内容<br>访问密码(可选)</p></blockquote><p>2.发送至<a href="mailto:&#x68;&#122;&#120;&#51;&#48;&#54;&#57;&#x31;&#x34;&#64;&#49;&#54;&#x33;&#x2e;&#99;&#111;&#x6d;">&#x68;&#122;&#120;&#51;&#48;&#54;&#57;&#x31;&#x34;&#64;&#49;&#54;&#x33;&#x2e;&#99;&#111;&#x6d;</a><br>3.等待审核通过<br>4.在博客查看你自己的网站</p><blockquote><p>注:<br>文章审核时间:每周六<br>文章发布:最晚14天内</p></blockquote>]]></content>
       
       
       
@@ -133,7 +223,7 @@
       <link href="/2021/09/19/CPP%E6%95%99%E7%A8%8B-%E5%BE%AA%E7%8E%AF/"/>
       <url>/2021/09/19/CPP%E6%95%99%E7%A8%8B-%E5%BE%AA%E7%8E%AF/</url>
       
-        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><h2 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h2><p>代码</p><pre class=" language-c++"><code class="language-c++">for(初始化变量;判断条件;变量更改)&#123;    ...&#125;</code></pre><p>当<code>判断条件</code>不成立时停止循环<br>例子</p><pre class=" language-c++"><code class="language-c++">for(int i=1;i<=10;i++)&#123; //会执行10次    ...&#125;</code></pre><h2 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h2><p>代码</p><pre class=" language-c++"><code class="language-c++">while(判断条件)&#123;    ...&#125;</code></pre><p>和<code>for循环</code>一样,只不过是把<code>初始化变量</code>与<code>变量更改</code>外置<br>例子</p><pre class=" language-c++"><code class="language-c++">int i=1;while(i<=10)&#123; //当i>10时停止    ...    i++;&#125;</code></pre><h2 id="do-while循环"><a href="#do-while循环" class="headerlink" title="do-while循环"></a>do-while循环</h2><p>和<code>while循环</code>一样,只不过会先执行一遍再判定<br>代码</p><pre class=" language-c++"><code class="language-c++">do&#123;    ...&#125;while(判断条件);</code></pre>]]></content>
+        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><h2 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h2><p>代码</p><pre class=" language-c++"><code class="language-c++">for(初始化变量;判断条件;变量更改)&#123;    ...&#125;</code></pre><p>当<code>判断条件</code>不成立时停止循环<br>例子</p><pre class=" language-c++"><code class="language-c++">for(int i=1;i<=10;i++)&#123; //会执行10次    ...&#125;</code></pre><h2 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h2><p>代码</p><pre class=" language-c++"><code class="language-c++">while(判断条件)&#123;    ...&#125;</code></pre><p>和<code>for循环</code>一样,只不过是把<code>初始化变量</code>与<code>变量更改</code>外置<br>例子</p><pre class=" language-c++"><code class="language-c++">int i=1;while(i<=10)&#123; //当i>10时停止    ...    i++;&#125;</code></pre><h2 id="do-while循环"><a href="#do-while循环" class="headerlink" title="do-while循环"></a>do-while循环</h2><p>和<code>while循环</code>一样,只不过会先执行一遍再判定<br>代码</p><pre class=" language-c++"><code class="language-c++">do&#123;    ...&#125;while(判断条件);</code></pre><h2 id="特殊语句"><a href="#特殊语句" class="headerlink" title="特殊语句"></a>特殊语句</h2><p>以下是放在循环里的一些语句</p><pre class=" language-c++"><code class="language-c++">continue;//跳过本次,直接开始下一次循环break;//跳出循环</code></pre>]]></content>
       
       
       
@@ -207,7 +297,7 @@
       <link href="/2021/09/17/CPP%E6%95%99%E7%A8%8B-%E8%BE%93%E5%85%A5%E4%B8%8E%E8%BE%93%E5%87%BA/"/>
       <url>/2021/09/17/CPP%E6%95%99%E7%A8%8B-%E8%BE%93%E5%85%A5%E4%B8%8E%E8%BE%93%E5%87%BA/</url>
       
-        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><h2 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h2><p>C++里的输入输出一般都会显示在命令提示符（黑底白字的那玩意儿）里，而要在那里输入或输出程序计算结果，就要使用输入输出语句</p><p>输入输出语句在C++里有两种：流式，格式</p><blockquote><p>在C语言中貌似没有流式</p></blockquote><h3 id="流式输入-出"><a href="#流式输入-出" class="headerlink" title="流式输入/出"></a>流式输入/出</h3><p>流式输入输出是C++里的独特的方式(指针)</p><p>它的效率比格式化输入输出要低,特别是在输入输出量很大的时候,极有可能会造成程序超时</p><blockquote><p>输入输出流程: 输入&gt;外存&gt;内存</p></blockquote><p>代码如下</p><pre class=" language-c++"><code class="language-c++">cin>>a; //输入并赋值给acout<<a; //输出a的值cout<<a<<endl; //输出并换行</code></pre><h3 id="格式化输入-出"><a href="#格式化输入-出" class="headerlink" title="格式化输入/出"></a>格式化输入/出</h3><p>格式化输入输出在C系列语言中通用</p><p>它的效率更高,特别是在输入输出量很大的时候,推荐使用</p><blockquote><p>输入输出流程: 输入&gt;内存</p></blockquote><p>但是它的代码要复杂的多,而且灵活性低</p><p>代码如下</p><pre class=" language-c++"><code class="language-c++">scanf("%d",&a) //输入一个类型为 整数(%d) 的值并按照 地址(&) 赋值给aprintf("%d",a) //输出a的值(强制转换类型为整数)</code></pre>]]></content>
+        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><h2 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h2><p>C++里的输入输出一般都会显示在命令提示符（黑底白字的那玩意儿）里，而要在那里输入或输出程序计算结果，就要使用输入输出语句</p><p>输入输出语句在C++里有两种：流式，格式</p><blockquote><p>在C语言中貌似没有流式</p></blockquote><h3 id="流式输入-出"><a href="#流式输入-出" class="headerlink" title="流式输入/出"></a>流式输入/出</h3><p>流式输入输出是C++里的独特的方式(指针)</p><p>它的效率比格式化输入输出要低,特别是在输入输出量很大的时候,极有可能会造成程序超时</p><blockquote><p>输入输出流程: 输入&gt;外存&gt;内存</p></blockquote><p>代码如下</p><pre class=" language-c++"><code class="language-c++">cin>>a; //输入并赋值给acout<<a; //输出a的值cout<<a<<endl; //输出并换行</code></pre><p>注：以下代码可以加快流式的速度，可以与格式化媲美</p><pre class=" language-c++"><code class="language-c++">ios::sync_with_stdio(false); //加速cin,cout</code></pre><h3 id="格式化输入-出"><a href="#格式化输入-出" class="headerlink" title="格式化输入/出"></a>格式化输入/出</h3><p>格式化输入输出在C系列语言中通用</p><p>它的效率更高,特别是在输入输出量很大的时候,推荐使用</p><blockquote><p>输入输出流程: 输入&gt;内存</p></blockquote><p>但是它的代码要复杂的多,而且灵活性低</p><p>代码如下</p><pre class=" language-c++"><code class="language-c++">scanf("%d",&a) //输入一个类型为 整数(%d) 的值并按照 地址(&) 赋值给aprintf("%d",a) //输出a的值(强制转换类型为整数)</code></pre>]]></content>
       
       
       

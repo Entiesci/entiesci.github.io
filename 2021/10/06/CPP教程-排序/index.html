@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Pic APi, Ntsc, 博客, Blog, ntsc">
+    <meta name="keywords" content="CPP教程-排序, Ntsc, 博客, Blog, ntsc">
     <meta name="description" content="ntsc的个人博客，内含HTML教程、CSS教程等">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Pic APi | Ntsc&#39;s Blog</title>
+    <title>CPP教程-排序 | Ntsc&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -279,12 +279,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Pic APi</h1>
+                    <h1 class="description center-align post-title">CPP教程-排序</h1>
                 </div>
             </div>
         </div>
@@ -400,8 +400,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%BD%AF%E4%BB%B6/">
-                                <span class="chip bg-color">软件</span>
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C++</span>
+                            </a>
+                        
+                            <a href="/tags/%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B/">
+                                <span class="chip bg-color">高级教程</span>
                             </a>
                         
                     </div>
@@ -416,7 +420,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-10-04
+                    2021-10-06
                 </div>
                 
 
@@ -425,7 +429,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    74
+                    116
                 </div>
                 
 
@@ -447,15 +451,69 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-<p>PicApi应用正式发布!</p>
+                <h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><blockquote>
+<p>在c++中,怎么样对一个无序数组从小到大/从大到小排序呢?</p>
 </blockquote>
-<h1 id="PicApi"><a href="#PicApi" class="headerlink" title="PicApi"></a>PicApi</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>PicApi是一个免翻墙的图片网站,每刷新一次就会给你推送一组新的图片<br>图片有风景,二次元等众多分类</p>
-<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>链接:<a href="https://ntsc-yrx.github.io/File/PICAPI/about%EF%BC%88%E5%9C%A8%E6%AD%A4%E9%A1%B5%E9%9D%A2%E4%B8%8B%E6%BB%91%EF%BC%89">https://ntsc-yrx.github.io/File/PICAPI/about（在此页面下滑）</a></p>
-<h2 id="支持"><a href="#支持" class="headerlink" title="支持"></a>支持</h2><ul>
-<li>Android4+</li>
-<li>Windows10、7</li>
-</ul>
+<p>方法如下</p>
+<p>1.函数法<br>c++本身就提供给我们一个高效的排序函数</p>
+<pre class=" language-c++"><code class="language-c++">int a[1000]//数据下标为1~n
+sort(a+1,a+n+1)//若数据下标为0~n-1,则sort(a,a+n)
+</code></pre>
+<p><code>sort</code>函数使用的方法是<code>快速排序</code><br>2.选择排序</p>
+<pre class=" language-c++"><code class="language-c++">
+</code></pre>
+<p>3.冒泡排序<br>程序如下</p>
+<pre class=" language-c++"><code class="language-c++">for(int i=1;i<=n;i++)&#123;
+    for(int j=i;j<=n;j++)&#123;
+        if(a[j]>a[j+1])swap(a[j],a[j+1]);
+    &#125;
+&#125;
+</code></pre>
+<p>时间复杂度为<code>O(n^2)</code><br>4.插入排序</p>
+<pre class=" language-c++"><code class="language-c++">
+</code></pre>
+<p>5.快速排序(高级)<br>程序如下</p>
+<pre class=" language-c++"><code class="language-c++">int a[10000001],n;
+void qsort(int l,int r)&#123;
+    int mid=a[(l+r)/2],i=l,j=r;
+    do&#123;
+        while(a[i]<mid)i++;
+        while(a[j]>mid)j--;
+        if(i<=j)swap(a[i++],a[j--]);
+    &#125;while(i<=j);
+    if(l<j)qsort(l,j);
+    if(i<r)qsort(i,r);
+&#125;
+int main() &#123;
+    cin>>n;
+    for(int i=1;i<=n;i++)scanf(%d,&a[i]);
+    qsort(1,n);
+    for(int i=1;i<=n;i++)printf(%d ,a[i]);
+    return 0;
+&#125;
+</code></pre>
+<p>6.归并排序(高级)<br>程序如下</p>
+<pre class=" language-c++"><code class="language-c++">int a[10000001],n,b[10000001];
+void msort(int l,int r)&#123;
+    if(l==r)return;
+    int mid=(l+r)/2,i=l,j=mid+1,k=l;
+    msort(l,mid);msort(mid+1,r);
+    while(i<=mid&&j<=r)&#123;
+        if(a[i]<a[j])b[k++]=a[i++];
+        else b[k++]=a[j++];
+    &#125;
+    while(i<=mid)b[k++]=a[i++];
+    while(j<=r)b[k++]=a[j++];
+    for(int i=l;i<=r;i++)a[i]=b[i];
+&#125;
+int main() &#123;
+    cin>>n;
+    for(int i=1;i<=n;i++)scanf(%d,&a[i]);
+    msort(1,n);
+    for(int i=1;i<=n;i++)printf(%d ,a[i]);
+    return 0;
+&#125;
+</code></pre>
 
                 
             </div>
@@ -482,7 +540,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ntsc-yrx.github.io/2021/10/04/Pic-APi/">https://ntsc-yrx.github.io/2021/10/04/Pic-APi/</a>
+                    <a href="https://ntsc-yrx.github.io/2021/10/06/CPP%E6%95%99%E7%A8%8B-%E6%8E%92%E5%BA%8F/">https://ntsc-yrx.github.io/2021/10/06/CPP%E6%95%99%E7%A8%8B-%E6%8E%92%E5%BA%8F/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -520,8 +578,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%BD%AF%E4%BB%B6/">
-                                    <span class="chip bg-color">软件</span>
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C++</span>
+                                </a>
+                            
+                                <a href="/tags/%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B/">
+                                    <span class="chip bg-color">高级教程</span>
                                 </a>
                             
                         </div>
@@ -622,6 +684,55 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
+                <a href="/2021/10/06/CPP%E6%95%99%E7%A8%8B-%E5%BE%AA%E7%8E%AF%E4%BA%8E%E9%80%92%E5%BD%92/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="CPP教程-循环与递归">
+                        
+                        <span class="card-title">CPP教程-循环与递归</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-06
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Ntsc-Yrx
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B/">
+                        <span class="chip bg-color">高级教程</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
                 <a href="/2021/10/05/CPP%E6%95%99%E7%A8%8B-%E7%BB%93%E6%9E%84%E4%BD%93/">
                     <div class="card-image">
                         
@@ -638,9 +749,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -660,43 +771,6 @@
                         <span class="chip bg-color">C++</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/10/02/%E5%85%B1%E8%B4%BA%E5%9B%BD%E5%BA%86-2021/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="共贺国庆-2021">
-                        
-                        <span class="card-title">共贺国庆-2021</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-02
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Ntsc-Yrx
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>
