@@ -4,6 +4,66 @@
   
     
     <entry>
+      <title>CSP2021</title>
+      <link href="/2021/10/24/CSP2021/"/>
+      <url>/2021/10/24/CSP2021/</url>
+      
+        <content type="html"><![CDATA[<p>庆祝CSP-J/S 2021顺利结束!</p><hr><p>希望我考个好成绩…</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CPP教程-走迷宫</title>
+      <link href="/2021/10/22/CPP%E6%95%99%E7%A8%8B-%E8%B5%B0%E8%BF%B7%E5%AE%AB/"/>
+      <url>/2021/10/22/CPP%E6%95%99%E7%A8%8B-%E8%B5%B0%E8%BF%B7%E5%AE%AB/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><h2 id="走迷宫问题"><a href="#走迷宫问题" class="headerlink" title="走迷宫问题"></a>走迷宫问题</h2><p>题目描述</p><blockquote><p>一个迷宫由R行C列格子组成，有的格子里有障碍物，不能走；有的格子是空地，可以走。<br>给定一个迷宫，求从左上角走到右下角最少需要走多少步(数据保证一定能走到)。只能在水平方向或垂直方向走，不能斜着走。</p></blockquote><p>图例</p><blockquote><p>. . ###<br>#. . . .<br>#. #. #<br>#. #. #<br>#. # . .</p></blockquote><p>结题思路</p><blockquote><p>使用广度优先搜索(扩散搜索并标记),并使用STL中的队列(也可以自己写)</p></blockquote><p>代码分析</p><pre class=" language-c++"><code class="language-c++">#include<bits/stdc++.h>using namespace std;const int N=105;int a[N][N],n,m,ans,d[N][N];int dx[4]=&#123;-1,0,1,0&#125;,dy[4]=&#123;0,1,0,-1&#125;;queue<pair<int,int> >q;void bfs()&#123;    d[1][1]=1;a[1][1]=0;    q.push(make_pair(1,1));    while(q.size())    &#123;        pair<int,int> u=q.front();q.pop();        if(u.first==n&&u.second==m)break;        for(int i=0;i<4;i++)        &#123;            int xx=u.first+dx[i],yy=u.second+dy[i];            if(xx<1||xx>n||yy<1||yy>m||a[xx][yy]==0)continue;            q.push(make_pair(xx,yy));            d[xx][yy]=d[u.first][u.second]+1;            a[xx][yy]=0;        &#125;    &#125;    cout<<d[n][m];&#125;int main()&#123;    cin>>n>>m;    for(int i=1;i<=n;i++)      for(int j=1;j<=m;j++)      &#123;        char c;cin>>c;        if(c=='.')a[i][j]=1;      &#125;    bfs();    return 0;&#125;</code></pre><p>知识扩展</p><blockquote><p>广度优先搜索</p></blockquote><p>含义</p><blockquote><p>使用类似递推的概念从一个点扩散到所有可扩散的点</p></blockquote><p>图例</p><blockquote><p>从左上角扩散到右下角,最少步数如下</p><table><thead><tr><th>1</th><th>2</th><th>3</th><th>4</th></tr></thead><tbody><tr><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>4</td><td>5</td><td>6</td><td>7</td></tr></tbody></table></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> 高级教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CPP资料</title>
+      <link href="/2021/10/21/CPP%E8%B5%84%E6%96%99/"/>
+      <url>/2021/10/21/CPP%E8%B5%84%E6%96%99/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-资料"><a href="#C-资料" class="headerlink" title="C++资料"></a>C++资料</h1><p>恭喜你解锁了C++独家资料，请不要随意传播哦！</p><pre class=" language-url"><code class="language-url">https://ntsc-yrx.github.io/File/cppstudy/...</code></pre><ul><li>01-高精度.doc</li><li>02-递推.doc</li><li>06-排序.doc</li><li>09.队列.doc</li><li>10-广搜.doc</li><li>课程计划.xls</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>名  人  名  言</title>
+      <link href="/2021/10/20/%E5%90%8D-%E4%BA%BA-%E5%90%8D-%E8%A8%80/"/>
+      <url>/2021/10/20/%E5%90%8D-%E4%BA%BA-%E5%90%8D-%E8%A8%80/</url>
+      
+        <content type="html"><![CDATA[<h1 id="名-人-名-言"><a href="#名-人-名-言" class="headerlink" title="名  人  名  言"></a>名  人  名  言</h1><p>1.过年了祝群里女的：<br>万事如意 落雁沉鱼 兰质蕙心 明眸皓齿 靡颜腻理 清词丽句 清辞丽曲 琪花瑶草 曲眉丰颊 螓首蛾眉 水木清华 爽心悦目 天生丽质 天香国色 我见犹怜 宛转蛾眉 霞光万道 小家碧玉 杏脸桃腮 煦色韶光 杏腮桃脸 雄伟壮观 杏雨梨云 涎玉沫珠 妍蚩好恶 鱼沉雁落 宜嗔宜喜 旖旎风光 远山芙蓉 艳色绝世 余霞成绮 宜喜宜嗔 瘗玉埋香 艳紫妖红 朱唇皓齿 左家娇女 章台杨柳 阿娇金屋 闭月羞花 逞娇呈美 春暖花香 春色满园 春深似海 彩云易散 姹紫嫣红 斗美夸丽 尽态极妍 斗艳争辉 蛾眉皓齿飞阁流丹 国色天香 胡天胡帝 花颜月貌 绝色佳人天生丽质 慧质兰心 秀外慧中 暗香盈袖 闭月羞花 沉鱼落雁 倾国倾城 温婉娴淑 千娇百媚 仪态万千 美艳绝世 国色天香 花容月貌 明目皓齿 淡扫峨眉 清艳脱 俗香肌玉肤 清丽绝俗 仪态万端 婉风流转 美撼凡尘 聘婷秀雅 娥娜翩跹 俏丽多姿 如花似月 风姿卓越 顾盼流转 清丝纠缠 举步轻摇 美若天仙 美愈天人 清秀高雅 艳冠群芳 剪水双瞳 美艳绝伦 神仙玉骨 楚楚动人 貌赛西施 姿容绝代 如花似玉 窈窕淑女 气质高雅 美丽四射 樱桃小口 静若处子 动若脱兔 小鸟宜人 善解人意 明眸善睐 娇艳妩媚 玲珑剔透 玉指如葱 肤如凝脂 眉如新月 秋波流转 樱桃小口 粉妆玉琢 桃腮杏脸 亭亭玉立 楚楚动人 贤良淑德 秀色可餐 水灵秀气 小家碧玉 完美无暇 娇羞可爱 婀娜多姿 美丽动人 人面桃花 柳眉杏眼 温文尔雅 明艳动人 天生尤物 芙蓉如面 娇艳惊人 冠压群芳 风华绝代 绝代佳人 一代佳人 一代容华 绝色美人 月里嫦娥 华如桃李 桃羞杏让 </p><p>祝群里的男孩子：<br>能娶到这样的女孩子</p><p>2.</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CPP教程-STL</title>
       <link href="/2021/10/16/CPP%E6%95%99%E7%A8%8B-STL/"/>
       <url>/2021/10/16/CPP%E6%95%99%E7%A8%8B-STL/</url>
