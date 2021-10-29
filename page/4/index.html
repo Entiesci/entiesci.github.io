@@ -1,611 +1,247 @@
-<!DOCTYPE HTML>
-<html lang="zh-CN">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Ocean - Ntscの博客</title><meta name="keywords" content="Ntsc, 博客, Blog, ntsc"><meta name="author" content="Ntsc-Yrx"><meta name="copyright" content="Ntsc-Yrx"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="ntsc的个人博客，内含HTML教程、CSS教程等">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ocean">
+<meta property="og:url" content="https://ntsc-yrx.github.io/page/4/index.html">
+<meta property="og:site_name" content="Ocean">
+<meta property="og:description" content="ntsc的个人博客，内含HTML教程、CSS教程等">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i2.hdslb.com/bfs/face/5509774173b45a8d12247818f8b4f834db44ab68.jpg">
+<meta property="article:author" content="Ntsc-Yrx">
+<meta property="article:tag" content="Ntsc, 博客, Blog, ntsc">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i2.hdslb.com/bfs/face/5509774173b45a8d12247818f8b4f834db44ab68.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://ntsc-yrx.github.io/page/4/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Ocean',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-10-29 13:20:09'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="Ntsc, 博客, Blog, ntsc">
-    <meta name="description" content="ntsc的个人博客，内含HTML教程、CSS教程等">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
 
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
 
-    <title>Ocean</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
-
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
-
-    <script src="/libs/jquery/jquery.min.js"></script>
-
-<!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiperstyle.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiperstyle.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
 <style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
   white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
-
-
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">Ocean</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
-
-
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">Ocean</div>
-        <div class="logo-desc">
-            
-            ntsc的个人博客，内含HTML教程、CSS教程等
-            
-        </div>
-    </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/Ntsc-Yrx/Ntsc-Yrx.github.io" class="waves-effect waves-light" target="_blank">
-                <i class="fab fa-github-square fa-fw"></i>关注我
-            </a>
-        </li>
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-            <style>
-    .nav-transparent .github-corner {
-        display: none !important;
-    }
-
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
-        }
-        20%,
-        60% {
-            transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-            transform: rotate(10deg);
-        }
-    }
-</style>
-
-<a href="https://github.com/Ntsc-Yrx/Ntsc-Yrx.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
-   data-tooltip="关注我" data-position="left" data-delay="50">
-    <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
-        
-    </nav>
-
-</header>
-
-    
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                Ntscの博客
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
-
-
-    </div>
-</div>
-
-
-<main class="content">
-
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/09/06/HTML%E6%89%A9%E5%B1%95-%E8%AE%BE%E7%BD%AE%E6%98%AF%E5%90%A6%E7%BC%93%E5%AD%98/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="HTML扩展-设置是否缓存">
-                            
-                            <span class="card-title">HTML扩展-设置是否缓存</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                设置是否缓存概念缓存至把浏览器中从网络上获取的文件暂时保存在磁盘上，这样下一次在同一个设备上访问此网站就可以减少下载量，从而加快网站加载速度
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i2.hdslb.com/bfs/face/5509774173b45a8d12247818f8b4f834db44ab68.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">52</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> TAGs</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/photo/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://pximg.rainchan.win/img?img_id=83088427')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Ocean</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> TAGs</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/photo/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Ocean</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2021/09/06/HTML%E6%89%A9%E5%B1%95-%E8%AE%BE%E7%BD%AE%E6%98%AF%E5%90%A6%E7%BC%93%E5%AD%98/" title="HTML扩展-设置是否缓存">HTML扩展-设置是否缓存</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-09-06T13:57:56.000Z" title="发表于 2021-09-06 21:57:56">2021-09-06</time></span></div><div class="content">设置是否缓存概念缓存至把浏览器中从网络上获取的文件暂时保存在磁盘上，这样下一次在同一个设备上访问此网站就可以减少下载量，从而加快网站加载速度
 
 缓存的选择：
 
-长时间不变化的，或者文件较大的（如视频、图片）需要缓存可能会随时更改的数据不要缓
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-06
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Ntsc-Yrx
-                                
-                            </span>
-                        </div>
-                    </div>
+长时间不变化的，或者文件较大的（如视频、图片）需要缓存可能会随时更改的数据不要缓存
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%95%99%E7%A8%8B/">
-                            <span class="chip bg-color">教程</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/09/05/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="实用软件分享">
-                            
-                            <span class="card-title">实用软件分享</span>
-                        </div>
-                    </a>
+缓存的时间：
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                实用软件分享本文章分享的软件均免费或有poujie版
+缓存没有时间限制，但如果用户清理了浏览器缓存，那么缓存内容会被清空
+改变设置缓存需要在两个地方进行改动
+
+新文件
+
+你需要新建一个文件name.appcache后缀名不可更改文件内容如下
+CACHE MANIFEST
+/要缓存的文件
+NETWORK
+/不缓存的文件(填*表示除要缓存的文件外都不要缓存)
+FALLBACK
+/没有网络时跳转的错误页面(html文件)
+
+
+html文件
+
+在原文件更改代码为
+&lt;html manifest="name.appcache">
+...
+&lt;/html>
+
+即可
+</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2021/09/05/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/" title="实用软件分享">实用软件分享</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-09-05T03:18:49.000Z" title="发表于 2021-09-05 11:18:49">2021-09-05</time></span></div><div class="content">实用软件分享本文章分享的软件均免费或有poujie版
 Adobe全家桶https://www.yutu.cn/popsoft.html
 电脑美化https://zhutix.com/tag/10t/
-操作系统https://msdn.ite
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-05
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Ntsc-Yrx
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E8%BD%AF%E4%BB%B6/">
-                            <span class="chip bg-color">软件</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/09/05/HTML%E6%8B%93%E5%B1%95-localStorage%E5%AD%98%E5%82%A82/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="HTML扩展-localStorage存储2">
-                            
-                            <span class="card-title">HTML扩展-localStorage存储2</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                HTML拓展-localStorage存储localStorage存储技术属于JS（JavaScript）的内容，而且还要放在函数中执行，框架如下
+操作系统https://msdn.itellyou.cn/
+注释本博客仅转载，无实际内容
+</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2021/09/05/HTML%E6%8B%93%E5%B1%95-localStorage%E5%AD%98%E5%82%A82/" title="HTML扩展-localStorage存储2">HTML扩展-localStorage存储2</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-09-05T02:10:11.000Z" title="发表于 2021-09-05 10:10:11">2021-09-05</time></span></div><div class="content">HTML拓展-localStorage存储localStorage存储技术属于JS（JavaScript）的内容，而且还要放在函数中执行，框架如下
 &lt;script>
     function()&amp;#123;
-    此处放置代
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-05
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Ntsc-Yrx
-                                
-                            </span>
-                        </div>
-                    </div>
+    此处放置代码
+    &amp;#125;
+&lt;/script>
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%95%99%E7%A8%8B/">
-                            <span class="chip bg-color">教程</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/09/04/HTML%E6%8B%93%E5%B1%95-localStorage%E5%AD%98%E5%82%A8/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="HTML拓展-localStorage存储">
-                            
-                            <span class="card-title">HTML拓展-localStorage存储</span>
-                        </div>
-                    </a>
+localStorage存储的功能有很多，我们一一讲解
+删除代码如下
+localStorage.removeItem("key")
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                HTML拓展-localStorage存储localStorage存储技术localStorage存储技术属于JS（JavaScript）的内容，而且还要放在函数中执行，框架如下
+以上是删除单个数据的方法，删除全部数据（清空）如下
+localStorage..clear()
+
+缓存缓存指你关闭浏览器时会自动清空的数据
+方法很简单，只需要把原代码的单词替换一下
+localStorage改为sessionStorage即可
+
+判断是否支持以下方法可以让你判断你的浏览器是否支持localStorage存储技术
+if(window.localStorage)&amp;#123;
+支持时的操作（比如显示文字等）
+&amp;#125;
+else
+&amp;#123;
+不支持时的操作
+&amp;#125;
+
+判断是否支持sessionStorage ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2021/09/04/HTML%E6%8B%93%E5%B1%95-localStorage%E5%AD%98%E5%82%A8/" title="HTML拓展-localStorage存储">HTML拓展-localStorage存储</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-09-04T09:38:54.000Z" title="发表于 2021-09-04 17:38:54">2021-09-04</time></span></div><div class="content">HTML拓展-localStorage存储localStorage存储技术localStorage存储技术属于JS（JavaScript）的内容，而且还要放在函数中执行，框架如下
 &lt;script>
-    function()&amp
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-04
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Ntsc-Yrx
-                                
-                            </span>
-                        </div>
-                    </div>
+    function()&amp;#123;
+    此处放置代码
+    &amp;#125;
+&lt;/script>
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%95%99%E7%A8%8B/">
-                            <span class="chip bg-color">教程</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/09/03/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%8C%87%E4%BB%A4%E5%A4%A7%E5%85%A8-%E5%AE%9E%E6%97%B6%E6%9B%B4%E6%96%B0/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="我的世界指令大全-实时更新">
-                            
-                            <span class="card-title">我的世界指令大全-实时更新</span>
-                        </div>
-                    </a>
+localStorage存储的功能有很多，我们一一讲解
+输入与储存输入还是使用input代码，如下
+&lt;input id="data" type="text">
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                我的世界指令大全A/awake（哎咿呀咿呀咿呀）/ascend (提升到一个平台）
-B/buttercup（开始吟唱）/bind&lt;命令&gt;（设置命令快捷键）/blockdata（修改某个方块的数据标签）/backup（运行备份）/
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-03
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Ntsc-Yrx
-                                
-                            </span>
-                        </div>
-                    </div>
+储存的代码如下
+localStorage.key=data
+或者
+localStorage.setItem('key',data)
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%B8%B8%E6%88%8F/">
-                            <span class="chip bg-color">游戏</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/09/03/%E6%B4%BE%E8%92%99/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="派蒙~">
-                            
-                            <span class="card-title">派蒙~</span>
-                        </div>
-                    </a>
+这里说明一下localStorage存储的格式localStorage存储的内容有两个：key,data可以理解为是名称和内容，他们俩一一对应。key和data都可以被当做变量直接赋值，如方法1
+获取直接上代码
+var data=localStorage.getItem("key")
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                派蒙-应急食物嘿嘿嘿…⠀  ⠀⠀⠀⠀⠀⠀⢀⣠⠴⠒⠛⠲⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⢀⠀⢻⡄⣠⠶⣆⠀⣸⣀⣀⠀⠀⡀⠀⢀⠀⢀⠀⠀⠀⠀⠀⠁⠀⠀⢀⡠⠬⠛⢓⣏⠉⣾⣉⣀⠉⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠀⢀⡖⠋⣠⠴⠛⠙⢹⠞⢳⢀⣨⡵⠚⠀⠀⠀⠐⠀⠀⠂⠀⠀⠀⠀⣰
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-03
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Ntsc-Yrx
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%B8%B8%E6%88%8F/">
-                            <span class="chip bg-color">游戏</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/09/03/CSS%E6%95%99%E7%A8%8B-%E5%88%97%E8%A1%A8%E4%B8%8E%E9%BC%A0%E6%A0%87/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="CSS教程-列表与鼠标">
-                            
-                            <span class="card-title">CSS教程-列表与鼠标</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                CSS教程-列表，鼠标列表样式今天讲的样式的分类是
+如果要把获取的内容显示出来，你需要
+&lt;p id="123">&lt;/ ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2021/09/03/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%8C%87%E4%BB%A4%E5%A4%A7%E5%85%A8-%E5%AE%9E%E6%97%B6%E6%9B%B4%E6%96%B0/" title="我的世界指令大全-实时更新">我的世界指令大全-实时更新</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-09-03T14:28:28.000Z" title="发表于 2021-09-03 22:28:28">2021-09-03</time></span></div><div class="content">我的世界指令大全A/awake（哎咿呀咿呀咿呀）/ascend (提升到一个平台）
+B/buttercup（开始吟唱）/bind&lt;命令&gt;（设置命令快捷键）/blockdata（修改某个方块的数据标签）/backup（运行备份）/ban（添加一个玩家到黑名单）/ban-ip（添加一个ip到黑名单）/banlist（显示你的黑名单）/butcher（杀死附近所有的怪物）
+C/clear（清空背包）/clone（将某个方块复制到某个位置）
+D/daylock（开启或关闭日夜循环）/difficulty（设置游戏难度，0和平，1简单，2普通，3困难）/damage（开启或关闭伤害）/descend（下降到一个平台）/dupe [all]（复制物品）/destroy [all]（破坏背包里的物品）/defuse [all]（拆掉点燃了的TNT）/drops（开启或关闭物品掉落）/duplicate [all]（复制当前手中物品并丢出）/deop（将某个玩家的管理员身份撤销）
+E/explode [范围]（使指定范围产生爆炸）/effect（获得或移除某效果）/ext [all]（熄灭 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2021/09/03/%E6%B4%BE%E8%92%99/" title="派蒙~">派蒙~</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-09-03T14:26:04.000Z" title="发表于 2021-09-03 22:26:04">2021-09-03</time></span></div><div class="content">派蒙-应急食物嘿嘿嘿…⠀  ⠀⠀⠀⠀⠀⠀⢀⣠⠴⠒⠛⠲⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⢀⠀⢻⡄⣠⠶⣆⠀⣸⣀⣀⠀⠀⡀⠀⢀⠀⢀⠀⠀⠀⠀⠀⠁⠀⠀⢀⡠⠬⠛⢓⣏⠉⣾⣉⣀⠉⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠀⢀⡖⠋⣠⠴⠛⠙⢹⠞⢳⢀⣨⡵⠚⠀⠀⠀⠐⠀⠀⠂⠀⠀⠀⠀⣰⠋⡠⠎⠁⣀⠤⠒⠚⠛⠙⠒⠳⠤⣄⡀⠀⠠⠀⠀⠄⠀⠠⠀⠀⠀⠘⠐⢼⠖⠋⠀⠀⢀⠀⠀⠀⠀⠀⠀⠘⣌⡒⠲⢹⠀⠀⠀⠀⠀⠀⠈⠀⡸⠁⠀⠀⠀⠀⡆⠀⠀⠐⠀⠢⣄⠀⡽⡙⡲⠑⠒⠒⡒⠁⢀⡠⠴⠚⠀⠀⠀⠀⠀⣕⠝⣄⡀⢀⠀⠀⡇⠵⢍⠚⢾⡀⢠⠖⠁⠀⠈⠦⣄⣀⠀⡔⠀⠀⢁⡞⠀⠉⠲⣄⡀⢲⢼⠀⢀⠳⡄⠁⠀⢣⠀⠀⠀⠀⣠⠃⢐⠄⠀⠀⠴⠅⠠⡊⡢⠀⠉⠉⠁⠀⢆⠕⠹⡀⠀⠈⡆⠀⠀⠠⡇⠀⡸⠀⠀⠀⠨⡅⠀⠒⠈⠀⢄⠠⠠⠔⠀⠀⠀⢻⠀⠀⢣⠀⠀⢸⠅⠀⡕⠀⠀⠀⠀⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⡏⠀⠀⢸⠀⠀⠈⡇⠀⣣⠀⠀⠈⠀⠸⡦⠴⠲⢚⢚⠙⠝⠙⠍⠝⣱⠏⢠⠀⢸⠅⠀⠀⠙⣆⠘⣄⠀⠠⣄⠀⠹⣌⠌⠀⠂⠐⢈⠄⡁⢌⠳⣺⠏⢀⡞⠀⠀⠀⠀⠀⠙⠺⠛⣲⠜⠟⡓⡚⣏⣔⡀⡌⣀⢂⣔⠴⠋⢏⠒⠁⠀
+</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2021/09/03/CSS%E6%95%99%E7%A8%8B-%E5%88%97%E8%A1%A8%E4%B8%8E%E9%BC%A0%E6%A0%87/" title="CSS教程-列表与鼠标">CSS教程-列表与鼠标</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-09-03T05:27:28.000Z" title="发表于 2021-09-03 13:27:28">2021-09-03</time></span></div><div class="content">CSS教程-列表，鼠标列表样式今天讲的样式的分类是
 list-style-
 
 项目有
@@ -614,50 +250,27 @@ position:边距
 image:自定义图片样式
 
 项目单独讲解如下：typenone表示无
-超链接样式今天讲的样式没有分类，而且与之前
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-03
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Ntsc-Yrx
-                                
-                            </span>
-                        </div>
-                    </div>
+超链接样式今天讲的样式没有分类，而且与之前的有一点不一样模块如下
+a:+++&#123;
+    属性
+&#125;
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%95%99%E7%A8%8B/">
-                            <span class="chip bg-color">教程</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/09/02/CSS%E6%95%99%E7%A8%8B-%E8%BE%B9%E6%A1%86/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="CSS教程-边框">
-                            
-                            <span class="card-title">CSS教程-边框</span>
-                        </div>
-                    </a>
+今天我们不讲“属性”部分，而将“+++”的部分
+“+++”可以替换为以下，表示属性适用于不同的超链接
+link 未访问的
+hover 鼠标悬停的
+visited 访问过的
+active 被激活的
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                CSS教程-边框边框样式今天讲的文本样式的分类是
+注：定义的顺序如下
+
+link / visited
+↓
+hover
+↓
+active
+
+</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2021/09/02/CSS%E6%95%99%E7%A8%8B-%E8%BE%B9%E6%A1%86/" title="CSS教程-边框">CSS教程-边框</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-09-02T05:23:04.000Z" title="发表于 2021-09-02 13:23:04">2021-09-02</time></span></div><div class="content">CSS教程-边框边框样式今天讲的文本样式的分类是
 border-
 
 边框样式包括图片边框和文字边框哦~
@@ -668,50 +281,8 @@ style:样式
 
 项目单独讲解如下：
 //作者很懒，什么也没留下….
-这是CS
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-02
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Ntsc-Yrx
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%95%99%E7%A8%8B/">
-                            <span class="chip bg-color">教程</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/09/01/CSS%E6%95%99%E7%A8%8B-%E5%AD%97%E4%BD%93/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="CSS教程-字体">
-                            
-                            <span class="card-title">CSS教程-字体</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                CSS教程-字体，间距字体样式今天讲的样式的分类是
+这是CSS教程系列里最后一个样式的教程了，请同学们一定要牢记！
+</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2021/09/01/CSS%E6%95%99%E7%A8%8B-%E5%AD%97%E4%BD%93/" title="CSS教程-字体">CSS教程-字体</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-09-01T14:04:51.000Z" title="发表于 2021-09-01 22:04:51">2021-09-01</time></span></div><div class="content">CSS教程-字体，间距字体样式今天讲的样式的分类是
 font-
 
 项目有
@@ -721,50 +292,14 @@ style:样式
 family:字体
 weight:粗细
 
-项目单独讲解如下：weight可填入数字100~900中的
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Ntsc-Yrx
-                                
-                            </span>
-                        </div>
-                    </div>
+项目单独讲解如下：weight可填入数字100~900中的整百数，数字越大，字体越粗
+设置间接这个没有统一的分类，但也不多
+line-height //行距
+word-spacing //词距
+letter-spacing //字距
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%95%99%E7%A8%8B/">
-                            <span class="chip bg-color">教程</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/08/31/CSS%E6%95%99%E7%A8%8B-%E8%83%8C%E6%99%AF/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="CSS教程-背景">
-                            
-                            <span class="card-title">CSS教程-背景</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                CSS教程-背景背景样式今天讲的文本样式的分类是
+一共就这3个,在后面加冒号加数值即可
+</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2021/08/31/CSS%E6%95%99%E7%A8%8B-%E8%83%8C%E6%99%AF/" title="CSS教程-背景">CSS教程-背景</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-08-31T01:55:55.000Z" title="发表于 2021-08-31 09:55:55">2021-08-31</time></span></div><div class="content">CSS教程-背景背景样式今天讲的文本样式的分类是
 background-
 
 项目有
@@ -774,342 +309,57 @@ repeat:平铺
 attachment:图片是否跟随文本移动
 position:图片位置
 
-项目单独讲解如
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-31
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Ntsc-Yrx
-                                
-                            </span>
-                        </div>
-                    </div>
+项目单独讲解如下：repeat
+-x //
+-y //
+no- //
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%95%99%E7%A8%8B/">
-                            <span class="chip bg-color">教程</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
+attachment
+scroll //是
+fixed //否
 
-</main>
+</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/3/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/#content-inner">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/#content-inner">5</a><a class="page-number" href="/page/6/#content-inner">6</a><a class="extend next" rel="next" href="/page/5/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i2.hdslb.com/bfs/face/5509774173b45a8d12247818f8b4f834db44ab68.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Ntsc-Yrx</div><div class="author-info__description">学生党</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">52</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">我的全新博客上线啦！原名是Ntsc's Blog！如果有疑问可以发我的邮箱：hzx306914@163.com！</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/10/24/CSP2021/" title="CSP2021">CSP2021</a><time datetime="2021-10-24T14:17:09.000Z" title="发表于 2021-10-24 22:17:09">2021-10-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/10/22/CPP%E6%95%99%E7%A8%8B-%E8%B5%B0%E8%BF%B7%E5%AE%AB/" title="CPP教程-走迷宫">CPP教程-走迷宫</a><time datetime="2021-10-22T07:14:38.000Z" title="发表于 2021-10-22 15:14:38">2021-10-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/10/21/CPP%E8%B5%84%E6%96%99/" title="CPP资料">CPP资料</a><time datetime="2021-10-21T14:14:50.000Z" title="发表于 2021-10-21 22:14:50">2021-10-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/10/20/%E5%90%8D-%E4%BA%BA-%E5%90%8D-%E8%A8%80/" title="名  人  名  言">名  人  名  言</a><time datetime="2021-10-20T05:15:27.000Z" title="发表于 2021-10-20 13:15:27">2021-10-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/10/16/CPP%E6%95%99%E7%A8%8B-STL/" title="CPP教程-STL">CPP教程-STL</a><time datetime="2021-10-16T10:06:32.000Z" title="发表于 2021-10-16 18:06:32">2021-10-16</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/API/" style="font-size: 1.1em; color: #999">API</a> <a href="/tags/C/" style="font-size: 1.42em; color: #99a6b7">C++</a> <a href="/tags/%E5%85%AC%E5%91%8A/" style="font-size: 1.18em; color: #999ca1">公告</a> <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 1.18em; color: #999ca1">学习</a> <a href="/tags/%E6%84%9F%E6%83%85/" style="font-size: 1.1em; color: #999">感情</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 1.5em; color: #99a9bf">教程</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 1.26em; color: #999fa8">游戏</a> <a href="/tags/%E8%AF%84%E8%AE%BA%E5%8C%BA/" style="font-size: 1.1em; color: #999">评论区</a> <a href="/tags/%E8%BD%AF%E4%BB%B6/" style="font-size: 1.26em; color: #999fa8">软件</a> <a href="/tags/%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B/" style="font-size: 1.34em; color: #99a3b0">高级教程</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/10/"><span class="card-archive-list-date">十月 2021</span><span class="card-archive-list-count">14</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/09/"><span class="card-archive-list-date">九月 2021</span><span class="card-archive-list-count">25</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/08/"><span class="card-archive-list-date">八月 2021</span><span class="card-archive-list-count">13</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">52</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">12.4k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-10-29T05:20:09.398Z"></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://pximg.rainchan.win/img?img_id=83088427')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Ntsc-Yrx</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
 
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function subtitleType () {
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      if (true) {
+        const from = '出自 ' + data.from
+        const sub = []
+        sub.unshift(data.hitokoto, from)
+        window.typed = new Typed('#subtitle', {
+          strings: sub,
+          startDelay: 300,
+          typeSpeed: 150,
+          loop: true,
+          backSpeed: 50,
+        })
+      } else {
+        document.getElementById('subtitle').innerHTML = data.hitokoto
+      }
+    })
+}
 
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/3/"
-               class="left btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">4 / 6</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/5/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
-    </div>
-</div>
-
-
-
-
-    <footer class="page-footer bg-color">
-    
-    <div class="container row center-align" style="margin-bottom: 15px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
-            
-                <span id="year">2021</span>
-            
-            <span id="year">2021</span>
-            <a href="/about" target="_blank">Ntsc-Yrx</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-            
-            
-            
-            
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
-            </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
-            </span>
-            
-            <br>
-            
-            <span id="sitetime">载入运行时间...</span>
-            <script>
-                function siteTime() {
-                    var seconds = 1000;
-                    var minutes = seconds * 60;
-                    var hours = minutes * 60;
-                    var days = hours * 24;
-                    var years = days * 365;
-                    var today = new Date();
-                    var startYear = "2021";
-                    var startMonth = "8";
-                    var startDate = "23";
-                    var startHour = "0";
-                    var startMinute = "0";
-                    var startSecond = "0";
-                    var todayYear = today.getFullYear();
-                    var todayMonth = today.getMonth() + 1;
-                    var todayDate = today.getDate();
-                    var todayHour = today.getHours();
-                    var todayMinute = today.getMinutes();
-                    var todaySecond = today.getSeconds();
-                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
-                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
-                    var diff = t2 - t1;
-                    var diffYears = Math.floor(diff / years);
-                    var diffDays = Math.floor((diff / days) - diffYears * 365);
-                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
-                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
-                        minutes);
-                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
-                        diffMinutes * minutes) / seconds);
-                    if (startYear == todayYear) {
-                        document.getElementById("year").innerHTML = todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
-                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
-                    } else {
-                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
-                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
-                    }
-                }
-                setInterval(siteTime, 1000);
-            </script>
-            
-            <br>
-            
-        </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/Ntsc-Yrx" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:hzx223306@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2425807713" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2425807713" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-</div>
-    </div>
-</footer>
-
-<div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
-
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
-
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
-
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
-});
-</script>
-
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
-
-
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
-
-    <!-- Baidu Analytics -->
-
-    <!-- Baidu Push -->
-
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
-
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
-
-    
-
-    
-
-	
-    
-
-    
-
-    
-    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
-    
-
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
-
-<!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='all'|| 'all' ==='all')){
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}
+</script></div><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="Rain,SuNesT,Ntsc,Star" data-fontsize="15px" data-random="false" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='all'|| 'all' ==='all')){
     var parent = document.getElementById('recent-posts');
     var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><div class="magnet_item"><a class="magnet_link" href="https://ntsc-yrx.github.io/tags/教程/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">📚 编程教程 (24)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://ntsc-yrx.github.io/tags/学习/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">📒 读书笔记 (2)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><a class="magnet_link_more"  href="https://ntsc-yrx.github.io/tags" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
     console.log('已挂载magnet')
@@ -1163,6 +413,4 @@ $(function () {
         }
     </script>
     <style>#github_container{min-height:248px}@media screen and (max-width:650px) {#github_container{background-image:;min-height:0px}}</style>
-    <style></style><!-- hexo injector body_end end --></body>
-
-</html>
+    <style></style><!-- hexo injector body_end end --></body></html>
