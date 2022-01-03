@@ -4,6 +4,61 @@
   
     
     <entry>
+      <title>CPP教程-高精度</title>
+      <link href="/2022/01/03/CPP%E6%95%99%E7%A8%8B-%E9%AB%98%E7%B2%BE%E5%BA%A6/"/>
+      <url>/2022/01/03/CPP%E6%95%99%E7%A8%8B-%E9%AB%98%E7%B2%BE%E5%BA%A6/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><h2 id="高精度"><a href="#高精度" class="headerlink" title="高精度"></a>高精度</h2><blockquote><p>介绍:</p></blockquote><p>我们有些时候要对很大的数(超出longlong范围)进行加减乘除,普通的运算符无法完成,我们就需要使用高精度</p><blockquote><p>代码</p></blockquote><pre class=" language-c++"><code class="language-c++">#include <bits/stdc++.h>using namespace std;</code></pre><p>//请将函数复制在你的程序里,不用直接从本文件调用!)</p><pre class=" language-c++"><code class="language-c++">//前置（定义变量）（将此代码复制在主函数外）string sa, sb;int la, lb, lc;int a[99999], b[99999], c[99999];//前置（输入并处理）（放在运算函数的前面）cin >> sa >> sb;la = sa.size();lb = sb.size();lc = max(la, lb);for (int i = 0; i < la; i++)    a[la - i] = sa[i] - '0';for (int i = 0; i < lb; i++)    b[lb - i] = sb[i] - '0';//输出结果的代码for (int i = lc; i > 0; i--)    cout << c[i];</code></pre><h3 id="大数加法"><a href="#大数加法" class="headerlink" title="大数加法"></a>大数加法</h3><p>//参数(加数,加数,进制(&lt;=10))</p><pre class=" language-c++"><code class="language-c++">void add(int B) &#123;    for (int i = 0; i <= lc; i++) //先加        c[i] = a[i] + b[i];    for (int i = 0; i <= lc; i++) &#123; //进位        c[i + 1] += c[i] / B;        c[i] %= B;    &#125;    if (c[lc + 1] != 0)        lc++;    while (c[lc] == 0 && lc > 1)        lc--;//去前导0&#125;</code></pre><h3 id="大数减法"><a href="#大数减法" class="headerlink" title="大数减法"></a>大数减法</h3><pre class=" language-c++"><code class="language-c++">void sub() &#123;    for (int i = 0; i <= lc; i++)        c[i] = a[i] - b[i];    for (int i = 0; i <= lc; i++) &#123;        if (c[i] < 0) &#123;            c[i] += 10;            c[i + 1]--;        &#125;    &#125;    while (c[lc] == 0 && lc > 1)        lc--;&#125;</code></pre><h3 id="大数乘法"><a href="#大数乘法" class="headerlink" title="大数乘法"></a>大数乘法</h3><p>//因数：sa，x（int）</p><pre class=" language-c++"><code class="language-c++">void mul_small(int x) &#123;    for (int i = 0; i <= lc; i++) //先加        c[i] = a[i] * x;    for (int i = 0; i <= lc; i++) &#123; //进位        c[i + 1] += c[i] / 10;        c[i] %= 10;    &#125;    if (c[lc + 1] != 0)        lc++;    while (c[lc] == 0 && lc > 1)        lc--;//去前导0&#125;</code></pre><p>//双大数乘法<br>void mul_big() {</p><p>}</p><h3 id="大数除法-大数-单精度"><a href="#大数除法-大数-单精度" class="headerlink" title="大数除法(大数/单精度)"></a>大数除法(大数/单精度)</h3><pre class=" language-c++"><code class="language-c++">void div_small(int x) &#123;    lc = la;    for (int i = 0; i < lc; i++) &#123;        c[i] = a[i] / x;        a[i + 1] += (a[i] % x) * 10;    &#125;    c[lc] = a[lc] / x;    int yu = a[lc] % x;&#125;</code></pre><p>//大数除法(大数/大数)<br>void div_big() {</p><p>}</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CPP有用的函数2</title>
+      <link href="/2022/01/03/CPP%E6%9C%89%E7%94%A8%E7%9A%84%E5%87%BD%E6%95%B02/"/>
+      <url>/2022/01/03/CPP%E6%9C%89%E7%94%A8%E7%9A%84%E5%87%BD%E6%95%B02/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CPP有用的函数-判断&amp;计算</title>
+      <link href="/2022/01/03/CPP%E6%9C%89%E7%94%A8%E7%9A%84%E5%87%BD%E6%95%B0(%E9%9D%9E%E8%87%AA%E5%B8%A6)/"/>
+      <url>/2022/01/03/CPP%E6%9C%89%E7%94%A8%E7%9A%84%E5%87%BD%E6%95%B0(%E9%9D%9E%E8%87%AA%E5%B8%A6)/</url>
+      
+        <content type="html"><![CDATA[<h1 id="有用的函数（非自带）"><a href="#有用的函数（非自带）" class="headerlink" title="有用的函数（非自带）"></a>有用的函数（非自带）</h1><h2 id="1-计算GND"><a href="#1-计算GND" class="headerlink" title="1.计算GND"></a>1.计算GND</h2><p>方法：辗转相除法<br>代码</p><pre class=" language-c++"><code class="language-c++">int gcd(int a, int b) &#123;    if (b == 0)        return a;    return gcd(b, a % b);&#125;</code></pre><h2 id="2-判断质数"><a href="#2-判断质数" class="headerlink" title="2.判断质数"></a>2.判断质数</h2><p>//返回值,是返回true,不是返回false</p><pre class=" language-c++"><code class="language-c++">bool if_prime(int x) &#123;    if (x < 2)        return false;    for (int i = 2; i <= sqrt(x); i++) &#123;        if (x % i == 0)            return false;    &#125;    return true;&#125;</code></pre><h2 id="3-阶乘"><a href="#3-阶乘" class="headerlink" title="3.阶乘"></a>3.阶乘</h2><p>//参数(开始,结尾,间隔)</p><pre class=" language-c++"><code class="language-c++">int fac_torial(int a, int b, int n) &#123;    int sum = 1;    for (int i = a; i <= b; i += n) &#123;        sum *= i;    &#125;    return sum;&#125;</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> 函数 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我的MC服务器</title>
       <link href="/2021/12/12/ntscyrx-mc-server/"/>
       <url>/2021/12/12/ntscyrx-mc-server/</url>
@@ -109,7 +164,7 @@
       <link href="/2021/11/11/%E5%A5%87%E6%80%AA%E7%9A%84%E5%AD%97%E7%AC%A6-%E8%87%AA%E5%B8%A6%E5%AD%97%E4%BD%93%E7%9A%84%E5%AD%97%E7%AC%A6/"/>
       <url>/2021/11/11/%E5%A5%87%E6%80%AA%E7%9A%84%E5%AD%97%E7%AC%A6-%E8%87%AA%E5%B8%A6%E5%AD%97%E4%BD%93%E7%9A%84%E5%AD%97%E7%AC%A6/</url>
       
-        <content type="html"><![CDATA[<h1 id="奇怪的字符"><a href="#奇怪的字符" class="headerlink" title="奇怪的字符"></a>奇怪的字符</h1><hr><h2 id="零散的"><a href="#零散的" class="headerlink" title="零散的"></a>零散的</h2><p>【𝟒𝐊/𝟔𝟎𝐅𝐏𝐒】</p><p>ℳ₯㎕</p><p>𝓐𝓵𝓸𝓷𝓮</p><p>ᵐᵒʳᵉ ᵗʰⁱⁿᵍ</p><hr><h2 id="整齐的"><a href="#整齐的" class="headerlink" title="整齐的"></a>整齐的</h2><p>𝐀𝐁𝐂𝐃𝐄𝐅𝐆𝐇𝐈𝐉𝐊𝐋𝐌𝐍𝐎𝐏𝐐𝐑𝐒𝐓𝐔𝐕𝐖𝐗𝐘𝐙</p><p>𝐚𝐛𝐜𝐝𝐞𝐟𝐠𝐡𝐢𝐣𝐤𝐥𝐦𝐧𝐨𝐩𝐪𝐫𝐬𝐭𝐮𝐯𝐰𝐱𝐲𝐳</p><p>𝐴𝐵𝐶𝐷𝐸𝐹𝐺𝐻𝐼𝐽𝐾𝐿𝑀𝑁𝑂𝑃𝑄𝑅𝑆𝑇𝑈𝑉𝑊𝑋𝑌𝑍</p><p>𝑎𝑏𝑐𝑑𝑒𝑓𝑔𝑖𝑗𝑘𝑙𝑚𝑛𝑜𝑝𝑞𝑟𝑠𝑡𝑢𝑣𝑤𝑥𝑦𝑧</p><p>𝑨𝑩𝑪𝑫𝑬𝑭𝑮𝑯𝑰𝑱𝑲𝑳𝑴𝑵𝑶𝑷𝑸𝑹𝑺𝑻𝑼𝑽𝑾𝑿𝒀𝒁</p><p>𝒂𝒃𝒄𝒅𝒆𝒇𝒈𝒉𝒊𝒋𝒌𝒍𝒎𝒏𝒐𝒑𝒒𝒓𝒔𝒕𝒖𝒗𝒘𝒙𝒚𝒛</p><p>𝒜𝒞𝒟𝒢𝒥𝒦𝒩𝒪𝒫𝒬𝒮𝒯𝒰𝒱𝒲𝒳𝒴𝒵</p><p>𝒶𝒷𝒸𝒹𝒻𝒽𝒾𝒿𝓀𝓁𝓂𝓃𝓅𝓆𝓇𝓈𝓉𝓊𝓋𝓌𝓍𝓎𝓏</p><p>𝓐𝓑𝓒𝓓𝓔𝓕𝓖𝓗𝓘𝓙𝓚𝓛𝓜𝓝𝓞𝓟𝓠𝓡𝓢𝓣𝓤𝓥𝓦𝓧𝓨𝓩  𝓝𝓽𝓼𝓬.</p><p>𝓪𝓫𝓬𝓭𝓮𝓯𝓰𝓱𝓲𝓳𝓴𝓵𝓶𝓷𝓸𝓹𝓺𝓻𝓼𝓽𝓾𝓿𝔀𝔁𝔂𝔃</p><p>𝔄𝔅𝔇𝔈𝔉𝔊𝔍𝔎𝔏𝔐𝔑𝔒𝔓𝔔𝔖𝔗𝔘𝔙𝔚𝔛𝔜</p><p>𝔞𝔟𝔠𝔡𝔢𝔣𝔤𝔥𝔦𝔧𝔨𝔩𝔪𝔫𝔬𝔭𝔮𝔯𝔰𝔱𝔲𝔳𝔴𝔵𝔶𝔷</p><p>𝔸𝔹𝔻𝔼𝔽𝔾𝕀𝕁𝕂𝕃𝕄𝕆𝕊𝕋𝕌𝕍𝕎𝕏𝕐</p><p>𝕒𝕓𝕔𝕕𝕖𝕗𝕘𝕙𝕚𝕛𝕜𝕝𝕞𝕟𝕠𝕡𝕢𝕣𝕤𝕥𝕦𝕧𝕨𝕩𝕪𝕫</p><p>𝕬𝕭𝕮𝕯𝕰𝕱𝕲𝕳𝕴𝕵𝕶𝕷𝕸𝕹𝕺𝕻𝕼𝕽𝕾𝕿𝖀𝖁𝖂𝖃𝖄𝖅</p><p>𝖆𝖇𝖈𝖉𝖊𝖋𝖌𝖍𝖎𝖏𝖐𝖑𝖒𝖓𝖔𝖕𝖖𝖗𝖘𝖙𝖚𝖛𝖜𝖝𝖞𝖟</p><p>𝖠𝖡𝖢𝖣𝖤𝖥𝖦𝖧𝖨𝖩𝖪𝖫𝖬𝖭𝖮𝖯𝖰𝖱𝖲𝖳𝖴𝖵𝖶𝖷𝖸𝖹</p><p>𝖺𝖻𝖼𝖽𝖾𝖿𝗀𝗁𝗂𝗃𝗄𝗅𝗆𝗇𝗈𝗉𝗊𝗋𝗌𝗍𝗎𝗏𝗐𝗑𝗒𝗓</p><p>𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭</p><p>𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇</p><p>𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘑𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡</p><p>𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘫𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻</p><p>𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙅𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕</p><p>𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙟𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯</p><p>𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙹𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉</p><p>𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚓𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣𝚤𝚥</p><p>𝚨𝚩𝚪𝚫𝚬𝚭𝚮𝚯𝚰𝚱𝚲𝚳𝚴𝚵𝚶𝚷𝚸𝚹𝚺𝚻𝚼𝚽𝚾𝚿𝛀𝛁</p><p>𝛂𝛃𝛄𝛅𝛆𝛇𝛈𝛉𝛊𝛋𝛌𝛍𝛎𝛏𝛐𝛑𝛒𝛓𝛔𝛕𝛖𝛗𝛘𝛙𝛚𝛛𝛜𝛝𝛞𝛟𝛠𝛡</p><p>𝛢𝛣𝛤𝛥𝛦𝛧𝛨𝛩𝛪𝛫𝛬𝛭𝛮𝛯𝛰𝛱𝛲𝛳𝛴𝛵𝛶𝛷𝛸𝛹𝛺𝛻</p><p>𝛼𝛽𝛾𝛿𝜀𝜁𝜂𝜃𝜄𝜅𝜆𝜇𝜈𝜉𝜊𝜋𝜌𝜍𝜎𝜏𝜐𝜑𝜒𝜓𝜔𝜕𝜖𝜗𝜘𝜙𝜚𝜛</p><p>𝜜𝜝𝜞𝜟𝜠𝜡𝜢𝜣𝜤𝜥𝜦𝜧𝜨𝜩𝜪𝜫𝜬𝜭𝜮𝜯𝜰𝜱𝜲𝜳𝜴𝜵</p><p>𝜶𝜷𝜸𝜹𝜺𝜻𝜼𝜽𝜾𝜿𝝀𝝁𝝂𝝃𝝄𝝅𝝆𝝇𝝈𝝉𝝊𝝋𝝌𝝍𝝎𝝏𝝐𝝑𝝒𝝓𝝔𝝕</p><p>𝝖𝝗𝝘𝝙𝝚𝝛𝝜𝝝𝝞𝝟𝝠𝝡𝝢𝝣𝝤𝝥𝝦𝝧𝝨𝝩𝝪𝝫𝝬𝝭𝝮𝝯</p><p>𝝰𝝱𝝲𝝳𝝴𝝵𝝶𝝷𝝸𝝹𝝺𝝻𝝼𝝽𝝾𝝿𝞀𝞁𝞂𝞃𝞄𝞅𝞆𝞇𝞈𝞉𝞊𝞋𝞌𝞍𝞎𝞏</p><p>𝞐𝞑𝞒𝞓𝞔𝞕𝞖𝞗𝞘𝞙𝞚𝞛𝞜𝞝𝞞𝞟𝞠𝞡𝞢𝞣𝞤𝞥𝞦𝞧𝞨𝞩</p><p>𝞪𝞫𝞬𝞭𝞮𝞯𝞰𝞱𝞲𝞳𝞴𝞵𝞶𝞷𝞸𝞹𝞺𝞻𝞼𝞽𝞾𝞿𝟀𝟁𝟂𝟃𝟄𝟅𝟆𝟇𝟈𝟉𝟊𝟋</p><p>𝟎𝟏𝟐𝟑𝟒𝟓𝟔𝟕𝟖𝟗</p><p>𝟘𝟙𝟚𝟛𝟜𝟝𝟞𝟟𝟠𝟡</p><p>𝟢𝟣𝟤𝟥𝟦𝟧𝟨𝟩𝟪𝟫</p><p>𝟬𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵</p><p>𝟶𝟷𝟸𝟹𝟺𝟻𝟼𝟽𝟾𝟿</p><p>𝓣𝓱𝓮 𝓫𝓸𝓾𝓷𝓭𝓪𝓻𝔂 𝓵𝓲𝓷𝓮 𝔀𝓱𝓲𝓬𝓱 𝓲𝓼𝓷’𝓽 𝓼𝓮𝓮𝓷.</p><p>𝓣𝓱𝓮 𝓷𝓮𝔀 𝔀𝓸𝓻𝓵𝓭 𝓘 𝓫𝓮𝓰𝓲𝓷 𝓽𝓸 𝓬𝓻𝓮𝓪𝓽𝓮.</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="奇怪的字符"><a href="#奇怪的字符" class="headerlink" title="奇怪的字符"></a>奇怪的字符</h1><hr><h2 id="零散的"><a href="#零散的" class="headerlink" title="零散的"></a>零散的</h2><p>【𝟒𝐊/𝟔𝟎𝐅𝐏𝐒】</p><p>ℳ₯㎕</p><p>𝓐𝓵𝓸𝓷𝓮</p><p>ᵐᵒʳᵉ ᵗʰⁱⁿᵍ</p><hr><h2 id="整齐的"><a href="#整齐的" class="headerlink" title="整齐的"></a>整齐的</h2><p>𝐀𝐁𝐂𝐃𝐄𝐅𝐆𝐇𝐈𝐉𝐊𝐋𝐌𝐍𝐎𝐏𝐐𝐑𝐒𝐓𝐔𝐕𝐖𝐗𝐘𝐙</p><p>𝐚𝐛𝐜𝐝𝐞𝐟𝐠𝐡𝐢𝐣𝐤𝐥𝐦𝐧𝐨𝐩𝐪𝐫𝐬𝐭𝐮𝐯𝐰𝐱𝐲𝐳</p><p>𝐴𝐵𝐶𝐷𝐸𝐹𝐺𝐻𝐼𝐽𝐾𝐿𝑀𝑁𝑂𝑃𝑄𝑅𝑆𝑇𝑈𝑉𝑊𝑋𝑌𝑍</p><p>𝑎𝑏𝑐𝑑𝑒𝑓𝑔𝑖𝑗𝑘𝑙𝑚𝑛𝑜𝑝𝑞𝑟𝑠𝑡𝑢𝑣𝑤𝑥𝑦𝑧</p><p>𝑨𝑩𝑪𝑫𝑬𝑭𝑮𝑯𝑰𝑱𝑲𝑳𝑴𝑵𝑶𝑷𝑸𝑹𝑺𝑻𝑼𝑽𝑾𝑿𝒀𝒁</p><p>𝒂𝒃𝒄𝒅𝒆𝒇𝒈𝒉𝒊𝒋𝒌𝒍𝒎𝒏𝒐𝒑𝒒𝒓𝒔𝒕𝒖𝒗𝒘𝒙𝒚𝒛</p><p>𝒜𝒞𝒟𝒢𝒥𝒦𝒩𝒪𝒫𝒬𝒮𝒯𝒰𝒱𝒲𝒳𝒴𝒵</p><p>𝒶𝒷𝒸𝒹𝒻𝒽𝒾𝒿𝓀𝓁𝓂𝓃𝓅𝓆𝓇𝓈𝓉𝓊𝓋𝓌𝓍𝓎𝓏</p><p>𝓐𝓑𝓒𝓓𝓔𝓕𝓖𝓗𝓘𝓙𝓚𝓛𝓜𝓝𝓞𝓟𝓠𝓡𝓢𝓣𝓤𝓥𝓦𝓧𝓨𝓩  𝓝𝓽𝓼𝓬.</p><p>𝓪𝓫𝓬𝓭𝓮𝓯𝓰𝓱𝓲𝓳𝓴𝓵𝓶𝓷𝓸𝓹𝓺𝓻𝓼𝓽𝓾𝓿𝔀𝔁𝔂𝔃</p><p>𝔄𝔅𝔇𝔈𝔉𝔊𝔍𝔎𝔏𝔐𝔑𝔒𝔓𝔔𝔖𝔗𝔘𝔙𝔚𝔛𝔜</p><p>𝔞𝔟𝔠𝔡𝔢𝔣𝔤𝔥𝔦𝔧𝔨𝔩𝔪𝔫𝔬𝔭𝔮𝔯𝔰𝔱𝔲𝔳𝔴𝔵𝔶𝔷</p><p>𝔸 𝔹 ℂ 𝔻 𝔼 𝔽 𝔾 ℍ 𝕀 𝕁 𝕂 𝕃 𝕄 ℕ 𝕆 ℙ ℚ ℝ 𝕊 𝕋 𝕌 𝕍 𝕎 𝕏 𝕐 ℤ</p><p>𝕒𝕓𝕔𝕕𝕖𝕗𝕘𝕙𝕚𝕛𝕜𝕝𝕞𝕟𝕠𝕡𝕢𝕣𝕤𝕥𝕦𝕧𝕨𝕩𝕪𝕫</p><p>𝕬𝕭𝕮𝕯𝕰𝕱𝕲𝕳𝕴𝕵𝕶𝕷𝕸𝕹𝕺𝕻𝕼𝕽𝕾𝕿𝖀𝖁𝖂𝖃𝖄𝖅</p><p>𝖆𝖇𝖈𝖉𝖊𝖋𝖌𝖍𝖎𝖏𝖐𝖑𝖒𝖓𝖔𝖕𝖖𝖗𝖘𝖙𝖚𝖛𝖜𝖝𝖞𝖟</p><p>𝖠𝖡𝖢𝖣𝖤𝖥𝖦𝖧𝖨𝖩𝖪𝖫𝖬𝖭𝖮𝖯𝖰𝖱𝖲𝖳𝖴𝖵𝖶𝖷𝖸𝖹</p><p>𝖺𝖻𝖼𝖽𝖾𝖿𝗀𝗁𝗂𝗃𝗄𝗅𝗆𝗇𝗈𝗉𝗊𝗋𝗌𝗍𝗎𝗏𝗐𝗑𝗒𝗓</p><p>𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭</p><p>𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇</p><p>𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘑𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡</p><p>𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘫𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻</p><p>𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙅𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕</p><p>𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙟𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯</p><p>𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙹𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉</p><p>𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚓𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣𝚤𝚥</p><p>𝚨𝚩𝚪𝚫𝚬𝚭𝚮𝚯𝚰𝚱𝚲𝚳𝚴𝚵𝚶𝚷𝚸𝚹𝚺𝚻𝚼𝚽𝚾𝚿𝛀𝛁</p><p>𝛂𝛃𝛄𝛅𝛆𝛇𝛈𝛉𝛊𝛋𝛌𝛍𝛎𝛏𝛐𝛑𝛒𝛓𝛔𝛕𝛖𝛗𝛘𝛙𝛚𝛛𝛜𝛝𝛞𝛟𝛠𝛡</p><p>𝛢𝛣𝛤𝛥𝛦𝛧𝛨𝛩𝛪𝛫𝛬𝛭𝛮𝛯𝛰𝛱𝛲𝛳𝛴𝛵𝛶𝛷𝛸𝛹𝛺𝛻</p><p>𝛼𝛽𝛾𝛿𝜀𝜁𝜂𝜃𝜄𝜅𝜆𝜇𝜈𝜉𝜊𝜋𝜌𝜍𝜎𝜏𝜐𝜑𝜒𝜓𝜔𝜕𝜖𝜗𝜘𝜙𝜚𝜛</p><p>𝜜𝜝𝜞𝜟𝜠𝜡𝜢𝜣𝜤𝜥𝜦𝜧𝜨𝜩𝜪𝜫𝜬𝜭𝜮𝜯𝜰𝜱𝜲𝜳𝜴𝜵</p><p>𝜶𝜷𝜸𝜹𝜺𝜻𝜼𝜽𝜾𝜿𝝀𝝁𝝂𝝃𝝄𝝅𝝆𝝇𝝈𝝉𝝊𝝋𝝌𝝍𝝎𝝏𝝐𝝑𝝒𝝓𝝔𝝕</p><p>𝝖𝝗𝝘𝝙𝝚𝝛𝝜𝝝𝝞𝝟𝝠𝝡𝝢𝝣𝝤𝝥𝝦𝝧𝝨𝝩𝝪𝝫𝝬𝝭𝝮𝝯</p><p>𝝰𝝱𝝲𝝳𝝴𝝵𝝶𝝷𝝸𝝹𝝺𝝻𝝼𝝽𝝾𝝿𝞀𝞁𝞂𝞃𝞄𝞅𝞆𝞇𝞈𝞉𝞊𝞋𝞌𝞍𝞎𝞏</p><p>𝞐𝞑𝞒𝞓𝞔𝞕𝞖𝞗𝞘𝞙𝞚𝞛𝞜𝞝𝞞𝞟𝞠𝞡𝞢𝞣𝞤𝞥𝞦𝞧𝞨𝞩</p><p>𝞪𝞫𝞬𝞭𝞮𝞯𝞰𝞱𝞲𝞳𝞴𝞵𝞶𝞷𝞸𝞹𝞺𝞻𝞼𝞽𝞾𝞿𝟀𝟁𝟂𝟃𝟄𝟅𝟆𝟇𝟈𝟉𝟊𝟋</p><p>𝟎𝟏𝟐𝟑𝟒𝟓𝟔𝟕𝟖𝟗</p><p>𝟘𝟙𝟚𝟛𝟜𝟝𝟞𝟟𝟠𝟡</p><p>𝟢𝟣𝟤𝟥𝟦𝟧𝟨𝟩𝟪𝟫</p><p>𝟬𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵</p><p>𝟶𝟷𝟸𝟹𝟺𝟻𝟼𝟽𝟾𝟿</p><p>𝓣𝓱𝓮 𝓫𝓸𝓾𝓷𝓭𝓪𝓻𝔂 𝓵𝓲𝓷𝓮 𝔀𝓱𝓲𝓬𝓱 𝓲𝓼𝓷’𝓽 𝓼𝓮𝓮𝓷.</p><p>𝓣𝓱𝓮 𝓷𝓮𝔀 𝔀𝓸𝓻𝓵𝓭 𝓘 𝓫𝓮𝓰𝓲𝓷 𝓽𝓸 𝓬𝓻𝓮𝓪𝓽𝓮.</p>]]></content>
       
       
       
@@ -876,7 +931,7 @@
       <link href="/2021/09/02/CSS%E6%95%99%E7%A8%8B-%E8%BE%B9%E6%A1%86/"/>
       <url>/2021/09/02/CSS%E6%95%99%E7%A8%8B-%E8%BE%B9%E6%A1%86/</url>
       
-        <content type="html"><![CDATA[<h1 id="CSS教程-边框"><a href="#CSS教程-边框" class="headerlink" title="CSS教程-边框"></a>CSS教程-边框</h1><h2 id="边框样式"><a href="#边框样式" class="headerlink" title="边框样式"></a>边框样式</h2><p>今天讲的文本样式的分类是</p><pre class=" language-CSS"><code class="language-CSS">border-</code></pre><p>边框样式包括图片边框和文字边框哦~</p><p>项目有</p><pre class=" language-CSS"><code class="language-CSS">color:#表示颜色的数值width:粗细style:样式</code></pre><p>项目单独讲解如下：</p><p>//作者很懒，什么也没留下….</p><p>这是CSS教程系列里最后一个样式的教程了，请同学们一定要牢记！</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="CSS教程-边框"><a href="#CSS教程-边框" class="headerlink" title="CSS教程-边框"></a>CSS教程-边框</h1><h2 id="边框样式"><a href="#边框样式" class="headerlink" title="边框样式"></a>边框样式</h2><p>今天讲的文本样式的分类是</p><pre class=" language-CSS"><code class="language-CSS">border-</code></pre><p>边框样式包括图片边框和文字边框哦~</p><p>项  ,NM目有</p><pre class=" language-CSS"><code class="language-CSS">color:x*x*xu*?&""</code></pre><p>项目单独讲解如下：</p><p>//作者很懒，什么也没留下….</p><p>这是CSS教程系列里最后一个样式的教程了，请同学们一定要牢记！</p><p>7</p>]]></content>
       
       
       
