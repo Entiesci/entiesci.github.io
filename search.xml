@@ -4,6 +4,61 @@
   
     
     <entry>
+      <title>CPP教程-最短路径</title>
+      <link href="/2022/01/21/CPP%E6%95%99%E7%A8%8B-%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/"/>
+      <url>/2022/01/21/CPP%E6%95%99%E7%A8%8B-%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++ 教程"></a>C++ 教程</h1><h2 id="最短路径"><a href="#最短路径" class="headerlink" title="最短路径"></a>最短路径</h2><blockquote><p>问题描述:</p></blockquote><p>在一个图中,求从s到t的最短路径</p><blockquote><p>解决办法</p></blockquote><h3 id="方法一-弗洛伊德法"><a href="#方法一-弗洛伊德法" class="headerlink" title="方法一:弗洛伊德法"></a>方法一:弗洛伊德法</h3><p>介绍:<br>这是最简单的方法,时间复杂度为n^3<br>代码:</p><pre class=" language-c++"><code class="language-c++">for(int k=1;k<=n;k++)    //枚举中间点    for(int i=1;i<=n;i++)    //枚举起点        for(int j=1;j<=n;j++)    //枚举终点            diss[i][j]=min(diss[i][j],diss[i][k]+diss[k][j]);    //diss[i][j]表示i到j的距离(权值)</code></pre><p>运行完后直接读取你需要的<code>diss[s][t]</code></p><h3 id="方法2-bellman-ford"><a href="#方法2-bellman-ford" class="headerlink" title="方法2:bellman-ford"></a>方法2:bellman-ford</h3><p>介绍:</p><p>代码:</p><pre class=" language-c++"><code class="language-c++">void ford()&#123;    d[s]=0;    //s是起点    for(int i=1;i<n;i++)      for(int j=1;j<=m;j++)      &#123;        d[b[j]]=min(d[b[j]],d[a[j]]+c[j]);//双向边        d[a[j]]=min(d[a[j]],d[b[j]]+c[j]);      &#125;&#125;</code></pre><p>读取<code>d[t]</code><br>运行完后读取你想要的</p><h3 id="方法4-spfa"><a href="#方法4-spfa" class="headerlink" title="方法4:spfa"></a>方法4:spfa</h3><p>特别之处:<br>可以处理含有负权值的图<br>代码:</p><pre class=" language-c++"><code class="language-c++">void spfa()&#123;    q.push(s);    //s是起点    vis[s]=1;    d[s]=0;    while(q.size())    &#123;        int u=q.front();q.pop();        for(int i=h[u];i;i=nxt[i])        &#123;            int v=to[i];            double w=val[i];            if(d[v]<d[u]+w)continue;            d[v]=d[u]+w;            if(vis[v]==0)vis[v]=1,q.push(v);        &#125;        vis[u]=0;    &#125;&#125;</code></pre><p>读取你要的<code>d[t]</code></p><h3 id="方法3-Dijkastra"><a href="#方法3-Dijkastra" class="headerlink" title="方法3:Dijkastra"></a>方法3:Dijkastra</h3><p>特别之处:<br>只能处理正权值,但速度快且稳定,必须确定起点在哪<br>代码:</p><pre class=" language-c++"><code class="language-c++">void dijkstra(int s)//输入起点&#123;    d[s]=0;    for(int i=1;i<=n;i++)    &#123;        int k=0;        for(int j=1;j<=n;j++)          if(!vis[j]&&(d[j]<d[k]||k==0))            k=j;//找最小的        vis[k]=1;        for(int j=h[k];j;j=nxt[j])          d[to[j]]=min(d[to[j]],d[k]+w[j]);    &#125;&#125;</code></pre><p>运行完后读取你需要的<code>d[s]</code></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 高级教程 </tag>
+            
+            <tag> c++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CPP教程-拓扑排序</title>
+      <link href="/2022/01/21/CPP%E6%95%99%E7%A8%8B-%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/"/>
+      <url>/2022/01/21/CPP%E6%95%99%E7%A8%8B-%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CPP教程-邻接表</title>
+      <link href="/2022/01/21/CPP%E6%95%99%E7%A8%8B-%E9%82%BB%E6%8E%A5%E8%A1%A8/"/>
+      <url>/2022/01/21/CPP%E6%95%99%E7%A8%8B-%E9%82%BB%E6%8E%A5%E8%A1%A8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><h2 id="邻接表"><a href="#邻接表" class="headerlink" title="邻接表"></a>邻接表</h2><p>序言：目前最主流的手写存图方式是什么？——<code>邻接表</code></p><p>今天我们就来介绍以下什么是<code>邻接表</code></p><blockquote><p>概念</p></blockquote><blockquote><p>代码</p></blockquote><p>存储</p><pre class=" language-c++"><code class="language-c++">void add(int a, int b) &#123;    to[++cnt] = b;        //新建节点的目标    nxt[cnt] = h[a];    //头插法    h[a] = cnt;        //接上&#125;</code></pre><p>遍历</p><pre class=" language-c++"><code class="language-c++">for(int i=h[u];i;i=nxt[i])    //u是起点//这个代码可以遍历点u的出边;</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> c++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CPP教程-堆</title>
       <link href="/2022/01/16/CPP%E6%95%99%E7%A8%8B-%E5%A0%86/"/>
       <url>/2022/01/16/CPP%E6%95%99%E7%A8%8B-%E5%A0%86/</url>
