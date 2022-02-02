@@ -4,6 +4,59 @@
   
     
     <entry>
+      <title>CPP函数-字符（串）函数</title>
+      <link href="/2022/02/02/CPP%E5%87%BD%E6%95%B0-%E5%AD%97%E7%AC%A6%EF%BC%88%E4%B8%B2%EF%BC%89%E5%87%BD%E6%95%B0/"/>
+      <url>/2022/02/02/CPP%E5%87%BD%E6%95%B0-%E5%AD%97%E7%AC%A6%EF%BC%88%E4%B8%B2%EF%BC%89%E5%87%BD%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-函数"><a href="#C-函数" class="headerlink" title="C++函数"></a>C++函数</h1><h2 id="字符函数"><a href="#字符函数" class="headerlink" title="字符函数"></a>字符函数</h2><pre class=" language-c++"><code class="language-c++">toupper() //函数用来将小写字母转换为大写字母。</code></pre><h2 id="字符串函数"><a href="#字符串函数" class="headerlink" title="字符串函数"></a>字符串函数</h2><pre class=" language-c++"><code class="language-c++">s.size();</code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CPP教程-转进制</title>
+      <link href="/2022/02/02/CPP%E6%95%99%E7%A8%8B-%E8%BD%AC%E8%BF%9B%E5%88%B6/"/>
+      <url>/2022/02/02/CPP%E6%95%99%E7%A8%8B-%E8%BD%AC%E8%BF%9B%E5%88%B6/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><h2 id="转进制"><a href="#转进制" class="headerlink" title="转进制"></a>转进制</h2><p>模板咯：</p><blockquote><p>从<code>b</code>进制转为10进值</p></blockquote><pre class=" language-c++"><code class="language-c++">int turn(int b, int n) &#123;    int v = 1, b_n = 0;    while (n != 0) &#123;        if (n % 10 >= b)            return 2e9;        b_n += (n % 10) * v;        v *= b;        n /= 10;    &#125;    return b_n;&#125;</code></pre><blockquote><p>从10进制转为<code>b</code>进值</p></blockquote><pre class=" language-c++"><code class="language-c++">int turn(int b, int n) &#123;    int v = 1, b_n = 0;    while (n != 0) &#123;        if (n % b >= 10)            return 2e9;        b_n += (n % b) * v;        v *= 10;        n /= b;    &#125;    return b_n;&#125;</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>FineOS</title>
+      <link href="/2022/01/26/FineOS/"/>
+      <url>/2022/01/26/FineOS/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Fine-OS-主页发布！"><a href="#Fine-OS-主页发布！" class="headerlink" title="Fine OS 主页发布！"></a>Fine OS 主页发布！</h1><p>欢迎访问<a href="https://ntsc-yrx.github.io/File/fos%EF%BC%81%EF%BC%81">https://ntsc-yrx.github.io/File/fos！！</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 软件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CPP教程-最短路径</title>
       <link href="/2022/01/21/CPP%E6%95%99%E7%A8%8B-%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/"/>
       <url>/2022/01/21/CPP%E6%95%99%E7%A8%8B-%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/</url>
@@ -63,7 +116,7 @@
       <link href="/2022/01/16/CPP%E6%95%99%E7%A8%8B-%E5%A0%86/"/>
       <url>/2022/01/16/CPP%E6%95%99%E7%A8%8B-%E5%A0%86/</url>
       
-        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><h2 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h2><blockquote><p>请在学习完<code>二叉树</code>后学习堆!</p></blockquote><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><blockquote><p>堆是一个比较有序的二叉树,但只有从父节点到子节点之间有序,左右节点是没有顺序的</p></blockquote><h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><p>1.大根堆</p><blockquote><p>即 这个二叉树从父节点到子节点是从大到小的</p></blockquote><p>2.小根堆</p><blockquote><p>即这个二叉树从父节点到子节点是从小到大的</p></blockquote><h3 id="相关函数"><a href="#相关函数" class="headerlink" title="相关函数:"></a>相关函数:</h3><p><code>priority_queue</code>优先序列<br>相关操作:<br>(p为任意名称)<br>p.pop(); 弹出顶端的数<br>p.push(); 插入一个数并且自动排序<br>p.top(); 读取顶端的数</p><p>说明:<br>优先序列默认是一个大根堆</p><p>定义方式:</p><p>1.大根堆</p><pre class=" language-c++"><code class="language-c++">priority_queue<int> q;    //简写priority_queue<int,vector<int>,less<int> > q;    //全写</code></pre><p>2.小根堆</p><pre class=" language-c++"><code class="language-c++">方法一:你可以把数值变成负数,然后用大根堆的方法,读取时再转换回来方法2:priority_queue<int,vector<int>,greater<int> > q;</code></pre><h3 id="用处"><a href="#用处" class="headerlink" title="用处:"></a>用处:</h3><p>1.堆排序<br>2.快速找第n个最大/小值</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><h2 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h2><blockquote><p>请在学习完<code>二叉树</code>后学习堆!</p></blockquote><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><blockquote><p>堆是一个比较有序的二叉树,但只有从父节点到子节点之间有序,左右节点是没有顺序的</p></blockquote><h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><p>1.大根堆</p><blockquote><p>即 这个二叉树从父节点到子节点是从大到小的</p></blockquote><p>2.小根堆</p><blockquote><p>即这个二叉树从父节点到子节点是从小到大的</p></blockquote><h3 id="相关函数"><a href="#相关函数" class="headerlink" title="相关函数:"></a>相关函数:</h3><p><code>priority_queue</code>优先序列<br>相关操作:</p><pre class=" language-c++"><code class="language-c++">(p为任意名称)p.pop();     //弹出顶端的数p.push();     //插入一个数并且自动排序p.top();     //读取顶端的数</code></pre><p>说明:<br>优先序列默认是一个大根堆</p><p>定义方式:</p><p>1.大根堆</p><pre class=" language-c++"><code class="language-c++">priority_queue<int> q;    //简写priority_queue<int,vector<int>,less<int> > q;    //全写</code></pre><p>2.小根堆</p><pre class=" language-c++"><code class="language-c++">方法一:你可以把数值变成负数,然后用大根堆的方法,读取时再转换回来方法2:priority_queue<int,vector<int>,greater<int> > q;</code></pre><h3 id="用处"><a href="#用处" class="headerlink" title="用处:"></a>用处:</h3><p>1.堆排序<br>2.快速找第n个最大/小值</p>]]></content>
       
       
       
@@ -118,7 +171,7 @@
       <link href="/2022/01/03/CPP%E6%9C%89%E7%94%A8%E7%9A%84%E5%87%BD%E6%95%B0(%E9%9D%9E%E8%87%AA%E5%B8%A6)/"/>
       <url>/2022/01/03/CPP%E6%9C%89%E7%94%A8%E7%9A%84%E5%87%BD%E6%95%B0(%E9%9D%9E%E8%87%AA%E5%B8%A6)/</url>
       
-        <content type="html"><![CDATA[<h1 id="有用的函数（非自带）"><a href="#有用的函数（非自带）" class="headerlink" title="有用的函数（非自带）"></a>有用的函数（非自带）</h1><h2 id="1-计算GND"><a href="#1-计算GND" class="headerlink" title="1.计算GND"></a>1.计算GND</h2><p>方法：辗转相除法<br>代码</p><pre class=" language-c++"><code class="language-c++">int gcd(int a, int b) &#123;    if (b == 0)        return a;    return gcd(b, a % b);&#125;</code></pre><h2 id="2-判断质数"><a href="#2-判断质数" class="headerlink" title="2.判断质数"></a>2.判断质数</h2><p>//返回值,是返回true,不是返回false</p><pre class=" language-c++"><code class="language-c++">bool if_prime(int x) &#123;    if (x < 2)        return false;    for (int i = 2; i <= sqrt(x); i++) &#123;        if (x % i == 0)            return false;    &#125;    return true;&#125;</code></pre><h2 id="3-阶乘"><a href="#3-阶乘" class="headerlink" title="3.阶乘"></a>3.阶乘</h2><p>//参数(开始,结尾,间隔)</p><pre class=" language-c++"><code class="language-c++">int fac_torial(int a, int b, int n) &#123;    int sum = 1;    for (int i = a; i <= b; i += n) &#123;        sum *= i;    &#125;    return sum;&#125;</code></pre>]]></content>
+        <content type="html"><![CDATA[<h1 id="有用的函数（非自带）"><a href="#有用的函数（非自带）" class="headerlink" title="有用的函数（非自带）"></a>有用的函数（非自带）</h1><h2 id="1-计算GND"><a href="#1-计算GND" class="headerlink" title="1.计算GND"></a>1.计算GND</h2><p>方法：辗转相除法<br>代码</p><pre class=" language-c++"><code class="language-c++">int gcd(int a, int b) &#123;    if (b == 0)        return a;    return gcd(b, a % b);&#125;</code></pre><h2 id="2-判断质数"><a href="#2-判断质数" class="headerlink" title="2.判断质数"></a>2.判断质数</h2><p>//返回值,是返回true,不是返回false</p><pre class=" language-c++"><code class="language-c++">bool if_prime(int x) &#123;    if (x < 2)        return false;    for (int i = 2; i <= sqrt(x); i++) &#123;        if (x % i == 0)            return false;    &#125;    return true;&#125;</code></pre><h2 id="3-阶乘"><a href="#3-阶乘" class="headerlink" title="3.阶乘"></a>3.阶乘</h2><p>//参数(开始,结尾,间隔)</p><pre class=" language-c++"><code class="language-c++">int fac_torial(int a, int b, int n) &#123;    int sum = 1;    for (int i = a; i <= b; i += n) &#123;        sum *= i;    &#125;    return sum;&#125;</code></pre><h2 id="4-求倒序数"><a href="#4-求倒序数" class="headerlink" title="4.求倒序数"></a>4.求倒序数</h2><pre class=" language-c++"><code class="language-c++">int dao(int n) &#123;    int sum = 0;    while(n > 0)    &#123;        sum = sum * 10 + n % 10;        n /= 10;    &#125;    return sum;&#125;</code></pre>]]></content>
       
       
       
@@ -598,7 +651,7 @@
       <link href="/2021/09/25/FineYunOS%E5%9C%A8%E7%BA%BF%E7%B3%BB%E7%BB%9F%E5%8F%91%E5%B8%83/"/>
       <url>/2021/09/25/FineYunOS%E5%9C%A8%E7%BA%BF%E7%B3%BB%E7%BB%9F%E5%8F%91%E5%B8%83/</url>
       
-        <content type="html"><![CDATA[<h1 id="FineYunOS发布！"><a href="#FineYunOS发布！" class="headerlink" title="FineYunOS发布！"></a>FineYunOS发布！</h1><p>FineYUNoS是一个可以在浏览器中直接运行的系统！目前已经发布！</p><h2 id="配置要求"><a href="#配置要求" class="headerlink" title="配置要求"></a>配置要求</h2><pre class=" language-txt"><code class="language-txt">系统——Windows7以上浏览器——Edge/Chrome等支持HTML5的浏览器内存——至少8GB分辨率——至少360*480</code></pre><p>运行时可能会有较长的启动时间</p><h2 id="OS信息"><a href="#OS信息" class="headerlink" title="OS信息"></a>OS信息</h2><pre class=" language-txt"><code class="language-txt">内核——Scratch3.12.0编码——HTML系统大小——9MB</code></pre><h2 id="在线体验"><a href="#在线体验" class="headerlink" title="在线体验"></a>在线体验</h2><p>网站:<a href="https://ntsc-yrx.github.io/File/FineYunOS">https://ntsc-yrx.github.io/File/FineYunOS</a></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="FineYunOS发布！"><a href="#FineYunOS发布！" class="headerlink" title="FineYunOS发布！"></a>FineYunOS发布！</h1><p>FineYUNoS是一个可以在浏览器中直接运行的系统！目前已经发布！</p><h2 id="配置要求"><a href="#配置要求" class="headerlink" title="配置要求"></a>配置要求</h2><pre class=" language-txt"><code class="language-txt">系统——Windows7以上浏览器——Edge/Chrome等支持HTML5的浏览器内存——至少8GB分辨率——至少360*480</code></pre><p>运行时可能会有较长的启动时间</p><h2 id="OS信息"><a href="#OS信息" class="headerlink" title="OS信息"></a>OS信息</h2><pre class=" language-txt"><code class="language-txt">内核——Scratch3.12.0编码——HTML系统大小——9MB</code></pre><h2 id="在线体验"><a href="#在线体验" class="headerlink" title="在线体验"></a>在线体验</h2><p>网站：<a href="https://ntsc-yrx.github.io/File/fos">https://ntsc-yrx.github.io/File/fos</a></p><p>旧版：<a href="https://ntsc-yrx.github.io/File/FineYunOS">https://ntsc-yrx.github.io/File/FineYunOS</a></p>]]></content>
       
       
       
@@ -613,9 +666,9 @@
     
     
     <entry>
-      <title>CPP教程-计算函数</title>
-      <link href="/2021/09/24/CPP%E6%95%99%E7%A8%8B-%E8%AE%A1%E7%AE%97%E5%87%BD%E6%95%B0/"/>
-      <url>/2021/09/24/CPP%E6%95%99%E7%A8%8B-%E8%AE%A1%E7%AE%97%E5%87%BD%E6%95%B0/</url>
+      <title>CPP函数-计算函数</title>
+      <link href="/2021/09/24/CPP%E5%87%BD%E6%95%B0-%E8%AE%A1%E7%AE%97%E5%87%BD%E6%95%B0/"/>
+      <url>/2021/09/24/CPP%E5%87%BD%E6%95%B0-%E8%AE%A1%E7%AE%97%E5%87%BD%E6%95%B0/</url>
       
         <content type="html"><![CDATA[<h1 id="C-教程"><a href="#C-教程" class="headerlink" title="C++教程"></a>C++教程</h1><h2 id="计算函数"><a href="#计算函数" class="headerlink" title="计算函数"></a>计算函数</h2><p>C++中自带了一些十分方便的计算函数，它们都直接返回返回值，使用方法如下</p><pre class=" language-c++"><code class="language-c++">a = sqrt(n); //a=n的平方根</code></pre><p>常用函数表</p><pre class=" language-c++"><code class="language-c++">sqrt(n) 平方根pow(x,y) x的y次方ceil(n) 向上取整floor(n) 向下取整max(x,y) 返回x，y中的最大值min(x,y) 返回x，y中的最小值abs(n) 绝对值</code></pre>]]></content>
       
@@ -625,7 +678,7 @@
             
             <tag> C++ </tag>
             
-            <tag> 教程 </tag>
+            <tag> 函数 </tag>
             
         </tags>
       
