@@ -27,7 +27,7 @@
       <link href="/2022/07/09/CPP%E8%BF%9B%E9%98%B6-%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
       <url>/2022/07/09/CPP%E8%BF%9B%E9%98%B6-%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="CPP进阶"><a href="#CPP进阶" class="headerlink" title="CPP进阶"></a>CPP进阶</h1><h2 id="树状数组"><a href="#树状数组" class="headerlink" title="树状数组"></a>树状数组</h2><blockquote><p>例题ACWING242</p></blockquote><pre class=" language-c++"><code class="language-c++">const int N=1e5+5;typedef long long ll;int n,m,x;ll c[N],a[N];</code></pre><p>lowbit函数,实际上是查询x在二进制下最后一个1的位数(?)</p><pre class=" language-c++"><code class="language-c++">int lowbit(int x)&#123;return x&-x;&#125;</code></pre><p>修改</p><pre class=" language-c++"><code class="language-c++">void add(int i,int x)&#123;    while(i<=n)    &#123;        c[i]+=x;        i+=lowbit(i);    &#125;&#125;</code></pre><p>求解</p><pre class=" language-c++"><code class="language-c++">ll sum(int x)&#123;    ll res=0;    while(x)    &#123;        res+=c[x];        x-=lowbit(x);    &#125;    return res;&#125;</code></pre><pre class=" language-c++"><code class="language-c++">int main()&#123;    cin>>n>>m;    for(int i=1;i<=n;i++)        scanf("%d",&a[i]);    while(m--)    &#123;        char op[2];        scanf("%s%d",op,&x);        if(op[0]=='Q')            printf("%d\n",sum(x)+a[x]);        else&#123;            int r,b;            scanf("%d%d",&r,&b);            add(x,b);add(r+1,-b);        &#125;    &#125;    return 0;&#125;</code></pre>]]></content>
       
       
       
@@ -53,7 +53,7 @@
       <link href="/2022/07/09/CPP%E8%BF%9B%E9%98%B6-%E6%A0%91%E5%9E%8BDP/"/>
       <url>/2022/07/09/CPP%E8%BF%9B%E9%98%B6-%E6%A0%91%E5%9E%8BDP/</url>
       
-        <content type="html"><![CDATA[<h1 id="C-进阶"><a href="#C-进阶" class="headerlink" title="C++ 进阶"></a>C++ 进阶</h1><h2 id="树型DP（动态规划）"><a href="#树型DP（动态规划）" class="headerlink" title="树型DP（动态规划）"></a>树型DP（动态规划）</h2><blockquote><p>例题ACWING</p></blockquote><pre class=" language-c++"><code class="language-c++"></code></pre>]]></content>
+        <content type="html"><![CDATA[<h1 id="C-进阶"><a href="#C-进阶" class="headerlink" title="C++ 进阶"></a>C++ 进阶</h1><h2 id="树型DP（动态规划）"><a href="#树型DP（动态规划）" class="headerlink" title="树型DP（动态规划）"></a>树型DP（动态规划）</h2><blockquote><p>例题ACWING285</p></blockquote><pre class=" language-c++"><code class="language-c++">const int N = 1e4 + 5;int h[N], cnt, nxt[N], to[N], f[N][2], w[N], fa[N];int  l, k, rt, n;</code></pre><p>邻接表</p><pre class=" language-c++"><code class="language-c++">void add(int a, int b) &#123;    to[++cnt] = b, nxt[cnt] = h[a], h[a] = cnt;&#125;</code></pre><p>以邻接表dfs为基础</p><pre class=" language-c++"><code class="language-c++">void dfs(int u) &#123;    f[u][1] = w[u]; //如果自己要来先把自己的快乐加上    for (int i = h[u]; i; i = nxt[i]) &#123;        int v = to[i];        //DP的部分        dfs(v);//先递归，因为上面要使用下面的结果        f[u][1] += f[v][0]; //自己要来        f[u][0] += max(f[v][0], f[v][1]); //自己不来    &#125;&#125;</code></pre><pre class=" language-c++"><code class="language-c++">int main() &#123;    cin >> n;    for (int i = 1; i <= n; i++) &#123;        cin >> w[i];    &#125;    for (int i = 1; i < n; i++) &#123;//请勿用while(n--)        cin >> l >> k;        add(k, l);        fa[l] = k;    &#125;    for (int i = 1; i <= n; i++)        if (fa[i] == 0)            rt = i;    dfs(rt);    cout << max(f[rt][1], f[rt][0]);    return 0;&#125;</code></pre>]]></content>
       
       
       
