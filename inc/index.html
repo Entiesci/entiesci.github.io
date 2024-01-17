@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://t.mwm.moe/pc') no-repeat center center fixed;
+            background-size: cover;
+            z-index: -1;
+            opacity: 0.36;
+        }
+
+        body {
+            /* 设置背景颜色为黑色，透明度为0.7 */
+            background-color: rgba(0, 0, 0, 1);
+
+        }
+
+        #time {
+            font-family: "Century Gothic","UD Digi Kyokasho N-B", Times, serif;
+            /* 设置文本颜色为白色 */
+            color: white;
+            /* 设置字体大小 */
+            font-size: 72px;
+            /* 设置字体居中 */
+            text-align: center;
+            /* 设置页面高度为100% */
+            height: 30vh;
+            /* 设置页面内容垂直居中 */
+            /* display: flex; */
+            align-items: center;
+            justify-content: center;
+            opacity: 0.5;
+
+        }
+
+        #hitokoto_text {
+            font-family: "UD Digi Kyokasho N-B", Times, serif;
+            /* 设置文本颜色为白色 */
+            color: white;
+            /* 设置字体大小 */
+            font-size: 24px;
+            /* 设置字体居中 */
+            text-align: center;
+            /* 设置页面高度为100% */
+            opacity: 0;
+
+        }
+
+        #typedText {
+            font-family: "sumsun", Times, serif;
+            /* 设置文本颜色为白色 */
+            color: white;
+            /* 设置字体大小 */
+            font-size: 36px;
+            /* 设置字体居中 */
+            text-align: center;
+            /* 设置页面高度为100% */
+            /* height: 80vh; */
+            /* 设置页面内容垂直居中 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* border-right: 0.2em solid; */
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        #signLeft {
+            font-family: "sumsun", Times, serif;
+            /* 设置文本颜色为白色 */
+            color: white;
+            /* 设置字体大小 */
+            font-size: 48px;
+            /* 设置字体居中 */
+            text-align: left;
+            /* 设置页面高度为100% */
+            /* height: 100vh; */
+            /* 设置页面内容垂直居中 */
+            /* display: flex; */
+            align-items: left;
+            justify-content: left;
+            border-left: 12em;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        #signReft {
+            font-family: "sumsun", Times, serif;
+            /* 设置文本颜色为白色 */
+            color: white;
+            /* 设置字体大小 */
+            font-size: 48px;
+            /* 设置字体居中 */
+            text-align: right;
+            /* 设置页面高度为100% */
+            /* height: 100vh; */
+            /* 设置页面内容垂直居中 */
+            /* display: flex; */
+            align-items: right;
+            justify-content: right;
+            border-right: 12em;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    </style>
+
+    <!-- <meta http-equiv="refresh" content="30"> -->
+
+</head>
+
+<body>
+    <p id="time"></p>
+    <p id="hitokoto_text"></p>
+
+    <!-- <p id="signLeft">『</p> -->
+    <div id="typedText"></div>
+    <!-- <div id="signReft">』</div> -->
+
+    <!-- <script>
+        var text = 'Hello, World!';
+        var index = 0;
+
+        function type() {
+            if (index < text.length) {
+                document.getElementById('typedText').innerHTML += text.charAt(index);
+                index++;
+                setTimeout(type, 500); // Wait for 500ms
+            }
+        }
+
+        type();
+    </script> -->
+
+
+    <script>
+        function updateTime() {
+            var now = new Date();
+            var year = now.getFullYear();
+            var month = now.getMonth() + 1;
+            var date = now.getDate();
+            var day = now.getDay();
+            var hour = now.getHours();
+            var minu = now.getMinutes();
+            var sec = now.getSeconds();
+            var MS = now.getMilliseconds();
+            var week;
+
+            if (month < 10) month = "0" + month;
+            if (date < 10) date = "0" + date;
+            if (hour < 10) hour = "0" + hour;
+            if (minu < 10) minu = "0" + minu;
+            if (sec < 10) sec = "0" + sec;
+            if (MS < 100) MS = "0" + MS;
+
+            var arr_week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            week = arr_week[day];
+
+            var time = year + "-" + month + "-" + date + " " + week + " " + hour + ":" + minu + ":" + sec + '\n';
+            document.getElementById("time").innerHTML = time;
+        }
+
+        setInterval(updateTime, 100);
+    </script>
+
+
+    <script>
+        let i = 0;
+        var text
+        var idx
+        setInterval(function () {
+            fetch('https://v1.hitokoto.cn')
+                .then(response => response.json())
+                .then(data => {
+                    const hitokoto = document.querySelector('#hitokoto_text')
+                    hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
+                    hitokoto.innerText = data.hitokoto
+                    text = data.hitokoto
+                    document.getElementById('typedText').innerHTML = ""
+                    type();
+                    // del();
+                })
+                .catch(console.error)
+        }, 12000);
+
+        function del() {
+            var delintv = setInterval(function () {
+                if (text.length > 0) {
+                    text = text.slice(0, -1);
+                    document.getElementById('typedText').innerHTML = text;
+                } else {
+                    clearInterval(delintv);
+                }
+            }, 100);
+        }
+
+        function type() {
+            idx = 0
+            var typeintv = setInterval(function () {
+                if (idx < text.length) {
+                    document.getElementById('typedText').innerHTML += text.charAt(idx);
+                    idx++;
+                } else {
+                    clearInterval(typeintv);
+                }
+            }, 100);
+            // del();
+        }
+
+    </script>
+</body>
+
+</html>
