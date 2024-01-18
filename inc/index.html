@@ -10,7 +10,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('https://t.mwm.moe/pc') no-repeat center center fixed;
+            /* background: url('https://t.mwm.moe/pc') no-repeat center center fixed; */
+            background: url('https://tu.ltyuanfang.cn/api/fengjing.php') no-repeat center center fixed;
             background-size: cover;
             z-index: -1;
             opacity: 0.36;
@@ -23,7 +24,7 @@
         }
 
         #time {
-            font-family: "Century Gothic","UD Digi Kyokasho N-B", Times, serif;
+            font-family: "Century Gothic", "UD Digi Kyokasho N-B", Times, serif;
             /* 设置文本颜色为白色 */
             color: white;
             /* 设置字体大小 */
@@ -111,7 +112,7 @@
         }
     </style>
 
-    <!-- <meta http-equiv="refresh" content="30"> -->
+    <meta http-equiv="refresh" content="30">
 
 </head>
 
@@ -174,6 +175,21 @@
         let i = 0;
         var text
         var idx
+        fetch('https://v1.hitokoto.cn')
+            .then(response => response.json())
+            .then(data => {
+                const hitokoto = document.querySelector('#hitokoto_text')
+                hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
+                hitokoto.innerText = data.hitokoto
+                text = data.hitokoto
+                document.getElementById('typedText').innerHTML = ""
+                document.title = text
+                type();
+                // del();
+            })
+            .catch(console.error)
+
+
         setInterval(function () {
             fetch('https://v1.hitokoto.cn')
                 .then(response => response.json())
@@ -183,11 +199,12 @@
                     hitokoto.innerText = data.hitokoto
                     text = data.hitokoto
                     document.getElementById('typedText').innerHTML = ""
+                    document.title = text
                     type();
                     // del();
                 })
                 .catch(console.error)
-        }, 12000);
+        }, 10000);
 
         function del() {
             var delintv = setInterval(function () {
