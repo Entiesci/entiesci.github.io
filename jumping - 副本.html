@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>entiesci 跳转中!</title>
+</head>
+
+<body>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style>
+    div#bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -10;
+      background-position: center 0;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      zoom: 1;
+
+      opacity: 1;
+      transition: opacity 1s linear;
+      -moz-transition: opacity 1s linear;
+      -webkit-transition: opacity 1s linear;
+      -o-transition: opacity 1s linear;
+    }
+  </style>
+  <h1><a href="http://gouji.org/?post=317">代码出处</a></h1>
+  <div id="bg"></div>
+  <script>
+    // 定义图片路径 {num} 为 可变的图片序号
+    var bgImgUrl = 'http://api.asilu.com/cdn/img/bg/{num}.jpg', bgNum,
+      bgImgArr = [],
+      bgDiv = document.getElementById("bg");
+    // 组合数组 此处 200 为 图开始序号 结束 210
+    for (var i = 200; i <= 210; i++) {
+      bgImgArr.push(bgImgUrl.replace('{num}', i));
+    }
+    setBGimg();
+    function setBGimg(d) {
+      if (!bgNum || bgNum >= bgImgArr.length) bgNum = 0;
+      bgDiv.style.opacity = .002;
+      setTimeout(function () {
+        bgDiv.style.backgroundImage = 'url(' + bgImgArr[bgNum] + ')';
+        bgNum++;
+        bgDiv.style.opacity = 1;
+      }, 500);
+      if (typeof d == 'undefined')
+        setInterval(function () { setBGimg(true); }, 6000);
+      // 上一行的 6000 是背景图片自动切换时间(单位 毫秒)
+    }
+  </script>
+</body>
+
+</html>
