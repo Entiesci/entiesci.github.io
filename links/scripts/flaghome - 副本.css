@@ -11,7 +11,7 @@ html {
     color: #fff;
     line-height: 1.5;
     min-width: 1150px;
-    background-color: #000000;
+    background-color: #212121;
     font-size: 14px;
     overflow-x: hidden
 }
@@ -56,7 +56,7 @@ html {
     left: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to top, rgb(60, 60, 60) 30%, rgba(0, 0, 0, 0) 100%)
+    background: linear-gradient(to top, rgba(32, 32, 32, 1) 30%, rgba(32, 32, 32, 0) 100%)
 }
 
 @keyframes bg {
@@ -510,7 +510,7 @@ ul.skill li .progress div {
     border-radius: 100%;
     text-align: center;
     margin-right: 15px;
-    background-color: #000000;
+    background-color: #353535;
     overflow: hidden
 }
 
