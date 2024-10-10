@@ -842,3 +842,30 @@ ul.skill li .progress div {
         letter-spacing: .2em
     }
 }
+
+/* ntsc below */
+
+/* img { */
+    /* background-position: center;
+    position: absolute;
+    width: 100%; */
+    /* height: 100%; */
+    /* background-size: contain; */
+/* } */
+
+.video-background {
+    position: fixed; /* 视频背景总是固定在相同的位置 */
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;  
+    height: auto;
+    background-size: cover; /* 确保视频覆盖整个容器 */
+    filter:brightness(0.3);
+}
+
+#bg-video {
+    width: 100%;
+    height: auto;
+}
